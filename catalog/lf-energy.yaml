@@ -1,0 +1,515 @@
+# LF Energy projects (https://lfenergy.org/projects/). Schema: catalog/SCHEMA.md
+
+# Already elsewhere in the catalog: citylearn, everest, grid2op, openleadr (also tagged host: LF Energy).
+
+- id: lfe-ainetus
+  name: "AINETUS"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/ainetus/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [rsi]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "AI for Safety-Critical Network Infrastructures: human-centric AI components that support grid operators' real-time and planning decisions. LF Energy stage: Sandbox. Code: github.com/ainetus."
+
+- id: lfe-arras
+  name: "Arras (formerly HiPAS GridLAB-D)"
+  creator: "LF Energy; GridLAB-D originally developed by PNNL for US DOE"
+  url: "https://lfenergy.org/projects/arras/"
+  kind: simulator
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Grid and smart-grid simulation for utilities and researchers, the continuation of HiPAS GridLAB-D. LF Energy stage: Sandbox. Code: github.com/arras-energy/gridlabd."
+
+- id: lfe-assetlife
+  name: "AssetLife"
+  creator: "RTE (France)"
+  url: "https://lfenergy.org/projects/assetlife/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Python library for asset management: survival analysis, renewal theory and cost calculation for maintenance and replacement decisions. Apache-2.0. LF Energy stage: Sandbox. Code: github.com/AssetLife-project."
+
+- id: lfe-battery-data-alliance
+  name: "Battery Data Alliance"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/battery-data-alliance/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [background]
+  status: verified
+  host: "LF Energy"
+  summary: "Common software and data schemas for battery data across companies. LF Energy stage: Sandbox. Code: github.com/battery-data-alliance."
+
+- id: lfe-cds-customer-data
+  name: "CDS Customer Data"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/cds-customer-data/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Open specifications for access to utility customer energy data, for carbon accounting, efficiency and flexibility use cases. Code: github.com/lfe-cds/CDS-Customer-Data."
+
+- id: lfe-cds-power-systems-data
+  name: "CDS Power Systems Data"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/cds-power-systems-data/"
+  kind: standard
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [background]
+  status: verified
+  host: "LF Energy"
+  summary: "Open specification for raw power system data, aimed at more accurate grid emissions reporting. Code: github.com/lfe-cds/CDS-Power-Systems-Data."
+
+- id: lfe-cds-registration
+  name: "CDS Registration"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/cds-registration/"
+  kind: standard
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Open specifications for how third-party systems securely discover, register with and connect to utility platforms. Code: github.com/lfe-cds/CDS-Registration."
+
+- id: lfe-citrineos
+  name: "CitrineOS"
+  creator: "S44 Energy"
+  url: "https://lfenergy.org/projects/citrineos/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Open-source charger network management software for OCPP 2.0.1: monitor, control and manage charging stations. Code: github.com/citrineos/citrineos."
+
+- id: lfe-compas
+  name: "CoMPAS"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/compas/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Shared software blocks for IEC 61850 profile configuration in digital substations. LF Energy stage: Early Adoption. Code: github.com/com-pas."
+
+- id: lfe-covxtreme
+  name: "covXtreme"
+  creator: "Shell"
+  url: "https://lfenergy.org/projects/covxtreme/"
+  kind: tool
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [verifier]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Statistical modelling of extreme values and how they occur together, for risk from rare severe conditions. LF Energy stage: Sandbox. Code: github.com/covXtreme."
+
+- id: lfe-cupid
+  name: "CUPID"
+  creator: "LF Energy; from the Horizon Europe InterSTORE project"
+  url: "https://lfenergy.org/projects/cupid/"
+  kind: tool
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Interoperability toolkit that extends IEEE 2030.5 for distributed energy resources and energy management systems. LF Energy stage: Sandbox. Code: github.com/cupid-project."
+
+- id: lfe-dynawo
+  name: "Dynawo"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/dyna%CF%89o/"
+  kind: simulator
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Simulation suite for power system dynamics: voltage, frequency, short circuit and stability with power-electronic resources and HVDC. Code: github.com/dynawo."
+
+- id: lfe-energnn
+  name: "EnerGNN"
+  creator: "RTE with University of Liège and partners"
+  url: "https://lfenergy.org/projects/energnn/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation, rsi]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Graph neural network stack (H2MG) for amortized optimization: trained once on many grid cases, it returns near-instant solutions to new ones. LF Energy stage: Sandbox. Code: github.com/energnn/energnn."
+
+- id: lfe-fidopower
+  name: "FIDOpower"
+  creator: "SLAC National Accelerator Laboratory"
+  url: "https://lfenergy.org/projects/fidopower/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Notebook-based tools for reproducible power system analysis. LF Energy stage: Sandbox. Code: github.com/fidopower."
+
+- id: lfe-flexmeasures
+  name: "FlexMeasures"
+  creator: "Seita Energy Flexibility (Nicolas Höning)"
+  url: "https://lfenergy.org/projects/flexmeasures/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Open-source energy optimization engine that forecasts and schedules flexible loads, batteries and generation against prices and grid limits, for real-time operations. Built by Seita (https://seita.nl/), founded by Nicolas Höning; hosted by LF Energy. LF Energy stage: Incubation. Code: github.com/FlexMeasures/flexmeasures (Apache-2.0)."
+
+- id: lfe-geisa
+  name: "GEISA (Grid Edge Interoperability & Security Alliance)"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/geisa/"
+  kind: standard
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [edge-ai, coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Secure, interoperable ecosystem for deploying and operating grid edge computing and applications. LF Energy stage: Sandbox. Code: github.com/geisa."
+
+- id: lfe-grid-vantage
+  name: "GridVantage"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/grid-vantage/"
+  kind: tool
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Agent-based grid modelling with resilience metrics to help operators prepare for and recover from extreme weather. LF Energy stage: Sandbox. Code: github.com/grid-vantage."
+
+- id: lfe-hyphae
+  name: "Hyphae"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/hyphae/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Microgrid software connecting buildings, homes and devices to local generation, storage and EV batteries. LF Energy stage: Incubation. Code: github.com/hyphae."
+
+- id: lfe-node-collective
+  name: "NODE Collective"
+  creator: "Building Decarbonization Coalition, Rewiring America, Eli Technologies"
+  url: "https://lfenergy.org/projects/node-collective/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  role: [data]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "National open database of US electrification incentives and rebates. LF Energy stage: Sandbox. Code: github.com/NODE-Collective."
+
+- id: lfe-opendsm
+  name: "OpenDSM (formerly OpenEEmeter)"
+  creator: "Recurve"
+  url: "https://lfenergy.org/projects/opendsm/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Measures savings and demand-side impact from meter data, for programs that need verified results. Code: github.com/opendsm/opendsm."
+
+- id: lfe-opengridfm
+  name: "OpenGridFM"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/opengridfm/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation, rsi]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Open framework for building and fine-tuning foundation models for power grids. LF Energy stage: Incubation. Code: github.com/gridfm."
+
+- id: lfe-openstef
+  name: "OpenSTEF"
+  creator: "LF Energy community (grid operators, vendors, researchers)"
+  url: "https://lfenergy.org/projects/openstef/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Python machine learning pipelines for short-term energy forecasts. LF Energy stage: Incubation. Code: github.com/OpenSTEF/openstef."
+
+- id: lfe-opensynth
+  name: "OpenSynth"
+  creator: "Centre for Net Zero"
+  url: "https://lfenergy.org/projects/opensynth/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [data]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Open data community for synthetic and real energy datasets, starting with demand. LF Energy stage: Sandbox. Code: github.com/OpenSynth-energy."
+
+- id: lfe-operatorfabric
+  name: "OperatorFabric"
+  creator: "RTE (France)"
+  url: "https://lfenergy.org/projects/operatorfabric/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity, 4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Control-room platform that brings alerts, workflows and messages from many systems into one interface. MPL-2.0. LF Energy stage: Early Adoption. Code: github.com/opfab."
+
+- id: lfe-ores
+  name: "ORES: Open Renewable Energy Systems"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/ores-open-renewable-energy-systems/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Open standards and practice for plug-and-play microgrids and grid-interactive device metadata and APIs. LF Energy stage: Sandbox. Code: github.com/open-renewable-energy-systems."
+
+- id: lfe-p-swamp
+  name: "p-SWAMP"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/p-swamp/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Modular research environment for wide-area monitoring and protection with simulation. LF Energy stage: Sandbox. Code: github.com/p-swamp/P-SWAMP."
+
+- id: lfe-power-grid-model
+  name: "Power Grid Model"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/power-grid-model/"
+  kind: simulator
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Fast calculation engine for distribution grids: power flow, state estimation and short circuit. LF Energy stage: Early Adoption. Code: github.com/PowerGridModel."
+
+- id: lfe-powsybl
+  name: "PowSyBl"
+  creator: "RTE (France)"
+  url: "https://lfenergy.org/projects/powsybl/"
+  kind: simulator
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Library and tools for power system modelling: load flow, security analysis, dynamic simulation, many grid formats. MPL-2.0. LF Energy stage: Early Adoption. Code: github.com/powsybl."
+
+- id: lfe-rtdip
+  name: "RTDIP: Real Time Data Ingestion Platform"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/real-time-data-ingestion-platform-rtdip/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [verifier]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Cloud pipelines for ingesting and querying real-time and historical time-series data. LF Energy stage: Sandbox. Code: github.com/rtdip."
+
+- id: lfe-rtc-tools
+  name: "RTC-Tools"
+  creator: "Deltares"
+  url: "https://lfenergy.org/projects/rtc-tools/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Toolbox for control and optimization of time-dependent systems, originally water systems; MESIDO extends it to energy networks. LF Energy stage: Sandbox. Code: github.com/Multi-Energy-Systems-Optimization/mesido."
+
+- id: lfe-seapath
+  name: "SEAPATH"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/seapath/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity, 4-aggregation]
+  role: [verifier]
+  tag: [edge-ai]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Real-time platform that runs IEC 61850 substation protection and control as virtual machines or containers on standard servers. LF Energy stage: Graduated. Code: github.com/seapath."
+
+- id: lfe-sef
+  name: "Semantic Energy Framework (SEF)"
+  creator: "LF Energy; from the EU InterConnect project"
+  url: "https://lfenergy.org/projects/semantic-energy-framework-sef/"
+  kind: standard
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Semantic interoperability so energy apps and devices interpret shared data the same way. LF Energy stage: Sandbox. Code: github.com/lfe-sef."
+
+- id: lfe-shapeshifter
+  name: "Shapeshifter"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/shapeshifter/"
+  kind: standard
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Implements the USEF Flexibility Trading Protocol for coordinating flexibility between grid operators and aggregators. LF Energy stage: Incubation. Code: github.com/shapeshifter."
+
+- id: lfe-smart-hems-benchmark
+  name: "Smart HEMS Benchmark"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/smart-hems-benchmark/"
+  kind: benchmark
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [metric]
+  tag: [simulation]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Manufacturer-neutral benchmark for home energy management systems with solar and batteries. LF Energy stage: Sandbox. Code: github.com/SMART-HEMS-Benchmark/smart-hems-benchmark."
+
+- id: lfe-sogno
+  name: "SOGNO"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/sogno/"
+  kind: tool
+  domain: [edge-compute]
+  track: [2-grid-capacity, 4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Modular, cloud-native automation for distribution utilities: monitoring, state estimation and control. LF Energy stage: Early Adoption. Code: github.com/sogno-platform."
+
+- id: lfe-trolie
+  name: "TROLIE"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/trolie/"
+  kind: standard
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Open specification for exchanging current and forecast transmission line ratings, as required by FERC Order 881. Apache-2.0. LF Energy stage: Sandbox. Code: github.com/trolie/spec."
+
+- id: lfe-urpx
+  name: "Utility Rate Plan Exchange (URPX)"
+  creator: "Flux Tailor with the National Laboratory of the Rockies"
+  url: "https://lfenergy.org/projects/utility-rate-plan-exchange-urpx/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  host: "LF Energy"
+  summary: "Open, machine-readable standard for utility tariffs and rate plans. Apache-2.0. LF Energy stage: Sandbox. Code: github.com/urpx-org."
+
+- id: lfe-varen
+  name: "VAREN"
+  creator: "LF Energy community"
+  url: "https://lfenergy.org/projects/varen/"
+  kind: tool
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [verifier]
+  tag: [edge-ai]
+  access: open
+  license: "Open source (see project)"
+  host: "LF Energy"
+  summary: "Python library that automates analysis of mobile LiDAR of overhead distribution lines and nearby vegetation. LF Energy stage: Sandbox. Code: github.com/varen-project."

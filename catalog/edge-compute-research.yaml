@@ -1,0 +1,1386 @@
+# Edge compute deep research, 7 Nov 2026. Schema: catalog/SCHEMA.md
+# Source: ChatGPT Deep Research run for this repo. Raw reports in catalog/research/edge-compute/.
+# ref = the ID used in those reports (S## master table, R/D/S/P/N/A## expanded handoff).
+# Topics: T1 growth, T2 siting difficulty, T3 public datasets, T4 vocabulary, T5 tools, T6 programs.
+# Entries already in datasets.yaml / tools.yaml / literature.yaml / programs.yaml are not repeated here.
+
+# ---------- T1 growth and demand ----------
+- id: lbnl-dc-energy-2025-update
+  name: "LBNL, United States Data Center Energy Usage Report: 2025 Update"
+  url: "https://datacenters.lbl.gov/publications/united-states-data-center-energy-2025"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity, 3-load-management]
+  topic: [T1, T2]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  ref: S01
+  summary: "Estimates US data center use at 521 to 843 TWh in 2030, 9.5% to 15.3% of US electricity, central estimate 11.8%."
+
+- id: iea-key-questions-2026
+  name: "IEA, Key Questions on Energy and AI (2026)"
+  url: "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T1, T2]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  ref: R03
+  summary: "Data center demand grew 17% in 2025 (AI-focused 50%); 485 TWh in 2025 to about 950 TWh in 2030. Projects 20 to 25 GW batteries and 15 to 27 GW onsite gas at data centers by 2030. CC BY 4.0."
+
+- id: eia-aeo2026-servers
+  name: "EIA, Data center server energy use grows across the commercial building stock (AEO2026)"
+  url: "https://www.eia.gov/todayinenergy/detail.php?id=67704"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T1]
+  role: [background]
+  status: verified
+  ref: S03
+  summary: "AEO2026 models data center server electricity separately and uses an essentially flat server load shape."
+
+- id: eia-aeo2026
+  name: "EIA, Annual Energy Outlook 2026 narrative"
+  url: "https://www.eia.gov/outlooks/aeo/narrative/"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T2]
+  role: [background]
+  status: verified
+  ref: S04
+  summary: "High Electricity Demand case with more AI servers; high-case server consumption reaches 818 TWh in 2050."
+
+- id: doe-demand-growth-hub
+  name: "DOE, Electricity Demand Growth Resource Hub"
+  url: "https://www.energy.gov/policy/electricity-demand-growth-resource-hub"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T1, T2, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S05
+  summary: "Federal hub of analyses, programs and resources on rapid load growth, including data centers."
+
+- id: doe-ai-datacenter-hub
+  name: "DOE, Powering America's AI Future: Data Center Resource Hub"
+  url: "https://www.energy.gov/powering-americas-ai-future-data-center-resource-hub"
+  kind: program
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T1, T2, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S06
+  summary: "Federal hub on data center demand, flexibility, efficiency, grid integration, water and DOE programs."
+
+- id: doe-microgrids-large-loads
+  name: "DOE, Microgrids, Large Electric Loads and Grid Support"
+  url: "https://www.energy.gov/oe/articles/microgrids-large-electric-loads-grid-support-how-leverage-microgrids-support-utilities"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T1, T5, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S10
+  summary: "US data center use rose from 58 TWh (2014) to 176 TWh (2023), 325 to 580 TWh possible by 2028; covers storage, CHP and microgrids for large loads."
+
+- id: va-jlarc-2024
+  name: "Virginia JLARC, Data Centers in Virginia (2024)"
+  url: "https://rga.lis.virginia.gov/Published/2025/RD206/PDF"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T1, T2]
+  role: [background]
+  status: verified
+  ref: R04
+  summary: "State investigation: 250+ interviews, independent demand forecast, E3 grid cost modeling. About 50 ongoing jobs vs 1,500 at construction peak for a 250k sq ft site; low-frequency noise; $14 to $37/month added residential cost by 2040 (modeled)."
+
+- id: mobile-edge-market-forecast-2026
+  name: "Commercial mobile edge computing market forecast (press release, 2026)"
+  url: "https://www.globenewswire.com/news-release/2026/11/04/3395444/0/en/Mobile-Edge-Computing-Market-Size-Share-Industry-Trends-and-Growth-Forecasts-2026-2031-5G-Edge-AI-and-Asia-Pacific-Demand-Fuel-30-1-CAGR-to-3-88-Billion.html"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T1]
+  role: [background]
+  tag: [edge-ai]
+  status: unverified
+  ref: A20
+  summary: "Vendor forecast: USD 0.80B (2025) to 3.88B (2031), 30.1% CAGR. Methodology not inspected; measures mobile edge computing, not edge data center buildings or MW."
+
+- id: etsi-edge-native-2023
+  name: "ETSI White Paper 55, MEC support towards edge-native design (2023)"
+  url: "https://www.etsi.org/images/files/ETSIWhitePapers/ETSI-WP55-MEC_support_towards_Edge_native.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 4-aggregation]
+  topic: [T1, T5]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: verified
+  ref: N06
+  summary: "Edge constraints: limited single-rack resources, heterogeneity, intermittent upstream links, user mobility, latency. Covers MEC 021 application mobility and MEC 011 discovery APIs."
+
+- id: etsi-mec-security-2022
+  name: "ETSI, Multi-access Edge Computing security white paper (2022)"
+  url: "https://www.etsi.org/newsroom/press-releases/2123-2022-09-etsi-publishes-a-new-white-paper-on-multi-access-edge-computing-security/"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 4-aggregation]
+  topic: [T2, T5]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: verified
+  ref: N07
+  summary: "Scope of edge security across federation, physical, data, network and application layers in multi-vendor edge ecosystems. Announcement only; full paper linked."
+
+- id: etsi-mec-overview
+  name: "ETSI MEC technical group"
+  url: "https://www.etsi.org/technical-groups/mec/"
+  kind: standard
+  domain: [edge-compute]
+  track: [1-sites, 4-aggregation]
+  topic: [T1, T4]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: verified
+  ref: A18
+  summary: "Defines multi-access edge computing as cloud capabilities and an IT service environment at the network edge."
+
+# ---------- T2 siting difficulty: local land use and permits (C1) ----------
+- id: cec-data-centers
+  name: "California Energy Commission, Data Centers"
+  url: "https://www.energy.ca.gov/programs-and-topics/topics/data-centers"
+  kind: program
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T1, T2, T6]
+  role: [background]
+  status: verified
+  ref: S25
+  summary: "CEC does not generally permit data centers but forecasts their demand. Early 2026 data centers were about 1,000 MW, roughly 2% of CAISO peak."
+
+- id: santa-clara-zoning
+  name: "City of Santa Clara, data center zoning framework"
+  url: "https://santaclara.legistar.com/LegislationDetail.aspx?FullText=1&GUID=2791DE9D-56B5-49B5-9998-BC1264149D06&ID=8260886"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: S26
+  summary: "2024 zoning code requires standalone data centers to obtain a Conditional Use Permit and architectural review."
+
+- id: santa-clara-planning-record
+  name: "City of Santa Clara, Planning Commission data center record"
+  url: "https://santaclara.legistar.com/LegislationDetail.aspx?FullText=1&GUID=25408312-6834-469E-B545-48CCFFBD1814&ID=7404898"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2]
+  role: [background]
+  status: verified
+  ref: S27
+  summary: "Review of noise, fiscal benefits, power use and concentration of data centers; CUP required in Office/R&D and industrial districts."
+
+- id: sf-planning-interim-controls
+  name: "San Francisco Planning, code change summaries and interim controls"
+  url: "https://sfplanning.org/fil/planning-code-change-summaries"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: S28
+  summary: "Index of adopted and interim controls, including an interim zoning moratorium for data centers in San Francisco."
+
+- id: sf-property-information-map
+  name: "San Francisco Property Information Map"
+  url: "https://sfplanninggis.org/PIM/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T3]
+  role: [data]
+  access: open
+  ref: D21
+  summary: "Parcel reports: zoning, height/bulk, overlays, permits, hazards (flooding, sea-level rise, liquefaction), year built. Not structural or electrical capacity."
+
+- id: prince-william-dc-review
+  name: "Prince William County, data center overlay district review"
+  url: "https://www.pwcva.gov/department/planning-office/data-center-overlay-district-comprehensive-review"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2]
+  role: [background]
+  status: verified
+  ref: S29
+  summary: "Specified new data center proposals now go through special-use-permit review instead of by-right zoning."
+
+- id: loudoun-land-use
+  name: "Loudoun County, Data Centers: Land Use Considerations"
+  url: "https://www.loudoun.gov/6410/Land-Use-Considerations"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2]
+  role: [background]
+  status: verified
+  ref: S30
+  summary: "Rural policy area zoning, about two-thirds of county land, does not allow data centers."
+
+- id: loudoun-dc-standards
+  name: "Loudoun County, Data Center Standards and Locations"
+  url: "https://www.loudoun.gov/5990/Data-Center-Standards-Locations"
+  kind: program
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: P01
+  summary: "Phase 1 (approved 18 Mar 2025) moved data centers from by-right to Special Exception in affected areas. Phase 2 (plan approved 16 Sep 2025) covers data center and substation standards. Includes existing/proposed data center map."
+
+- id: tulare-dc-moratorium
+  name: "Tulare County, temporary moratorium on new data centers (CEQAnet)"
+  url: "https://ceqanet.lci.ca.gov/2026100006"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: S31
+  summary: "Moratorium extension while the county develops zoning, infrastructure, water, energy, noise and safety standards."
+
+- id: richmond-dc-moratorium
+  name: "City of Richmond CA, temporary moratorium on new data centers (CEQAnet)"
+  url: "https://ceqanet.lci.ca.gov/2026101044"
+  kind: filing
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: S32
+  summary: "Citywide moratorium extended through 15 Sep 2028 while permanent rules are evaluated."
+
+- id: va-deq-air-permits
+  name: "Virginia DEQ, issued air permits for data centers"
+  url: "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T3]
+  role: [data]
+  access: open
+  ref: S33
+  summary: "List of air permits for data center backup generation: facility, locality, permit ID, dates."
+
+- id: national-zoning-atlas
+  name: "National Zoning Atlas"
+  url: "https://www.zoningatlas.org/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T3]
+  role: [data]
+  access: mixed
+  ref: D22
+  summary: "Standardized zoning for 11,000+ jurisdictions, 200+ characteristics per district. Data center is not a normalized permitted-use field."
+
+- id: lbnl-water-use-workloads
+  name: "LBNL, The water use of data center workloads (2025)"
+  url: "https://datacenters.lbl.gov/publications/water-use-data-center-workloads"
+  kind: paper
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  topic: [T2]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  ref: S34
+  summary: "Workload-level water use varies by more than four orders of magnitude with server efficiency, grid water factors, cooling, climate and utilization."
+
+- id: jrc-eu-coc-2024
+  name: "JRC, 2024 EU Code of Conduct for Data Centres best practice guidelines"
+  url: "https://e3p.jrc.ec.europa.eu/sites/default/files/2024-04/JRC136986_2024_best_practice_guidelines.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  topic: [T2, T5]
+  role: [background]
+  status: verified
+  ref: R05
+  summary: "Catalogue of data center practices (cooling, airflow, waste heat, geography, water, monitoring) with 1 to 5 qualitative values that must not be summed. CC BY 4.0."
+
+# ---------- C1 public datasets ----------
+- id: census-tiger
+  name: "Census TIGER/Line shapefiles (2026)"
+  url: "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3]
+  role: [data]
+  access: open
+  ref: D20
+  summary: "National boundaries, roads, rails, hydrography; 2026 release 14 Oct 2026. Not parcels or zoning."
+
+- id: noaa-cdo-api
+  name: "NOAA Climate Data Online API v2"
+  url: "https://www.ncei.noaa.gov/cdo-web/webservices/v2"
+  kind: api
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  topic: [T3, T5]
+  role: [data]
+  access: api-key
+  ref: D15
+  summary: "Station observations and climate normals as JSON. Token header; 5 requests/s, 10,000/day; max 1,000 results per call."
+
+- id: usgs-water-data
+  name: "USGS Water Data APIs"
+  url: "https://api.waterdata.usgs.gov/"
+  kind: api
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3, T5]
+  role: [data]
+  access: open
+  ref: S67
+  summary: "REST/OGC APIs for streamflow, groundwater, daily and continuous values at 1M+ monitoring sites. Not a water right or utility allocation."
+
+- id: mrlc-nlcd
+  name: "MRLC Annual National Land Cover Database"
+  url: "https://www.mrlc.gov/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3]
+  role: [data]
+  access: open
+  ref: D14
+  summary: "Annual US land cover, change and imperviousness 1985 to 2025 (Collection 1.2, June 2026). Downloads and WMS."
+
+- id: fema-nfhl
+  name: "FEMA National Flood Hazard Layer"
+  url: "https://www.fema.gov/flood-maps/national-flood-hazard-layer"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3]
+  role: [data]
+  access: open
+  ref: D17
+  summary: "Effective flood maps covering 90%+ of US population, via viewer, downloads and GIS services. Unmapped does not mean no flood risk."
+
+- id: fema-nri
+  name: "FEMA National Risk Index (OpenFEMA)"
+  url: "https://www.fema.gov/about/openfema/data-sets/national-risk-index-data"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3]
+  role: [data]
+  access: open
+  ref: D18
+  summary: "v1.20 (Dec 2025): risk for 18 hazards by state, county, tract. Tables, shapefiles, geodatabases, 39 to 411 MB. Old hazards.fema.gov/nri URL redirects."
+
+- id: ripe-atlas
+  name: "RIPE Atlas public measurements (BigQuery)"
+  url: "https://github.com/RIPE-NCC/ripe-atlas-bigquery"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 4-aggregation]
+  topic: [T3]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: registration
+  ref: D13
+  summary: "Ping, traceroute, DNS, HTTP measurements from deployed probes since 2020, queryable in BigQuery (Google account). Measured latency between probes and targets, not arbitrary sites."
+
+# ---------- C2 grid capacity: California ----------
+- id: pge-grip-guide
+  name: "PG&E GRIP user guide and quick start (REST endpoint)"
+  url: "https://www.pge.com/assets/pge/docs/about/doing-business-with-pge/pge-grip-quick-start-guide.pdf"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3, T4, T5]
+  role: [data]
+  access: open
+  ref: S19
+  summary: "Documents PG&E load ICA: 576 hourly results per line section for four limiting criteria, feeder CSV/ZIP downloads, no-login ArcGIS REST at services2.arcgis.com/mJaJSax0KPHoCNB6/arcgis/rest/services/DRPComplianceRelProd/FeatureServer. Values are directional, not a guarantee."
+
+- id: pge-gis-hub
+  name: "PG&E GIS Data Hub"
+  url: "https://pgegishub.pge.com/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3]
+  role: [data]
+  access: open
+  ref: S19
+  summary: "Selected PG&E infrastructure and risk GIS layers as ArcGIS services."
+
+- id: sce-ica-featureserver
+  name: "SCE ICA ArcGIS FeatureServer"
+  url: "https://drpep.sce.com/arcgis_server/rest/services/hosted/ICA_Layer/FeatureServer"
+  kind: api
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T3, T5]
+  role: [data]
+  access: open
+  ref: S21
+  summary: "Machine-readable SCE integration capacity layers. Tables at .../hosted/ICA_Tables/FeatureServer."
+
+- id: sdge-ica
+  name: "SDG&E Integration Capacity Analysis"
+  url: "https://marketplace.sdge.com/more-information/customer-generation/enhanced-integration-capacity-analysis-ica"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3, T5]
+  role: [data]
+  access: registration
+  ref: S22
+  summary: "Distribution ICA map for SDG&E territory; 2025 update added Limited Generation Profile data."
+
+- id: caiso-lcr-2027
+  name: "CAISO 2027 Local Capacity Requirements"
+  url: "https://stakeholdercenter.prod.caiso.com/RecurringStakeholderProcesses/Local-capacity-requirements-process-2027"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T2, T3]
+  role: [data]
+  status: verified
+  ref: S23
+  summary: "Local reliability studies and capacity requirements for constrained California transmission areas."
+
+- id: caiso-todays-outlook
+  name: "CAISO Today's Outlook"
+  url: "https://www.caiso.com/todays-outlook"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T3, T5]
+  role: [data]
+  tag: [coordination]
+  access: open
+  ref: S24
+  summary: "Near-real-time CAISO demand, supply, renewables and emissions dashboards with CSV downloads."
+
+- id: caiso-resource-adequacy
+  name: "CAISO Resource Adequacy"
+  url: "https://www.caiso.com/generation-transmission/resource-adequacy"
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T3, T4]
+  role: [data]
+  access: open
+  ref: S23
+  summary: "RA program pages and aggregate capacity files for the CAISO balancing area."
+
+# ---------- C2 grid capacity: ERCOT ----------
+- id: ercot-large-load-update-2026
+  name: "ERCOT, Interconnection and Grid Analysis Update (Apr 2026)"
+  url: "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T2, T3]
+  role: [data]
+  status: verified
+  ref: S37
+  summary: "As of 26 Mar 2026, data centers were 87.6% of MW in ERCOT's large-load request portfolio."
+
+- id: ercot-constraints-2025
+  name: "ERCOT, 2025 Report on Existing and Potential Electric System Constraints and Needs"
+  url: "https://www.ercot.com/files/docs/2025/12/23/2025-Report-on-Existing-and-Potential-Electric-System-Constraints-and-Needs.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T1, T2, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: R08
+  summary: "238.6 GW of large-load requests vs 7,502 MW approved to energize since Jan 2022. Unadjusted 2031 TSP forecast 218 GW vs studied 159 GW. $30.21B transmission planned 2026 to 2031."
+
+- id: ercot-legislative-update-2026
+  name: "ERCOT, Large Load update to Texas legislature (Apr 2026)"
+  url: "https://www.ercot.com/files/docs/2026/04/01/ERCOT_LargeLoad_Update_April2026_B-C_-Hearing.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T1, T2, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A02
+  summary: "About 410 GW of large-load requests (about 87% data centers) as of 26 Mar 2026. Explains batch studies about every six months; proposed $50,000/MW security fee."
+
+- id: ercot-batch-zero
+  name: "ERCOT / PUCT, Batch Zero process for large loads (Jun 2026)"
+  url: "https://www.ercot.com/news/release/06182026-puct-approves-ercots"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: S38
+  summary: "PUCT approved ERCOT's batch study process to decide how much large load ERCOT can reliably connect and where."
+
+- id: ercot-nprr1234
+  name: "ERCOT NPRR1234, large load interconnection requirements"
+  url: "https://www.ercot.com/mktrules/issues/NPRR1234"
+  kind: standard
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T2, T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S39
+  summary: "Interconnection and modeling requirements for loads of 25 MW or more."
+
+- id: ercot-ride-through-notice
+  name: "ERCOT market notice, large electronic load ride-through (Jun 2025)"
+  url: "https://www.ercot.com/services/comm/mkt_notices/M-B062325-01"
+  kind: filing
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T2, T4]
+  role: [background]
+  status: verified
+  ref: S40
+  summary: "ERCOT asked data center and crypto loads of 75 MW+ for voltage ride-through data because simultaneous trips threaten reliability."
+
+- id: ercot-ers
+  name: "ERCOT Emergency Response Service (ERS)"
+  url: "https://www.ercot.com/services/programs/load/eils"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: P03
+  summary: "Loads, generators and aggregations paid to reduce consumption within 10 or 30 minutes during energy emergencies. Procured four times a year via QSEs. ERCOT is not under FERC Order 2222."
+
+# ---------- C2 grid capacity: PJM ----------
+- id: pjm-load-forecast-2025
+  name: "PJM, 2025 Long-Term Load Forecast Report"
+  url: "https://www.pjm.com/-/media/DotCom/library/reports-notices/load-forecast/2025-load-report.ashx"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T2]
+  role: [data]
+  status: verified
+  ref: R07
+  summary: "20-year zonal peak and energy forecast with data center adjustments in 10 zones. Summer peak +3.1%/yr, 209,923 MW by 2035. Tables in Excel."
+
+- id: pjm-load-forecast-2026
+  name: "PJM, 2026 Long-Term Load Forecast"
+  url: "https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T2, T3]
+  role: [background]
+  status: verified
+  ref: S41
+  summary: "10-year average growth 3.6%/yr summer peak, 4.0%/yr winter peak; data center adjustments a major component."
+
+- id: pjm-2025-review
+  name: "PJM, 2025 Year in Review: Planning"
+  url: "https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T2]
+  role: [background]
+  status: verified
+  ref: S42
+  summary: "Vetted data center load projected to grow about 30 GW from 2025 to 2030."
+
+- id: pjm-large-load-vetting
+  name: "PJM, annual vetting of large load requests (Sep 2026)"
+  url: "https://insidelines.pjm.com/pjm-kicks-off-annual-process-of-vetting-large-load-requests/"
+  link_check: blocks-bots
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: S43
+  summary: "PJM has no load interconnection queue; load-serving entities submit large-load adjustments to the forecast, which PJM vets."
+
+- id: pjm-novec-forecast
+  name: "NOVEC data center forecast documentation (PJM 2026 forecast)"
+  url: "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/novec-documentation.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T2]
+  role: [background]
+  status: verified
+  ref: R09
+  summary: "Bottom-up utility method: contract milestones, site control, zoning; moderate-risk projects discounted 50%. July peak 1,387 MW (2025) to 5,032 MW (2030) forecast."
+
+- id: pjm-load-transfer-event-2026
+  name: "PJM / Dominion review of large load transfer event (Aug 2026)"
+  url: "https://insidelines.pjm.com/pjm-dominion-review-large-load-transfer-event/"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T2, T4]
+  role: [background]
+  status: verified
+  ref: S44
+  summary: "Nearly 4,000 MW of data center load disconnected unexpectedly in Virginia on 22 Jul 2026; earlier events were about 1,500 MW."
+
+- id: pjm-disconnection-standards-2026
+  name: "PJM, proposed reliability standards for large load disconnection (Sep 2026)"
+  url: "https://insidelines.pjm.com/reliability-standards-to-manage-large-load-disconnection-events-proposed-by-pjm/"
+  link_check: blocks-bots
+  kind: filing
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T2, T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S45
+  summary: "Proposed requirements for computational loads after the July 2026 event and a June 2026 FERC directive. Proposal, not effective rule."
+
+- id: pjm-7day-forecast
+  name: "PJM Data Miner, seven-day load forecast feed"
+  url: "https://dataminer2.pjm.com/feed/load_frcstd_7_day"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T3]
+  role: [data]
+  access: registration
+  ref: D07
+  summary: "Hourly forecast MW by area with evaluation time and target time, so lead time is separable. API needs a PJM account."
+
+- id: pjm-historical-forecasts
+  name: "PJM Data Miner, historical load forecasts feed"
+  url: "https://dataminer2.pjm.com/feed/load_frcstd_hist/definition"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T3]
+  role: [data, metric]
+  access: registration
+  ref: D08
+  summary: "Every forecast vintage since 1 Jan 2011, created every six hours. Pair with actual load to measure forecast error."
+
+# ---------- C2 grid capacity: MISO and federal ----------
+- id: miso-large-load-integration
+  name: "MISO, Large Load Additions framework"
+  url: "https://www.misoenergy.org/planning/large-loads---container-page/large-load-additions/"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T1, T2, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: P08
+  summary: "Requests seek connection in 18 to 36 months. Goal of approval within 120 days. Mechanisms include non-firm service, firm-service step-up, curtailment, telemetry, ride-through."
+
+- id: miso-firm-service-step-up
+  name: "MISO, Firm Service Step Up for large load interconnections"
+  url: "https://www.misoenergy.org/engage/MISO-Dashboard/firm-service-step-up-for-large-load-interconnections/"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S47
+  summary: "Proposed process letting large loads start with reduced firm service before all upgrades are complete."
+
+- id: miso-telemetry-pmu
+  name: "MISO, large load telemetry and PMU requirements"
+  url: "https://www.misoenergy.org/engage/MISO-Dashboard/operational-reliability-requirement---large-load-telemetry-and-phasor-measurement-unit-pmu-requirements/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T5, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S48
+  summary: "Draft: real-time large load telemetry over ICCP and PMU measurements at the point of interconnection."
+
+- id: miso-gen-load-alignment
+  name: "MISO, Generation and Large Load Alignment (LLWG-2026-6)"
+  url: "https://www.misoenergy.org/engage/MISO-Dashboard/generation-and-large-load-alignment/"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: A03
+  summary: "Proposal to study large loads together with the generation serving them. Under development."
+
+- id: miso-eras
+  name: "MISO, Expedited Resource Addition Study (ERAS)"
+  url: "https://www.misoenergy.org/meet-miso/media-center/2025---news-releases/ferc-approves-misos-expedited-resource-addition-study/"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T2, T6]
+  role: [background]
+  status: verified
+  ref: P07
+  summary: "FERC-approved temporary fast track for generation interconnection; first requests Aug 2025. A generation pathway, not a load queue."
+
+- id: miso-lmr-faq
+  name: "MISO, LMR and demand response enrollment FAQ"
+  url: "https://help.misoenergy.org/knowledgebase/article/KA-01560/en-us"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A04
+  summary: "Minimums: LMR 0.1 MW, DRR 1 MW, EDR 0.1 MW. 2 to 6 hour notice, events up to 4 hours, up to 16 dispatches a year. Enrollment tool opens 1 Dec 2026; no API."
+
+- id: eia-411
+  name: "EIA-411 Coordinated Bulk Power Supply and Demand Program"
+  url: "https://www.eia.gov/electricity/data/eia411/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  topic: [T1, T3]
+  role: [data]
+  access: open
+  ref: D03
+  summary: "Planners' capacity, demand and growth estimates by NERC assessment area. Geography changed in 2011."
+
+- id: eia-860m
+  name: "EIA-860M monthly generator inventory (API)"
+  url: "https://www.eia.gov/opendata/browser/electricity/operating-generator-capacity/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3]
+  role: [data]
+  access: api-key
+  ref: S64
+  summary: "Monthly generator-level operating status and capacity via EIA API v2."
+
+- id: eia-api-v2
+  name: "EIA Open Data API v2"
+  url: "https://www.eia.gov/opendata/"
+  kind: api
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T3, T5]
+  role: [data]
+  access: api-key
+  ref: S63
+  summary: "JSON/CSV API for EIA series including EIA-930 hourly grid data (from 2019). Free key."
+
+- id: eia-state-data
+  name: "EIA state electricity data"
+  url: "https://www.eia.gov/electricity/data/state/index.php"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3]
+  role: [data]
+  access: open
+  ref: S64
+  summary: "State-level capacity, generation, sales and related historical series."
+
+- id: eia-transmission-lines
+  name: "EIA Energy Atlas, Electric Power Transmission Lines"
+  url: "https://atlas.eia.gov/datasets/geoplatform::electric-power-transmission-lines"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3]
+  role: [data]
+  access: open
+  status: unverified
+  ref: D04
+  summary: "Transmission line GIS layer. Research could not retrieve metadata; an older EIA layer is archived. HIFLD legacy portal returned not-found. Check before relying on it."
+
+- id: eia-wholesale-markets
+  name: "EIA, wholesale electricity markets overview"
+  url: "https://www.eia.gov/electricity/wholesalemarkets/"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 4-aggregation]
+  topic: [T4]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A19
+  summary: "Map and links for each US ISO/RTO region."
+
+- id: doe-transmission-needs
+  name: "DOE, National Transmission Needs Study"
+  url: "https://www.energy.gov/oe/national-transmission-needs-study"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T1, T2, T3]
+  role: [background]
+  status: verified
+  ref: S08
+  summary: "Current and future transmission constraints as demand rises; most modeled congestion falls in a small fraction of hours."
+
+- id: doe-large-load-rates
+  name: "DOE, Electricity Rate Designs for Large Loads (2025)"
+  url: "https://www.energy.gov/policy/articles/electricity-rate-designs-large-loads-evolving-practices-and-opportunities"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T2, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S09
+  summary: "Utility and regulatory treatment of large new loads: cost allocation and rate design."
+
+- id: doe-i2x-der-roadmap
+  name: "DOE i2X, DER Interconnection Roadmap (2025)"
+  url: "https://www.energy.gov/sites/default/files/2025-01/i2X%20DER%20Interconnection%20Roadmap.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T2, T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: N05
+  summary: "Distribution DER interconnection under 100 kV / 80 MW. 2030 targets: under 75 days for 50 kW to 5 MW, under 140 days above 5 MW. Aspirational, not legal deadlines."
+
+- id: doe-grid-codes
+  name: "DOE, Distribution Grid Code Adoption Pathways (2024)"
+  url: "https://www.energy.gov/sites/default/files/2024-07/48726_DOE_OE_TDC_Distribution_Grid_Codes_Pathways_RELEASE_508.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 4-aggregation]
+  topic: [T4, T5]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A08
+  summary: "Taxonomy of grid codes; hosting capacity publication choices and five validation stages."
+
+- id: doe-resource-adequacy-2024
+  name: "DOE, The Future of Resource Adequacy (2024)"
+  url: "https://www.energy.gov/sites/default/files/2024-04/2024%20The%20Future%20of%20Resource%20Adequacy%20Report.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A07
+  summary: "Explains nameplate vs capacity credit: equal MW is not equal reliability. Covers DR, DERMS, ADMS, VPPs."
+
+- id: ferc-energy-primer
+  name: "FERC, Energy Primer (2024 edition)"
+  url: "https://www.ferc.gov/sites/default/files/2024-01/24_Energy-Markets-Primer_0117_DIGITAL_0.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T4]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A06
+  summary: "Staff handbook on electricity and gas markets; RTO/ISO sections for PJM, MISO, CAISO. Vocabulary, not tariff."
+
+# ---------- C3 load management ----------
+- id: lbnl-dc-flex-workshop
+  name: "LBNL / DOE, Data Center Load Flexibility Workshop Summary (2025)"
+  url: "https://eta.lbl.gov/publications/doe-data-center-load-flexibility"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T5, T6]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: verified
+  ref: S11
+  summary: "Nov 2024 workshop, 49 participants: workload shifting, storage, onsite generation, demand response, communications and control needs."
+
+- id: lbnl-integrating-ai-dc
+  name: "LBNL, Integrating AI Data Centers with the Power Grid (2026)"
+  url: "https://eta.lbl.gov/publications/integrating-ai-data-centers-power"
+  link_check: blocks-bots
+  kind: paper
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T1, T4]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: verified
+  ref: S12
+  summary: "Four flexibility mechanisms: temporal/geographic compute shifting, facility infrastructure flexibility, storage, onsite generation."
+
+- id: epri-dcflex-deliverables
+  name: "EPRI DCFlex deliverables (load shape library and reports)"
+  url: "https://dcflex.epri.com/deliverables"
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T3, T4, T5, T6]
+  role: [data]
+  tag: [coordination]
+  access: mixed
+  ref: S14
+  summary: "Data center load shape library (first edition 2025), storage assessments, flexible design and program mappings."
+
+- id: epri-flex-mosaic
+  name: "EPRI Flex MOSAIC"
+  url: "https://dcflex.epri.com/flex-mosaic"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T5]
+  role: [background]
+  tag: [coordination, edge-ai]
+  access: mixed
+  ref: S15
+  summary: "Framework classifying data center flexibility by response characteristics across workloads, generation, storage and cooling."
+
+- id: epri-dcflex-programs
+  name: "EPRI DCFlex Workstream 2: Programs"
+  url: "https://dcflex.epri.com/workstream-2"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S16
+  summary: "Maps US and European utility programs and market services to EPRI flexibility classes."
+
+- id: epri-dcflex-demos
+  name: "EPRI DCFlex demonstrations"
+  url: "https://dcflex.epri.com/demonstrations"
+  kind: program
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T5, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: P02
+  summary: "At least ten planned demos (Phoenix, Lenoir, Paris, Chicago named): AI workload modulation, DR, backup integration, ride-through. Page does not give curtailment MW."
+
+- id: google-dr-2023
+  name: "Google Cloud, Using demand response to reduce data center power consumption (2023)"
+  url: "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T5, T6]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: verified
+  ref: P09
+  summary: "Grid event notices feed Google's compute planner, which sets hourly limits on non-urgent tasks per site (delay or reroute). Europe, Taiwan, US examples. No MW series published."
+
+- id: google-power-smoothing-2025
+  name: "Google Cloud, Mitigating power and thermal fluctuations in ML infrastructure (2025)"
+  url: "https://cloud.google.com/blog/topics/systems/mitigating-power-and-thermal-fluctuations-in-ml-infrastructure"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management]
+  topic: [T5]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  ref: A01
+  summary: "Synchronized ML clusters swing tens of MW every few seconds; compiler-level smoothing cut swings about 50% with under 1% performance loss and slightly higher average power."
+
+- id: ca-dr-potential-phase4
+  name: "LBNL / CPUC, California Demand Response Potential Study Phase 4 (2024)"
+  url: "https://eta.lbl.gov/publications/california-demand-response-0"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T3, T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S68
+  summary: "Shed and shift DR potential in California through 2050 by end use."
+
+- id: sustaindc
+  name: "SustainDC (HPE dc-rl)"
+  creator: "Hewlett Packard Enterprise"
+  url: "https://github.com/HewlettPackard/dc-rl"
+  kind: simulator
+  domain: [edge-compute]
+  track: [3-load-management]
+  topic: [T3, T5]
+  role: [verifier, metric]
+  tag: [simulation, edge-ai]
+  access: open
+  license: "MIT"
+  ref: S04
+  summary: "Multi-agent RL environments for data center workload shifting, HVAC setpoints and batteries with carbon, weather and Alibaba/Google workload inputs. Metrics: energy, carbon, water, dropped tasks. Mixed MIT / CC BY-NC."
+
+- id: helics
+  name: "HELICS co-simulation framework"
+  creator: "US DOE Grid Modernization Lab Consortium (PNNL, LLNL, NREL)"
+  url: "https://github.com/GMLC-TDC/HELICS"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T5]
+  role: [harness]
+  tag: [rsi, coordination]
+  access: open
+  license: "BSD-3-Clause"
+  ref: S07
+  summary: "Couples separate simulators (grid, buildings, markets, comms) into one time-synchronized federation. Python bindings. Simulates nothing on its own. BSD-3."
+
+- id: energyplus
+  name: "EnergyPlus (now under NatLabRockies)"
+  creator: "US DOE, NREL (now NLR)"
+  url: "https://github.com/NatLabRockies/EnergyPlus"
+  kind: simulator
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  topic: [T5]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  ref: S08
+  summary: "Whole-building energy and HVAC simulation with Python API. Needs facility inputs; not a calibrated data center model out of the box."
+
+- id: scaphandre
+  name: "Scaphandre"
+  creator: "Hubblo"
+  url: "https://github.com/hubblo-org/scaphandre"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management]
+  topic: [T5]
+  role: [metric]
+  tag: [edge-ai]
+  access: open
+  license: "Apache-2.0"
+  ref: S09
+  summary: "Rust agent reporting host and VM power, exporting to Prometheus, JSON and others. Early-stage. Apache-2.0."
+
+- id: powerapi
+  name: "PowerAPI"
+  creator: "Inria and University of Lille"
+  url: "https://powerapi.org/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management]
+  topic: [T5]
+  role: [metric]
+  tag: [edge-ai]
+  access: open
+  license: "BSD-3-Clause"
+  ref: S10
+  summary: "Python framework for software-defined power meters down to process level. Estimates, not physical metering. BSD-3."
+
+- id: azure-llm-inference-traces
+  name: "Azure LLM inference traces 2023, 2024 and multimodal 2025"
+  url: "https://github.com/Azure/AzurePublicDataset/blob/master/AzureLLMInferenceDataset2024.md"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T3]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: open
+  ref: D25
+  summary: "Production request traces: timestamp, context tokens, generated tokens (plus images in the 2025 multimodal trace). No power, location or deadlines. CC BY."
+
+# ---------- C3/C4 programs and market pathways ----------
+- id: caiso-demand-response
+  name: "CAISO Demand Response participation"
+  url: "https://www.caiso.com/generation-transmission/load/demand-response"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S51
+  summary: "Proxy Demand Resource and Reliability DR Resource models. Needs a scheduling coordinator and revenue-quality meters; ancillary services need telemetry."
+
+- id: caiso-der-provider
+  name: "CAISO Distributed Energy Resource Provider model"
+  url: "https://www.caiso.com/generation-transmission/generation/distributed-energy-resources"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S50
+  summary: "DER aggregations in wholesale markets. Utility concurrence review of 30 business days, then onboarding, metering and agreements."
+
+- id: caiso-ddemi-2026
+  name: "CAISO, Demand and Distributed Energy Market Integration straw proposal (Mar 2026)"
+  url: "https://stakeholdercenter.caiso.com/InitiativeDocuments/Straw-Proposal-and-Issue-Paper-Demand-and-Distributed-Energy-Market-Integration-Mar-13-2026.pdf"
+  kind: filing
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S52
+  summary: "Stakeholder initiative on market pathways for large flexible loads and DER aggregations."
+
+- id: caiso-dmm-dr-2025
+  name: "CAISO DMM, Demand Response Issues and Performance 2025"
+  url: "https://www.caiso.com/notices/department-of-market-monitoring-demand-response-issues-and-performance-2025-report-posted"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T6]
+  role: [metric]
+  tag: [coordination]
+  status: verified
+  ref: S69
+  summary: "2025 demand response activity and performance across CAISO and WEIM."
+
+- id: caiso-dmm-dr-2024
+  name: "CAISO DMM, Demand Response Issues and Performance 2024"
+  url: "https://www.caiso.com/documents/demand-response-issues-and-performance-2024-feb-20-2025.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T6]
+  role: [metric]
+  tag: [coordination]
+  status: verified
+  ref: S70
+  summary: "DR was about 1,400 MW, 2.6% of CAISO RA capacity in summer 2024; only 44% of utility PDR RA capacity was bid on high-load days."
+
+- id: pge-rule-24
+  name: "PG&E Rule 24 (third-party demand response)"
+  url: "https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs/rule-24.html"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S53
+  summary: "Customers enroll with third-party DR providers that bid aggregated reductions into CAISO."
+
+- id: pge-business-dr
+  name: "PG&E business demand response programs (incl. Capacity Bidding)"
+  url: "https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs/business-programs.html"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management]
+  topic: [T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S54
+  summary: "Capacity Bidding Program and other business DR offerings with incentives and performance obligations."
+
+- id: sce-cbp-elect
+  name: "SCE Capacity Bidding Program Elect"
+  url: "https://www.sce.com/save-money/savings-programs/enroll-in-savings-programs/capacity-bidding-program-elect"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S55
+  summary: "Pays participants for temporary reductions during high demand; overlap restrictions with other DR programs."
+
+- id: sce-elrp
+  name: "SCE Emergency Load Reduction Program"
+  url: "https://www.sce.com/factsheet/emergency-load-reduction-program"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: S56
+  summary: "Seven-year DR pilot 2021 to 2027 for qualifying non-residential customers, including CCA and Direct Access."
+
+- id: ca-dsgs
+  name: "California Demand Side Grid Support (DSGS) program"
+  url: "https://www.energy.ca.gov/programs-and-topics/programs/demand-side-grid-support-program"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: P06
+  summary: "Pays eligible customers for net load reduction and backup generation during extreme events, May to October. Fifth Edition guidelines adopted 27 Apr 2026."
+
+- id: cec-dsgs-docket
+  name: "CEC docket 22-RENEW-01 (DSGS data and guidelines)"
+  url: "https://efiling.energy.ca.gov/Lists/DocketLog.aspx?docketnumber=22-RENEW-01"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T3, T6]
+  role: [data]
+  tag: [coordination]
+  access: open
+  ref: A05
+  summary: "Includes anonymized 2024 and 2025 storage VPP performance workbooks (monthly site and hourly discharge), enrolled capacity by county. Measured distributed storage, not compute."
+
+- id: doe-vpp-announcement-2025
+  name: "DOE, VPP Liftoff update announcement (Jan 2025)"
+  url: "https://www.energy.gov/technologycommercialization/articles/us-department-energy-releases-new-reports-highlighting"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: R10
+  summary: "33 GW of VPPs in North America; 80 to 160 GW by 2030 scenario (10% to 20% of peak)."
+
+- id: doe-grid-orchestration
+  name: "DOE, Distribution Grid Orchestration (Nov 2024)"
+  url: "https://www.energy.gov/documents/distribution-grid-orchestration"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T4, T5]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: N04
+  summary: "Taxonomy of DER orchestration: dispatch-signal, autonomous, behavioral; local feeder constraints vs grid-wide signals; OpenADR and IEEE 2030.5 roles."
+
+- id: doe-sourcing-der
+  name: "DOE, Sourcing DER for Distribution Services (2024)"
+  url: "https://www.energy.gov/sites/default/files/2024-12/Sourcing%20DER%20for%20Dist%20Services%20final%2012.17.24.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A14
+  summary: "How utilities procure DER for local distribution needs, distinct from wholesale aggregation."
+
+- id: pge-redwood-microgrid
+  name: "PG&E EPIC 3.11, Redwood Coast Airport Microgrid final report (2024)"
+  url: "https://www.pge.com/assets/pge/docs/about/corporate-responsibility-and-sustainability/pge-epic-project-3.11.pdf"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity, 3-load-management, 4-aggregation]
+  topic: [T2, T5, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  ref: A09
+  summary: "Measured community microgrid: 2.3 MW / 8.8 MWh battery plus 2.2 MW PV; 51+ hours of resilience across 12 events; fixed limited interconnection avoided reconductoring."
+
+- id: energyhub-derms
+  name: "EnergyHub edge DERMS utility integrations"
+  url: "https://www.energyhub.com/edge-derms-platform/utility-integrations"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T5]
+  role: [background]
+  tag: [coordination]
+  access: paid
+  ref: S13
+  summary: "Commercial DERMS integration gateway, including GE Vernova GridOS. No public API or sandbox."
+
+- id: gridappsd-2030-5
+  name: "GRIDAPPS-D IEEE 2030.5 repositories"
+  creator: "PNNL (GridAPPS-D)"
+  url: "https://github.com/GRIDAPPSD"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T5]
+  role: [data]
+  tag: [coordination]
+  access: open
+  license: "See repos"
+  status: unverified
+  ref: A12
+  summary: "Go components for IEEE 2030.5 server, client and inverter simulator. Repository existence only; conformance not checked."
+
+- id: ferc-2222-fact-sheet
+  name: "FERC Order No. 2222 fact sheet"
+  url: "https://www.ferc.gov/media/ferc-order-no-2222-fact-sheet"
+  kind: policy
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  topic: [T4, T6]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  link_check: blocks-bots
+  ref: A16
+  summary: "Minimum aggregation size in RTO/ISO markets may be no greater than 100 kW."

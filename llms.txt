@@ -1,0 +1,31 @@
+# SF x MIT Hack Day: Energy
+
+> Resource pack for a one-day hack at AGI House SF on 8 Nov 2026. Theme: grid-friendly compute, open to any angle (examples: simulation, RSI, coordination, edge AI, forecasting, storage, cooling, markets, reliability). Four tracks: 1 identify suitable sites, 2 assess grid capacity at the edge, 3 manage loads, 4 aggregate distributed compute. Demos at 18:30.
+
+Chat assistants: start with https://raw.githubusercontent.com/arhamshah08/energy-hack/main/ai/START.md, then the track file. Coding agents: read AGENTS.md. Whole repo in one file: llms-full.txt (large).
+
+## Feedback
+- [Feedback form](https://forms.gle/k1pnQ4dtvfcGkuGK6): participants, later users, and creators of listed tools. Or email arhams@stanford.edu
+
+## Core
+- [AGENTS.md](https://github.com/arhamshah08/energy-hack/blob/main/AGENTS.md): rules, timeline, routing
+- [Full repo in one file](https://raw.githubusercontent.com/arhamshah08/energy-hack/main/llms-full.txt)
+- [Theme](https://github.com/arhamshah08/energy-hack/blob/main/guides/theme/README.md): grid-friendly compute and example angles
+- [Ideas](https://github.com/arhamshah08/energy-hack/blob/main/guides/ideas/README.md): speed to power, permitting layer, vision on city permits, AI approval plans, Omniverse grid twins
+- [Starter data](https://github.com/arhamshah08/energy-hack/blob/main/data/grid-hourly-2025/README.md): hourly 2025 grid demand and generation, 12 US operators
+- [RFQs](https://github.com/arhamshah08/energy-hack/blob/main/guides/rfq/README.md): ready-made problems per track
+- [Playbook](https://github.com/arhamshah08/energy-hack/blob/main/guides/playbook/README.md): timeline, plan and demo templates
+- [Open-source tools](https://github.com/arhamshah08/energy-hack/blob/main/tools/README.md): grouped by use, with creators and licenses
+- [Concepts](https://github.com/arhamshah08/energy-hack/blob/main/guides/concepts/README.md): load flow, grid-forming microgrids, EV charging and V2G
+- [Prompts](https://github.com/arhamshah08/energy-hack/blob/main/guides/playbook/prompts.md)
+
+## Tracks
+- [Track 1 Sites](https://github.com/arhamshah08/energy-hack/blob/main/tracks/1-sites/README.md)
+- [Track 2 Grid capacity](https://github.com/arhamshah08/energy-hack/blob/main/tracks/2-grid-capacity/README.md)
+- [Track 3 Load management](https://github.com/arhamshah08/energy-hack/blob/main/tracks/3-load-management/README.md)
+- [Track 4 Aggregation](https://github.com/arhamshah08/energy-hack/blob/main/tracks/4-aggregation/README.md)
+
+## Data
+- [catalog.json](https://raw.githubusercontent.com/arhamshah08/energy-hack/main/catalog/catalog.json): all 322 resources
+- [Schema](https://github.com/arhamshah08/energy-hack/blob/main/catalog/SCHEMA.md)
+- [Reference](https://github.com/arhamshah08/energy-hack/blob/main/guides/reference/README.md): glossary, data setup, materials, fusion

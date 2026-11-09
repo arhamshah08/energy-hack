@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" font-family="'DM Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="380" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#0b6e4f"/>
+  <text x="60" y="92" font-size="46" font-weight="700" fill="#111111">SF x MIT Hack Day: Energy</text>
+  <text x="60" y="140" font-size="26" font-weight="400" fill="#111111">Grid-friendly compute</text>
+  <text x="60" y="176" font-size="18" font-weight="400" fill="#0b6e4f">AGI House SF   ·   Sunday 8 November 2026   ·   Demos at 18:30</text>
+  <g font-size="18" fill="#111111">
+    <rect x="60" y="222" width="250" height="110" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="80" y="262" font-size="30" font-weight="700" fill="#0b6e4f">1</text>
+    <text x="80" y="296" font-weight="700">Identify suitable sites</text>
+    <rect x="335" y="222" width="250" height="110" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="355" y="262" font-size="30" font-weight="700" fill="#0b6e4f">2</text>
+    <text x="355" y="296" font-weight="700">Assess grid capacity</text>
+    <text x="355" y="318">at the edge</text>
+    <rect x="610" y="222" width="250" height="110" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="630" y="262" font-size="30" font-weight="700" fill="#0b6e4f">3</text>
+    <text x="630" y="296" font-weight="700">Manage loads</text>
+    <rect x="885" y="222" width="255" height="110" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+    <text x="905" y="262" font-size="30" font-weight="700" fill="#0b6e4f">4</text>
+    <text x="905" y="296" font-weight="700">Aggregate distributed</text>
+    <text x="905" y="318">compute</text>
+  </g>
+</svg>

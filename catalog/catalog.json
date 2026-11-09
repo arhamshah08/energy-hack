@@ -1,0 +1,7248 @@
+[
+ {
+  "id": "eia-930",
+  "name": "EIA Hourly Electric Grid Monitor (Form EIA-930)",
+  "url": "https://www.eia.gov/electricity/gridmonitor/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "summary": "Hourly demand, day-ahead demand forecast, net generation by fuel and interchange for US balancing authorities. Bulk download and API."
+ },
+ {
+  "id": "eia-860",
+  "name": "EIA-860 Annual Electric Generator Report",
+  "url": "https://www.eia.gov/electricity/data/eia860/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Generator-level data for US plants of 1 MW and above: location, capacity, technology, status, planned additions and retirements."
+ },
+ {
+  "id": "eia-861",
+  "name": "EIA-861 Annual Electric Power Industry Report",
+  "url": "https://www.eia.gov/electricity/data/eia861/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "summary": "Utility-level sales, customers, revenue, demand response program enrollment and distributed generation by US utility."
+ },
+ {
+  "id": "pudl",
+  "name": "PUDL (Public Utility Data Liberation), Catalyst Cooperative",
+  "url": "https://github.com/catalyst-cooperative/pudl",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Cleaned and linked EIA, FERC and EPA data in SQLite and Parquet. Removes most of the cleanup work of using raw EIA/FERC files."
+ },
+ {
+  "id": "lbnl-queued-up",
+  "name": "LBNL Queued Up: interconnection queue data",
+  "url": "https://emp.lbl.gov/publications/queued-2026-edition-characteristics",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "2026 edition: generation and storage requests through end-2025 from 7 ISOs and 50 other areas; XLSX with codebook, CC BY 4.0. Median request-to-operation over 5 years; 13% of 2000 to 2020 requests reached operation. Excludes load requests."
+ },
+ {
+  "id": "interconnection-fyi",
+  "name": "Interconnection.fyi",
+  "url": "https://www.interconnection.fyi/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "mixed",
+  "summary": "Searchable aggregation of US interconnection queue projects by ISO, utility, county and point of interconnection."
+ },
+ {
+  "id": "pjm-dataminer",
+  "name": "PJM Data Miner 2",
+  "url": "https://dataminer2.pjm.com/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "summary": "PJM load, load forecast, LMP prices, generation and reserve data. API needs a free key."
+ },
+ {
+  "id": "caiso-oasis",
+  "name": "CAISO OASIS",
+  "url": "https://oasis.caiso.com/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "CAISO prices, load, forecasts, transmission and ancillary service data. Queryable by URL API."
+ },
+ {
+  "id": "ercot-data",
+  "name": "ERCOT data products",
+  "url": "https://www.ercot.com/mp/data-products",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "ERCOT load, prices, generation and system reports. ERCOT also publishes large load interconnection status reports."
+ },
+ {
+  "id": "sce-drpep",
+  "name": "SCE Distribution Resources Plan External Portal (DRPEP)",
+  "url": "https://drpep.sce.com/drpep/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "summary": "Southern California Edison feeder-level integration (hosting) capacity maps and grid data. Example of a utility hosting capacity portal."
+ },
+ {
+  "id": "pge-ica",
+  "name": "PG&E Grid Resource Integration Portal (GRIP)",
+  "url": "https://grip.pge.com/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "PG&E data for California: feeder and line-section load and generation hosting capacity (ICA), forecasts, grid needs, substations and lines, with map exports and a no-login REST service. PG&E says values are directional, not a guarantee. Older DRP page: pge.com distributed-resource-planning-data-and-maps."
+ },
+ {
+  "id": "openinframap",
+  "name": "Open Infrastructure Map",
+  "url": "https://openinframap.org/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Map of OpenStreetMap power lines, substations, power plants and telecom infrastructure. Underlying data via OSM / Overpass."
+ },
+ {
+  "id": "fcc-broadband-map",
+  "name": "FCC National Broadband Map",
+  "url": "https://broadbandmap.fcc.gov/",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Provider-reported fixed and mobile broadband availability by location (CSV and GIS). Not fiber routes, capacity or latency. Download page blocks scripts."
+ },
+ {
+  "id": "peeringdb",
+  "name": "PeeringDB",
+  "url": "https://www.peeringdb.com/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Database of colocation facilities, exchanges and networks with coordinates and a public API (peeringdb.com/apidocs). Facility records include diverse_serving_substations, a declared field, not measured capacity."
+ },
+ {
+  "id": "im3-datacenter-atlas",
+  "name": "PNNL IM3 Open Source Data Center Atlas",
+  "url": "https://im3.pnnl.gov/datacenter-atlas",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Open geospatial inventory of existing US data center locations compiled by Pacific Northwest National Laboratory."
+ },
+ {
+  "id": "epoch-data-centers",
+  "name": "Epoch AI data on AI data centers",
+  "url": "https://epoch.ai/data/data-centers",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Tracked large AI data center projects with estimated power, compute and timelines. Focused on large sites, not edge."
+ },
+ {
+  "id": "census-acs",
+  "name": "US Census American Community Survey",
+  "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "api-key",
+  "summary": "ACS 5-year estimates via API down to block group. All Census API queries now need a free key."
+ },
+ {
+  "id": "wri-aqueduct",
+  "name": "WRI Aqueduct water risk atlas",
+  "url": "https://www.wri.org/aqueduct",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Global water stress and water risk indicators by watershed. Relevant to cooling water availability."
+ },
+ {
+  "id": "epa-egrid",
+  "name": "EPA eGRID",
+  "url": "https://www.epa.gov/egrid",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Emissions and generation mix for US power plants and grid subregions. Annual average emission rates."
+ },
+ {
+  "id": "openei-urdb",
+  "name": "OpenEI Utility Rate Database",
+  "url": "https://openei.org/wiki/Utility_Rate_Database",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "US retail electricity tariffs including energy charges, demand charges and time-of-use periods. API available."
+ },
+ {
+  "id": "nsrdb",
+  "name": "National Solar Radiation Database (NSRDB)",
+  "url": "https://nsrdb.nlr.gov/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "api-key",
+  "summary": "Gridded hourly and sub-hourly solar irradiance and weather. Used to model on-site solar output at a location."
+ },
+ {
+  "id": "google-cluster-data",
+  "name": "Google cluster workload traces",
+  "url": "https://github.com/google/cluster-data",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Borg traces: 2019 (eight cells, May 2019) and 2011 (one ~12,500-machine cell), plus power traces for 57 power domains in May 2019. CC BY."
+ },
+ {
+  "id": "azure-public-dataset",
+  "name": "Azure Public Dataset",
+  "url": "https://github.com/Azure/AzurePublicDataset",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Azure VM, serverless function and LLM inference request traces. The inference traces show request timing and token counts."
+ },
+ {
+  "id": "alibaba-clusterdata",
+  "name": "Alibaba cluster traces",
+  "url": "https://github.com/alibaba/clusterdata",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "summary": "Production traces 2017 to 2026, including GPU traces (2020, 2023, 2025, 2026 up to 155k GPUs), LLM serving and spot GPU. Some downloads need a survey; license per release."
+ },
+ {
+  "id": "materials-project",
+  "name": "Materials Project",
+  "url": "https://next-gen.materialsproject.org/",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "api-key",
+  "summary": "DFT-computed properties for 150k+ inorganic materials: formation energy, band gap, stability, battery electrode data. Free API key."
+ },
+ {
+  "id": "oqmd",
+  "name": "Open Quantum Materials Database (OQMD)",
+  "url": "https://oqmd.org/",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "DFT formation energies and structures for about 1M materials. Downloadable database and REST API."
+ },
+ {
+  "id": "jarvis",
+  "name": "JARVIS (NIST)",
+  "url": "https://jarvis.nist.gov/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "summary": "NIST DFT, force-field and ML datasets and tools for materials, including 2D materials and solar-relevant properties."
+ },
+ {
+  "id": "aflow",
+  "name": "AFLOW",
+  "url": "https://aflow.org/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "High-throughput DFT database of millions of material entries with REST API."
+ },
+ {
+  "id": "alexandria",
+  "name": "Alexandria materials database",
+  "url": "https://alexandria.icams.rub.de/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Millions of DFT calculations of periodic compounds, used to train ML interatomic potentials."
+ },
+ {
+  "id": "omat24",
+  "name": "OMat24 (Meta FAIR)",
+  "url": "https://huggingface.co/datasets/facebook/OMAT24",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "About 110M DFT single-point calculations on inorganic structures, released for training ML potentials."
+ },
+ {
+  "id": "open-catalyst",
+  "name": "Open Catalyst Project (OC20, OC22)",
+  "url": "https://opencatalystproject.org/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data",
+   "metric"
+  ],
+  "access": "open",
+  "summary": "Large DFT datasets of adsorbate-catalyst relaxations for renewable energy reactions, with leaderboards."
+ },
+ {
+  "id": "gnome",
+  "name": "GNoME materials discovery data (Google DeepMind)",
+  "url": "https://github.com/google-deepmind/materials_discovery",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Predicted stable crystal structures from the GNoME project (Nature 2023), with released structures and models."
+ },
+ {
+  "id": "catalysis-hub",
+  "name": "Catalysis-Hub",
+  "url": "https://www.catalysis-hub.org/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Surface reaction energies and barriers from DFT, searchable with GraphQL API."
+ },
+ {
+  "id": "matr-battery",
+  "name": "Battery cycle life dataset (Severson et al. 2019), data.matr.io",
+  "url": "https://data.matr.io/1/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data",
+   "metric"
+  ],
+  "access": "open",
+  "summary": "124 LFP/graphite cells cycled to failure under fast-charge protocols. Standard benchmark for early cycle-life prediction."
+ },
+ {
+  "id": "battery-archive",
+  "name": "Battery Archive",
+  "url": "https://www.batteryarchive.org/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Repository of battery cycling data from multiple labs in a common format."
+ },
+ {
+  "id": "nasa-pcoe",
+  "name": "NASA Prognostics Center of Excellence data sets",
+  "url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Run-to-failure datasets including Li-ion battery aging data used for prognostics research."
+ },
+ {
+  "id": "nrel-cell-efficiency",
+  "name": "NREL (now NLR) Best Research-Cell Efficiency Chart",
+  "url": "https://www.nlr.gov/pv/cell-efficiency",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "metric"
+  ],
+  "access": "open",
+  "summary": "Record confirmed efficiencies of research solar cells by technology since 1976."
+ },
+ {
+  "id": "perovskite-database",
+  "name": "The Perovskite Database",
+  "url": "https://www.perovskitedatabase.com/",
+  "kind": "dataset",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Device data from 40k+ perovskite solar cells extracted from the literature: composition, architecture, efficiency, stability."
+ },
+ {
+  "id": "opsd",
+  "name": "Open Power System Data",
+  "url": "https://open-power-system-data.org/",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Cleaned European time series (load, wind, solar, prices), power plant lists and weather data."
+ },
+ {
+  "id": "comstock",
+  "name": "NREL (now NLR) ComStock",
+  "url": "https://comstock.nlr.gov/",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Simulated hourly end-use load profiles for the US commercial building stock."
+ },
+ {
+  "id": "resstock",
+  "name": "NREL (now NLR) ResStock",
+  "url": "https://resstock.nlr.gov/",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Simulated hourly end-use load profiles for the US residential building stock."
+ },
+ {
+  "id": "bdg2",
+  "name": "Building Data Genome Project 2",
+  "url": "https://github.com/buds-lab/building-data-genome-project-2",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data",
+   "metric"
+  ],
+  "access": "open",
+  "summary": "Two years of hourly meter data from 1,636 non-residential buildings with weather and metadata. Used for load forecasting benchmarks."
+ },
+ {
+  "id": "era5",
+  "name": "ERA5 reanalysis (Copernicus)",
+  "url": "https://cds.climate.copernicus.eu/",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "summary": "Global hourly weather reanalysis from 1940. Common input for load, wind and solar forecasting."
+ },
+ {
+  "id": "wind-toolkit",
+  "name": "NREL (now NLR) WIND Toolkit",
+  "url": "https://www.nlr.gov/grid/wind-toolkit",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "api-key",
+  "summary": "Modeled wind speed and power for 126k US sites at 5-minute resolution, 2007 to 2013."
+ },
+ {
+  "id": "fair-mast",
+  "name": "FAIR-MAST (UKAEA MAST tokamak data)",
+  "url": "https://github.com/ukaea/fair-mast",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Open diagnostic data from the MAST spherical tokamak, released by UKAEA with an API and cloud-native formats."
+ },
+ {
+  "id": "the-well",
+  "name": "The Well (Polymathic AI)",
+  "url": "https://github.com/PolymathicAI/the_well",
+  "kind": "dataset",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data",
+   "metric"
+  ],
+  "access": "open",
+  "summary": "15 TB collection of physics simulations, including magnetohydrodynamics, for training and benchmarking surrogate models."
+ },
+ {
+  "id": "tamu-synthetic-grids",
+  "name": "Texas A&M Electric Grid Test Case Repository",
+  "url": "https://electricgrids.engr.tamu.edu/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "summary": "Synthetic power system cases from 200 to 70,000 buses (Illinois, South Carolina, Texas, western, northeastern and eastern US) in MATPOWER, PSS/E, PowerWorld and PSLF formats. Free for commercial and non-commercial use. Not real utility networks."
+ },
+ {
+  "id": "tamu-activsg10k",
+  "name": "ACTIVSg10k: 10,000-bus synthetic grid, western US",
+  "url": "https://electricgrids.engr.tamu.edu/electric-grid-test-cases/activsg10k/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "summary": "Synthetic grid on the US WECC footprint, 16 areas. Package includes a MATPOWER case, substation latitude/longitude in the PowerWorld .aux file, and an N-1 branch contingency list. No hourly load time series. Also bundled with MATPOWER as case_ACTIVSg10k."
+ },
+ {
+  "id": "tamu-activsg2000",
+  "name": "ACTIVSg2000: 2,000-bus synthetic grid, Texas",
+  "url": "https://electricgrids.engr.tamu.edu/electric-grid-test-cases/activsg2000/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "summary": "Synthetic grid on the ERCOT footprint. Package includes a MATPOWER case, contingencies and a year of hourly load scenarios. Also bundled with MATPOWER as case_ACTIVSg2000."
+ },
+ {
+  "id": "overpass-api",
+  "name": "Overpass API (OpenStreetMap queries)",
+  "creator": "OpenStreetMap community (Roland Olbricht)",
+  "url": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+  "kind": "api",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "license": "AGPL-3.0",
+  "summary": "Query OpenStreetMap features by tag and area, e.g. power=substation, power=line with voltage, building footprints. No key; public endpoints are rate-limited. OSM coverage of grid assets is volunteer-mapped and uneven."
+ },
+ {
+  "id": "microsoft-us-building-footprints",
+  "name": "Microsoft US Building Footprints",
+  "url": "https://github.com/microsoft/USBuildingFootprints",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Building footprint polygons for the US derived from imagery, by state, GeoJSON. ODbL license."
+ },
+ {
+  "id": "census-reporter-api",
+  "name": "Census Reporter API",
+  "creator": "Census Reporter",
+  "url": "https://censusreporter.org/",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "license": "Free API",
+  "summary": "Simplified access to ACS tables by geography through api.censusreporter.org. No key, unlike the official Census API."
+ },
+ {
+  "id": "cpuc-fire-threat-map",
+  "name": "CPUC High Fire Threat District map",
+  "url": "https://www.cpuc.ca.gov/industries-and-topics/wildfires/fire-threat-maps-and-fire-safety-rulemaking",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "California fire threat tiers (Tier 2 elevated, Tier 3 extreme) used for utility fire safety rules, published as a map and ArcGIS feature service."
+ },
+ {
+  "id": "open-meteo",
+  "name": "Open-Meteo weather API",
+  "creator": "Open-Meteo (Patrick Zippenfenig)",
+  "url": "https://open-meteo.com/",
+  "kind": "api",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "license": "AGPL-3.0",
+  "summary": "Weather forecasts and historical reanalysis by coordinate, hourly, JSON. No key for non-commercial use."
+ },
+ {
+  "id": "esa-worldcover",
+  "name": "ESA WorldCover",
+  "url": "https://esa-worldcover.org/en",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Global 10 m land cover maps for 2020 and 2021 from Sentinel-1 and Sentinel-2."
+ },
+ {
+  "id": "eagle-i-outages",
+  "name": "EAGLE-I recorded electricity outages 2014 to 2022 (ORNL)",
+  "url": "https://doi.org/10.6084/m9.figshare.24237376",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "Customers without power by US county at 15-minute intervals, 2014 to 2022, from DOE's EAGLE-I system. Live EAGLE-I portal: eagle-i.doe.gov."
+ },
+ {
+  "id": "acn-data",
+  "name": "ACN-Data: EV charging sessions (Caltech)",
+  "url": "https://ev.caltech.edu/dataset",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "summary": "Real EV charging sessions from Caltech, JPL and an office site: arrival, departure, energy requested and delivered. API with a free token."
+ },
+ {
+  "id": "afdc-stations",
+  "name": "AFDC alternative fuel station locator (US DOE)",
+  "url": "https://afdc.energy.gov/stations",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "summary": "US public EV charging stations with location, network, connector types and power level. API through the NREL developer network (free key)."
+ },
+ {
+  "id": "gridstatus-io",
+  "name": "Grid Status (gridstatus.io): live and historical data for all US ISOs",
+  "creator": "Grid Status",
+  "url": "https://www.gridstatus.io/",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "mixed",
+  "summary": "Web dashboards and API with live and historical prices (LMP), demand, forecasts and fuel mix across US ISOs: CAISO, ERCOT, PJM, MISO, SPP, NYISO, ISO-NE. Browse in the browser; an account is needed for the API and downloads. Python library: gridstatus."
+ },
+ {
+  "id": "starter-us-grid-hourly-2025",
+  "name": "Starter data: US grid demand and generation, hourly, 2025 (12 operators)",
+  "creator": "Built for this repo from US EIA-930",
+  "url": "https://github.com/arhamshah08/energy-hack/tree/main/data/grid-hourly-2025",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "license": "Public domain (US government data)",
+  "summary": "Ready-to-load CSV: hourly 2025 demand, day-ahead forecast, net generation, interchange and generation by fuel (coal, gas, nuclear, hydro, solar, wind, battery and more) for CAISO, ERCOT, PJM, MISO, NYISO, ISO-NE, SPP, BPA, Duke, Southern, TVA, FPL. Plus an annual summary file. One-line pandas loader in the README."
+ },
+ {
+  "id": "lbnl-dc-energy-2025-update",
+  "name": "LBNL, United States Data Center Energy Usage Report: 2025 Update",
+  "url": "https://datacenters.lbl.gov/publications/united-states-data-center-energy-2025",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "S01",
+  "summary": "Estimates US data center use at 521 to 843 TWh in 2030, 9.5% to 15.3% of US electricity, central estimate 11.8%."
+ },
+ {
+  "id": "iea-key-questions-2026",
+  "name": "IEA, Key Questions on Energy and AI (2026)",
+  "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "R03",
+  "summary": "Data center demand grew 17% in 2025 (AI-focused 50%); 485 TWh in 2025 to about 950 TWh in 2030. Projects 20 to 25 GW batteries and 15 to 27 GW onsite gas at data centers by 2030. CC BY 4.0."
+ },
+ {
+  "id": "eia-aeo2026-servers",
+  "name": "EIA, Data center server energy use grows across the commercial building stock (AEO2026)",
+  "url": "https://www.eia.gov/todayinenergy/detail.php?id=67704",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T1"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S03",
+  "summary": "AEO2026 models data center server electricity separately and uses an essentially flat server load shape."
+ },
+ {
+  "id": "eia-aeo2026",
+  "name": "EIA, Annual Energy Outlook 2026 narrative",
+  "url": "https://www.eia.gov/outlooks/aeo/narrative/",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S04",
+  "summary": "High Electricity Demand case with more AI servers; high-case server consumption reaches 818 TWh in 2050."
+ },
+ {
+  "id": "doe-demand-growth-hub",
+  "name": "DOE, Electricity Demand Growth Resource Hub",
+  "url": "https://www.energy.gov/policy/electricity-demand-growth-resource-hub",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S05",
+  "summary": "Federal hub of analyses, programs and resources on rapid load growth, including data centers."
+ },
+ {
+  "id": "doe-ai-datacenter-hub",
+  "name": "DOE, Powering America's AI Future: Data Center Resource Hub",
+  "url": "https://www.energy.gov/powering-americas-ai-future-data-center-resource-hub",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S06",
+  "summary": "Federal hub on data center demand, flexibility, efficiency, grid integration, water and DOE programs."
+ },
+ {
+  "id": "doe-microgrids-large-loads",
+  "name": "DOE, Microgrids, Large Electric Loads and Grid Support",
+  "url": "https://www.energy.gov/oe/articles/microgrids-large-electric-loads-grid-support-how-leverage-microgrids-support-utilities",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S10",
+  "summary": "US data center use rose from 58 TWh (2014) to 176 TWh (2023), 325 to 580 TWh possible by 2028; covers storage, CHP and microgrids for large loads."
+ },
+ {
+  "id": "va-jlarc-2024",
+  "name": "Virginia JLARC, Data Centers in Virginia (2024)",
+  "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "R04",
+  "summary": "State investigation: 250+ interviews, independent demand forecast, E3 grid cost modeling. About 50 ongoing jobs vs 1,500 at construction peak for a 250k sq ft site; low-frequency noise; $14 to $37/month added residential cost by 2040 (modeled)."
+ },
+ {
+  "id": "mobile-edge-market-forecast-2026",
+  "name": "Commercial mobile edge computing market forecast (press release, 2026)",
+  "url": "https://www.globenewswire.com/news-release/2026/11/04/3395444/0/en/Mobile-Edge-Computing-Market-Size-Share-Industry-Trends-and-Growth-Forecasts-2026-2031-5G-Edge-AI-and-Asia-Pacific-Demand-Fuel-30-1-CAGR-to-3-88-Billion.html",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T1"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "unverified",
+  "ref": "A20",
+  "summary": "Vendor forecast: USD 0.80B (2025) to 3.88B (2031), 30.1% CAGR. Methodology not inspected; measures mobile edge computing, not edge data center buildings or MW."
+ },
+ {
+  "id": "etsi-edge-native-2023",
+  "name": "ETSI White Paper 55, MEC support towards edge-native design (2023)",
+  "url": "https://www.etsi.org/images/files/ETSIWhitePapers/ETSI-WP55-MEC_support_towards_Edge_native.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "N06",
+  "summary": "Edge constraints: limited single-rack resources, heterogeneity, intermittent upstream links, user mobility, latency. Covers MEC 021 application mobility and MEC 011 discovery APIs."
+ },
+ {
+  "id": "etsi-mec-security-2022",
+  "name": "ETSI, Multi-access Edge Computing security white paper (2022)",
+  "url": "https://www.etsi.org/newsroom/press-releases/2123-2022-09-etsi-publishes-a-new-white-paper-on-multi-access-edge-computing-security/",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T2",
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "N07",
+  "summary": "Scope of edge security across federation, physical, data, network and application layers in multi-vendor edge ecosystems. Announcement only; full paper linked."
+ },
+ {
+  "id": "etsi-mec-overview",
+  "name": "ETSI MEC technical group",
+  "url": "https://www.etsi.org/technical-groups/mec/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T4"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "A18",
+  "summary": "Defines multi-access edge computing as cloud capabilities and an IT service environment at the network edge."
+ },
+ {
+  "id": "cec-data-centers",
+  "name": "California Energy Commission, Data Centers",
+  "url": "https://www.energy.ca.gov/programs-and-topics/topics/data-centers",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S25",
+  "summary": "CEC does not generally permit data centers but forecasts their demand. Early 2026 data centers were about 1,000 MW, roughly 2% of CAISO peak."
+ },
+ {
+  "id": "santa-clara-zoning",
+  "name": "City of Santa Clara, data center zoning framework",
+  "url": "https://santaclara.legistar.com/LegislationDetail.aspx?FullText=1&GUID=2791DE9D-56B5-49B5-9998-BC1264149D06&ID=8260886",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S26",
+  "summary": "2024 zoning code requires standalone data centers to obtain a Conditional Use Permit and architectural review."
+ },
+ {
+  "id": "santa-clara-planning-record",
+  "name": "City of Santa Clara, Planning Commission data center record",
+  "url": "https://santaclara.legistar.com/LegislationDetail.aspx?FullText=1&GUID=25408312-6834-469E-B545-48CCFFBD1814&ID=7404898",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S27",
+  "summary": "Review of noise, fiscal benefits, power use and concentration of data centers; CUP required in Office/R&D and industrial districts."
+ },
+ {
+  "id": "sf-planning-interim-controls",
+  "name": "San Francisco Planning, code change summaries and interim controls",
+  "url": "https://sfplanning.org/fil/planning-code-change-summaries",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S28",
+  "summary": "Index of adopted and interim controls, including an interim zoning moratorium for data centers in San Francisco."
+ },
+ {
+  "id": "sf-property-information-map",
+  "name": "San Francisco Property Information Map",
+  "url": "https://sfplanninggis.org/PIM/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "D21",
+  "summary": "Parcel reports: zoning, height/bulk, overlays, permits, hazards (flooding, sea-level rise, liquefaction), year built. Not structural or electrical capacity."
+ },
+ {
+  "id": "prince-william-dc-review",
+  "name": "Prince William County, data center overlay district review",
+  "url": "https://www.pwcva.gov/department/planning-office/data-center-overlay-district-comprehensive-review",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S29",
+  "summary": "Specified new data center proposals now go through special-use-permit review instead of by-right zoning."
+ },
+ {
+  "id": "loudoun-land-use",
+  "name": "Loudoun County, Data Centers: Land Use Considerations",
+  "url": "https://www.loudoun.gov/6410/Land-Use-Considerations",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S30",
+  "summary": "Rural policy area zoning, about two-thirds of county land, does not allow data centers."
+ },
+ {
+  "id": "loudoun-dc-standards",
+  "name": "Loudoun County, Data Center Standards and Locations",
+  "url": "https://www.loudoun.gov/5990/Data-Center-Standards-Locations",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "P01",
+  "summary": "Phase 1 (approved 18 Mar 2025) moved data centers from by-right to Special Exception in affected areas. Phase 2 (plan approved 16 Sep 2025) covers data center and substation standards. Includes existing/proposed data center map."
+ },
+ {
+  "id": "tulare-dc-moratorium",
+  "name": "Tulare County, temporary moratorium on new data centers (CEQAnet)",
+  "url": "https://ceqanet.lci.ca.gov/2026100006",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S31",
+  "summary": "Moratorium extension while the county develops zoning, infrastructure, water, energy, noise and safety standards."
+ },
+ {
+  "id": "richmond-dc-moratorium",
+  "name": "City of Richmond CA, temporary moratorium on new data centers (CEQAnet)",
+  "url": "https://ceqanet.lci.ca.gov/2026101044",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S32",
+  "summary": "Citywide moratorium extended through 15 Sep 2028 while permanent rules are evaluated."
+ },
+ {
+  "id": "va-deq-air-permits",
+  "name": "Virginia DEQ, issued air permits for data centers",
+  "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S33",
+  "summary": "List of air permits for data center backup generation: facility, locality, permit ID, dates."
+ },
+ {
+  "id": "national-zoning-atlas",
+  "name": "National Zoning Atlas",
+  "url": "https://www.zoningatlas.org/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "mixed",
+  "ref": "D22",
+  "summary": "Standardized zoning for 11,000+ jurisdictions, 200+ characteristics per district. Data center is not a normalized permitted-use field."
+ },
+ {
+  "id": "lbnl-water-use-workloads",
+  "name": "LBNL, The water use of data center workloads (2025)",
+  "url": "https://datacenters.lbl.gov/publications/water-use-data-center-workloads",
+  "kind": "paper",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "S34",
+  "summary": "Workload-level water use varies by more than four orders of magnitude with server efficiency, grid water factors, cooling, climate and utilization."
+ },
+ {
+  "id": "jrc-eu-coc-2024",
+  "name": "JRC, 2024 EU Code of Conduct for Data Centres best practice guidelines",
+  "url": "https://e3p.jrc.ec.europa.eu/sites/default/files/2024-04/JRC136986_2024_best_practice_guidelines.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2",
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "R05",
+  "summary": "Catalogue of data center practices (cooling, airflow, waste heat, geography, water, monitoring) with 1 to 5 qualitative values that must not be summed. CC BY 4.0."
+ },
+ {
+  "id": "census-tiger",
+  "name": "Census TIGER/Line shapefiles (2026)",
+  "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "D20",
+  "summary": "National boundaries, roads, rails, hydrography; 2026 release 14 Oct 2026. Not parcels or zoning."
+ },
+ {
+  "id": "noaa-cdo-api",
+  "name": "NOAA Climate Data Online API v2",
+  "url": "https://www.ncei.noaa.gov/cdo-web/webservices/v2",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "api-key",
+  "ref": "D15",
+  "summary": "Station observations and climate normals as JSON. Token header; 5 requests/s, 10,000/day; max 1,000 results per call."
+ },
+ {
+  "id": "usgs-water-data",
+  "name": "USGS Water Data APIs",
+  "url": "https://api.waterdata.usgs.gov/",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S67",
+  "summary": "REST/OGC APIs for streamflow, groundwater, daily and continuous values at 1M+ monitoring sites. Not a water right or utility allocation."
+ },
+ {
+  "id": "mrlc-nlcd",
+  "name": "MRLC Annual National Land Cover Database",
+  "url": "https://www.mrlc.gov/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "D14",
+  "summary": "Annual US land cover, change and imperviousness 1985 to 2025 (Collection 1.2, June 2026). Downloads and WMS."
+ },
+ {
+  "id": "fema-nfhl",
+  "name": "FEMA National Flood Hazard Layer",
+  "url": "https://www.fema.gov/flood-maps/national-flood-hazard-layer",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "D17",
+  "summary": "Effective flood maps covering 90%+ of US population, via viewer, downloads and GIS services. Unmapped does not mean no flood risk."
+ },
+ {
+  "id": "fema-nri",
+  "name": "FEMA National Risk Index (OpenFEMA)",
+  "url": "https://www.fema.gov/about/openfema/data-sets/national-risk-index-data",
+  "link_check": "blocks-bots",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "D18",
+  "summary": "v1.20 (Dec 2025): risk for 18 hazards by state, county, tract. Tables, shapefiles, geodatabases, 39 to 411 MB. Old hazards.fema.gov/nri URL redirects."
+ },
+ {
+  "id": "ripe-atlas",
+  "name": "RIPE Atlas public measurements (BigQuery)",
+  "url": "https://github.com/RIPE-NCC/ripe-atlas-bigquery",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "registration",
+  "ref": "D13",
+  "summary": "Ping, traceroute, DNS, HTTP measurements from deployed probes since 2020, queryable in BigQuery (Google account). Measured latency between probes and targets, not arbitrary sites."
+ },
+ {
+  "id": "pge-grip-guide",
+  "name": "PG&E GRIP user guide and quick start (REST endpoint)",
+  "url": "https://www.pge.com/assets/pge/docs/about/doing-business-with-pge/pge-grip-quick-start-guide.pdf",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3",
+   "T4",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S19",
+  "summary": "Documents PG&E load ICA: 576 hourly results per line section for four limiting criteria, feeder CSV/ZIP downloads, no-login ArcGIS REST at services2.arcgis.com/mJaJSax0KPHoCNB6/arcgis/rest/services/DRPComplianceRelProd/FeatureServer. Values are directional, not a guarantee."
+ },
+ {
+  "id": "pge-gis-hub",
+  "name": "PG&E GIS Data Hub",
+  "url": "https://pgegishub.pge.com/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S19",
+  "summary": "Selected PG&E infrastructure and risk GIS layers as ArcGIS services."
+ },
+ {
+  "id": "sce-ica-featureserver",
+  "name": "SCE ICA ArcGIS FeatureServer",
+  "url": "https://drpep.sce.com/arcgis_server/rest/services/hosted/ICA_Layer/FeatureServer",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S21",
+  "summary": "Machine-readable SCE integration capacity layers. Tables at .../hosted/ICA_Tables/FeatureServer."
+ },
+ {
+  "id": "sdge-ica",
+  "name": "SDG&E Integration Capacity Analysis",
+  "url": "https://marketplace.sdge.com/more-information/customer-generation/enhanced-integration-capacity-analysis-ica",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "ref": "S22",
+  "summary": "Distribution ICA map for SDG&E territory; 2025 update added Limited Generation Profile data."
+ },
+ {
+  "id": "caiso-lcr-2027",
+  "name": "CAISO 2027 Local Capacity Requirements",
+  "url": "https://stakeholdercenter.prod.caiso.com/RecurringStakeholderProcesses/Local-capacity-requirements-process-2027",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "status": "verified",
+  "ref": "S23",
+  "summary": "Local reliability studies and capacity requirements for constrained California transmission areas."
+ },
+ {
+  "id": "caiso-todays-outlook",
+  "name": "CAISO Today's Outlook",
+  "url": "https://www.caiso.com/todays-outlook",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "ref": "S24",
+  "summary": "Near-real-time CAISO demand, supply, renewables and emissions dashboards with CSV downloads."
+ },
+ {
+  "id": "caiso-resource-adequacy",
+  "name": "CAISO Resource Adequacy",
+  "url": "https://www.caiso.com/generation-transmission/resource-adequacy",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3",
+   "T4"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S23",
+  "summary": "RA program pages and aggregate capacity files for the CAISO balancing area."
+ },
+ {
+  "id": "ercot-large-load-update-2026",
+  "name": "ERCOT, Interconnection and Grid Analysis Update (Apr 2026)",
+  "url": "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "status": "verified",
+  "ref": "S37",
+  "summary": "As of 26 Mar 2026, data centers were 87.6% of MW in ERCOT's large-load request portfolio."
+ },
+ {
+  "id": "ercot-constraints-2025",
+  "name": "ERCOT, 2025 Report on Existing and Potential Electric System Constraints and Needs",
+  "url": "https://www.ercot.com/files/docs/2025/12/23/2025-Report-on-Existing-and-Potential-Electric-System-Constraints-and-Needs.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "R08",
+  "summary": "238.6 GW of large-load requests vs 7,502 MW approved to energize since Jan 2022. Unadjusted 2031 TSP forecast 218 GW vs studied 159 GW. $30.21B transmission planned 2026 to 2031."
+ },
+ {
+  "id": "ercot-legislative-update-2026",
+  "name": "ERCOT, Large Load update to Texas legislature (Apr 2026)",
+  "url": "https://www.ercot.com/files/docs/2026/04/01/ERCOT_LargeLoad_Update_April2026_B-C_-Hearing.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A02",
+  "summary": "About 410 GW of large-load requests (about 87% data centers) as of 26 Mar 2026. Explains batch studies about every six months; proposed $50,000/MW security fee."
+ },
+ {
+  "id": "ercot-batch-zero",
+  "name": "ERCOT / PUCT, Batch Zero process for large loads (Jun 2026)",
+  "url": "https://www.ercot.com/news/release/06182026-puct-approves-ercots",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S38",
+  "summary": "PUCT approved ERCOT's batch study process to decide how much large load ERCOT can reliably connect and where."
+ },
+ {
+  "id": "ercot-nprr1234",
+  "name": "ERCOT NPRR1234, large load interconnection requirements",
+  "url": "https://www.ercot.com/mktrules/issues/NPRR1234",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2",
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S39",
+  "summary": "Interconnection and modeling requirements for loads of 25 MW or more."
+ },
+ {
+  "id": "ercot-ride-through-notice",
+  "name": "ERCOT market notice, large electronic load ride-through (Jun 2025)",
+  "url": "https://www.ercot.com/services/comm/mkt_notices/M-B062325-01",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2",
+   "T4"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S40",
+  "summary": "ERCOT asked data center and crypto loads of 75 MW+ for voltage ride-through data because simultaneous trips threaten reliability."
+ },
+ {
+  "id": "ercot-ers",
+  "name": "ERCOT Emergency Response Service (ERS)",
+  "url": "https://www.ercot.com/services/programs/load/eils",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "P03",
+  "summary": "Loads, generators and aggregations paid to reduce consumption within 10 or 30 minutes during energy emergencies. Procured four times a year via QSEs. ERCOT is not under FERC Order 2222."
+ },
+ {
+  "id": "pjm-load-forecast-2025",
+  "name": "PJM, 2025 Long-Term Load Forecast Report",
+  "url": "https://www.pjm.com/-/media/DotCom/library/reports-notices/load-forecast/2025-load-report.ashx",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "data"
+  ],
+  "status": "verified",
+  "ref": "R07",
+  "summary": "20-year zonal peak and energy forecast with data center adjustments in 10 zones. Summer peak +3.1%/yr, 209,923 MW by 2035. Tables in Excel."
+ },
+ {
+  "id": "pjm-load-forecast-2026",
+  "name": "PJM, 2026 Long-Term Load Forecast",
+  "url": "https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S41",
+  "summary": "10-year average growth 3.6%/yr summer peak, 4.0%/yr winter peak; data center adjustments a major component."
+ },
+ {
+  "id": "pjm-2025-review",
+  "name": "PJM, 2025 Year in Review: Planning",
+  "url": "https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S42",
+  "summary": "Vetted data center load projected to grow about 30 GW from 2025 to 2030."
+ },
+ {
+  "id": "pjm-large-load-vetting",
+  "name": "PJM, annual vetting of large load requests (Sep 2026)",
+  "url": "https://insidelines.pjm.com/pjm-kicks-off-annual-process-of-vetting-large-load-requests/",
+  "link_check": "blocks-bots",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S43",
+  "summary": "PJM has no load interconnection queue; load-serving entities submit large-load adjustments to the forecast, which PJM vets."
+ },
+ {
+  "id": "pjm-novec-forecast",
+  "name": "NOVEC data center forecast documentation (PJM 2026 forecast)",
+  "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/novec-documentation.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "R09",
+  "summary": "Bottom-up utility method: contract milestones, site control, zoning; moderate-risk projects discounted 50%. July peak 1,387 MW (2025) to 5,032 MW (2030) forecast."
+ },
+ {
+  "id": "pjm-load-transfer-event-2026",
+  "name": "PJM / Dominion review of large load transfer event (Aug 2026)",
+  "url": "https://insidelines.pjm.com/pjm-dominion-review-large-load-transfer-event/",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2",
+   "T4"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S44",
+  "summary": "Nearly 4,000 MW of data center load disconnected unexpectedly in Virginia on 22 Jul 2026; earlier events were about 1,500 MW."
+ },
+ {
+  "id": "pjm-disconnection-standards-2026",
+  "name": "PJM, proposed reliability standards for large load disconnection (Sep 2026)",
+  "url": "https://insidelines.pjm.com/reliability-standards-to-manage-large-load-disconnection-events-proposed-by-pjm/",
+  "link_check": "blocks-bots",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2",
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S45",
+  "summary": "Proposed requirements for computational loads after the July 2026 event and a June 2026 FERC directive. Proposal, not effective rule."
+ },
+ {
+  "id": "pjm-7day-forecast",
+  "name": "PJM Data Miner, seven-day load forecast feed",
+  "url": "https://dataminer2.pjm.com/feed/load_frcstd_7_day",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "ref": "D07",
+  "summary": "Hourly forecast MW by area with evaluation time and target time, so lead time is separable. API needs a PJM account."
+ },
+ {
+  "id": "pjm-historical-forecasts",
+  "name": "PJM Data Miner, historical load forecasts feed",
+  "url": "https://dataminer2.pjm.com/feed/load_frcstd_hist/definition",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data",
+   "metric"
+  ],
+  "access": "registration",
+  "ref": "D08",
+  "summary": "Every forecast vintage since 1 Jan 2011, created every six hours. Pair with actual load to measure forecast error."
+ },
+ {
+  "id": "miso-large-load-integration",
+  "name": "MISO, Large Load Additions framework",
+  "url": "https://www.misoenergy.org/planning/large-loads---container-page/large-load-additions/",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "P08",
+  "summary": "Requests seek connection in 18 to 36 months. Goal of approval within 120 days. Mechanisms include non-firm service, firm-service step-up, curtailment, telemetry, ride-through."
+ },
+ {
+  "id": "miso-firm-service-step-up",
+  "name": "MISO, Firm Service Step Up for large load interconnections",
+  "url": "https://www.misoenergy.org/engage/MISO-Dashboard/firm-service-step-up-for-large-load-interconnections/",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S47",
+  "summary": "Proposed process letting large loads start with reduced firm service before all upgrades are complete."
+ },
+ {
+  "id": "miso-telemetry-pmu",
+  "name": "MISO, large load telemetry and PMU requirements",
+  "url": "https://www.misoenergy.org/engage/MISO-Dashboard/operational-reliability-requirement---large-load-telemetry-and-phasor-measurement-unit-pmu-requirements/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S48",
+  "summary": "Draft: real-time large load telemetry over ICCP and PMU measurements at the point of interconnection."
+ },
+ {
+  "id": "miso-gen-load-alignment",
+  "name": "MISO, Generation and Large Load Alignment (LLWG-2026-6)",
+  "url": "https://www.misoenergy.org/engage/MISO-Dashboard/generation-and-large-load-alignment/",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "A03",
+  "summary": "Proposal to study large loads together with the generation serving them. Under development."
+ },
+ {
+  "id": "miso-eras",
+  "name": "MISO, Expedited Resource Addition Study (ERAS)",
+  "url": "https://www.misoenergy.org/meet-miso/media-center/2025---news-releases/ferc-approves-misos-expedited-resource-addition-study/",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "P07",
+  "summary": "FERC-approved temporary fast track for generation interconnection; first requests Aug 2025. A generation pathway, not a load queue."
+ },
+ {
+  "id": "miso-lmr-faq",
+  "name": "MISO, LMR and demand response enrollment FAQ",
+  "url": "https://help.misoenergy.org/knowledgebase/article/KA-01560/en-us",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A04",
+  "summary": "Minimums: LMR 0.1 MW, DRR 1 MW, EDR 0.1 MW. 2 to 6 hour notice, events up to 4 hours, up to 16 dispatches a year. Enrollment tool opens 1 Dec 2026; no API."
+ },
+ {
+  "id": "eia-411",
+  "name": "EIA-411 Coordinated Bulk Power Supply and Demand Program",
+  "url": "https://www.eia.gov/electricity/data/eia411/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "D03",
+  "summary": "Planners' capacity, demand and growth estimates by NERC assessment area. Geography changed in 2011."
+ },
+ {
+  "id": "eia-860m",
+  "name": "EIA-860M monthly generator inventory (API)",
+  "url": "https://www.eia.gov/opendata/browser/electricity/operating-generator-capacity/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "api-key",
+  "ref": "S64",
+  "summary": "Monthly generator-level operating status and capacity via EIA API v2."
+ },
+ {
+  "id": "eia-api-v2",
+  "name": "EIA Open Data API v2",
+  "url": "https://www.eia.gov/opendata/",
+  "kind": "api",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "api-key",
+  "ref": "S63",
+  "summary": "JSON/CSV API for EIA series including EIA-930 hourly grid data (from 2019). Free key."
+ },
+ {
+  "id": "eia-state-data",
+  "name": "EIA state electricity data",
+  "url": "https://www.eia.gov/electricity/data/state/index.php",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "ref": "S64",
+  "summary": "State-level capacity, generation, sales and related historical series."
+ },
+ {
+  "id": "eia-transmission-lines",
+  "name": "EIA Energy Atlas, Electric Power Transmission Lines",
+  "url": "https://atlas.eia.gov/datasets/geoplatform::electric-power-transmission-lines",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "status": "unverified",
+  "ref": "D04",
+  "summary": "Transmission line GIS layer. Research could not retrieve metadata; an older EIA layer is archived. HIFLD legacy portal returned not-found. Check before relying on it."
+ },
+ {
+  "id": "eia-wholesale-markets",
+  "name": "EIA, wholesale electricity markets overview",
+  "url": "https://www.eia.gov/electricity/wholesalemarkets/",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A19",
+  "summary": "Map and links for each US ISO/RTO region."
+ },
+ {
+  "id": "doe-transmission-needs",
+  "name": "DOE, National Transmission Needs Study",
+  "url": "https://www.energy.gov/oe/national-transmission-needs-study",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T1",
+   "T2",
+   "T3"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "ref": "S08",
+  "summary": "Current and future transmission constraints as demand rises; most modeled congestion falls in a small fraction of hours."
+ },
+ {
+  "id": "doe-large-load-rates",
+  "name": "DOE, Electricity Rate Designs for Large Loads (2025)",
+  "url": "https://www.energy.gov/policy/articles/electricity-rate-designs-large-loads-evolving-practices-and-opportunities",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "topic": [
+   "T2",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S09",
+  "summary": "Utility and regulatory treatment of large new loads: cost allocation and rate design."
+ },
+ {
+  "id": "doe-i2x-der-roadmap",
+  "name": "DOE i2X, DER Interconnection Roadmap (2025)",
+  "url": "https://www.energy.gov/sites/default/files/2025-01/i2X%20DER%20Interconnection%20Roadmap.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T2",
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "N05",
+  "summary": "Distribution DER interconnection under 100 kV / 80 MW. 2030 targets: under 75 days for 50 kW to 5 MW, under 140 days above 5 MW. Aspirational, not legal deadlines."
+ },
+ {
+  "id": "doe-grid-codes",
+  "name": "DOE, Distribution Grid Code Adoption Pathways (2024)",
+  "url": "https://www.energy.gov/sites/default/files/2024-07/48726_DOE_OE_TDC_Distribution_Grid_Codes_Pathways_RELEASE_508.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A08",
+  "summary": "Taxonomy of grid codes; hosting capacity publication choices and five validation stages."
+ },
+ {
+  "id": "doe-resource-adequacy-2024",
+  "name": "DOE, The Future of Resource Adequacy (2024)",
+  "url": "https://www.energy.gov/sites/default/files/2024-04/2024%20The%20Future%20of%20Resource%20Adequacy%20Report.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A07",
+  "summary": "Explains nameplate vs capacity credit: equal MW is not equal reliability. Covers DR, DERMS, ADMS, VPPs."
+ },
+ {
+  "id": "ferc-energy-primer",
+  "name": "FERC, Energy Primer (2024 edition)",
+  "url": "https://www.ferc.gov/sites/default/files/2024-01/24_Energy-Markets-Primer_0117_DIGITAL_0.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A06",
+  "summary": "Staff handbook on electricity and gas markets; RTO/ISO sections for PJM, MISO, CAISO. Vocabulary, not tariff."
+ },
+ {
+  "id": "lbnl-dc-flex-workshop",
+  "name": "LBNL / DOE, Data Center Load Flexibility Workshop Summary (2025)",
+  "url": "https://eta.lbl.gov/publications/doe-data-center-load-flexibility",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "S11",
+  "summary": "Nov 2024 workshop, 49 participants: workload shifting, storage, onsite generation, demand response, communications and control needs."
+ },
+ {
+  "id": "lbnl-integrating-ai-dc",
+  "name": "LBNL, Integrating AI Data Centers with the Power Grid (2026)",
+  "url": "https://eta.lbl.gov/publications/integrating-ai-data-centers-power",
+  "link_check": "blocks-bots",
+  "kind": "paper",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T1",
+   "T4"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "S12",
+  "summary": "Four flexibility mechanisms: temporal/geographic compute shifting, facility infrastructure flexibility, storage, onsite generation."
+ },
+ {
+  "id": "epri-dcflex-deliverables",
+  "name": "EPRI DCFlex deliverables (load shape library and reports)",
+  "url": "https://dcflex.epri.com/deliverables",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T3",
+   "T4",
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "mixed",
+  "ref": "S14",
+  "summary": "Data center load shape library (first edition 2025), storage assessments, flexible design and program mappings."
+ },
+ {
+  "id": "epri-flex-mosaic",
+  "name": "EPRI Flex MOSAIC",
+  "url": "https://dcflex.epri.com/flex-mosaic",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "mixed",
+  "ref": "S15",
+  "summary": "Framework classifying data center flexibility by response characteristics across workloads, generation, storage and cooling."
+ },
+ {
+  "id": "epri-dcflex-programs",
+  "name": "EPRI DCFlex Workstream 2: Programs",
+  "url": "https://dcflex.epri.com/workstream-2",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S16",
+  "summary": "Maps US and European utility programs and market services to EPRI flexibility classes."
+ },
+ {
+  "id": "epri-dcflex-demos",
+  "name": "EPRI DCFlex demonstrations",
+  "url": "https://dcflex.epri.com/demonstrations",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "P02",
+  "summary": "At least ten planned demos (Phoenix, Lenoir, Paris, Chicago named): AI workload modulation, DR, backup integration, ride-through. Page does not give curtailment MW."
+ },
+ {
+  "id": "google-dr-2023",
+  "name": "Google Cloud, Using demand response to reduce data center power consumption (2023)",
+  "url": "https://cloud.google.com/blog/products/infrastructure/using-demand-response-to-reduce-data-center-power-consumption",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "P09",
+  "summary": "Grid event notices feed Google's compute planner, which sets hourly limits on non-urgent tasks per site (delay or reroute). Europe, Taiwan, US examples. No MW series published."
+ },
+ {
+  "id": "google-power-smoothing-2025",
+  "name": "Google Cloud, Mitigating power and thermal fluctuations in ML infrastructure (2025)",
+  "url": "https://cloud.google.com/blog/topics/systems/mitigating-power-and-thermal-fluctuations-in-ml-infrastructure",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "ref": "A01",
+  "summary": "Synchronized ML clusters swing tens of MW every few seconds; compiler-level smoothing cut swings about 50% with under 1% performance loss and slightly higher average power."
+ },
+ {
+  "id": "ca-dr-potential-phase4",
+  "name": "LBNL / CPUC, California Demand Response Potential Study Phase 4 (2024)",
+  "url": "https://eta.lbl.gov/publications/california-demand-response-0",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T3",
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S68",
+  "summary": "Shed and shift DR potential in California through 2050 by end use."
+ },
+ {
+  "id": "sustaindc",
+  "name": "SustainDC (HPE dc-rl)",
+  "creator": "Hewlett Packard Enterprise",
+  "url": "https://github.com/HewlettPackard/dc-rl",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "verifier",
+   "metric"
+  ],
+  "tag": [
+   "simulation",
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "ref": "S04",
+  "summary": "Multi-agent RL environments for data center workload shifting, HVAC setpoints and batteries with carbon, weather and Alibaba/Google workload inputs. Metrics: energy, carbon, water, dropped tasks. Mixed MIT / CC BY-NC."
+ },
+ {
+  "id": "helics",
+  "name": "HELICS co-simulation framework",
+  "creator": "US DOE Grid Modernization Lab Consortium (PNNL, LLNL, NREL)",
+  "url": "https://github.com/GMLC-TDC/HELICS",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi",
+   "coordination"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "ref": "S07",
+  "summary": "Couples separate simulators (grid, buildings, markets, comms) into one time-synchronized federation. Python bindings. Simulates nothing on its own. BSD-3."
+ },
+ {
+  "id": "energyplus",
+  "name": "EnergyPlus (now under NatLabRockies)",
+  "creator": "US DOE, NREL (now NLR)",
+  "url": "https://github.com/NatLabRockies/EnergyPlus",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "ref": "S08",
+  "summary": "Whole-building energy and HVAC simulation with Python API. Needs facility inputs; not a calibrated data center model out of the box."
+ },
+ {
+  "id": "scaphandre",
+  "name": "Scaphandre",
+  "creator": "Hubblo",
+  "url": "https://github.com/hubblo-org/scaphandre",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "ref": "S09",
+  "summary": "Rust agent reporting host and VM power, exporting to Prometheus, JSON and others. Early-stage. Apache-2.0."
+ },
+ {
+  "id": "powerapi",
+  "name": "PowerAPI",
+  "creator": "Inria and University of Lille",
+  "url": "https://powerapi.org/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "ref": "S10",
+  "summary": "Python framework for software-defined power meters down to process level. Estimates, not physical metering. BSD-3."
+ },
+ {
+  "id": "azure-llm-inference-traces",
+  "name": "Azure LLM inference traces 2023, 2024 and multimodal 2025",
+  "url": "https://github.com/Azure/AzurePublicDataset/blob/master/AzureLLMInferenceDataset2024.md",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T3"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "ref": "D25",
+  "summary": "Production request traces: timestamp, context tokens, generated tokens (plus images in the 2025 multimodal trace). No power, location or deadlines. CC BY."
+ },
+ {
+  "id": "caiso-demand-response",
+  "name": "CAISO Demand Response participation",
+  "url": "https://www.caiso.com/generation-transmission/load/demand-response",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S51",
+  "summary": "Proxy Demand Resource and Reliability DR Resource models. Needs a scheduling coordinator and revenue-quality meters; ancillary services need telemetry."
+ },
+ {
+  "id": "caiso-der-provider",
+  "name": "CAISO Distributed Energy Resource Provider model",
+  "url": "https://www.caiso.com/generation-transmission/generation/distributed-energy-resources",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S50",
+  "summary": "DER aggregations in wholesale markets. Utility concurrence review of 30 business days, then onboarding, metering and agreements."
+ },
+ {
+  "id": "caiso-ddemi-2026",
+  "name": "CAISO, Demand and Distributed Energy Market Integration straw proposal (Mar 2026)",
+  "url": "https://stakeholdercenter.caiso.com/InitiativeDocuments/Straw-Proposal-and-Issue-Paper-Demand-and-Distributed-Energy-Market-Integration-Mar-13-2026.pdf",
+  "kind": "filing",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S52",
+  "summary": "Stakeholder initiative on market pathways for large flexible loads and DER aggregations."
+ },
+ {
+  "id": "caiso-dmm-dr-2025",
+  "name": "CAISO DMM, Demand Response Issues and Performance 2025",
+  "url": "https://www.caiso.com/notices/department-of-market-monitoring-demand-response-issues-and-performance-2025-report-posted",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S69",
+  "summary": "2025 demand response activity and performance across CAISO and WEIM."
+ },
+ {
+  "id": "caiso-dmm-dr-2024",
+  "name": "CAISO DMM, Demand Response Issues and Performance 2024",
+  "url": "https://www.caiso.com/documents/demand-response-issues-and-performance-2024-feb-20-2025.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S70",
+  "summary": "DR was about 1,400 MW, 2.6% of CAISO RA capacity in summer 2024; only 44% of utility PDR RA capacity was bid on high-load days."
+ },
+ {
+  "id": "pge-rule-24",
+  "name": "PG&E Rule 24 (third-party demand response)",
+  "url": "https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs/rule-24.html",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S53",
+  "summary": "Customers enroll with third-party DR providers that bid aggregated reductions into CAISO."
+ },
+ {
+  "id": "pge-business-dr",
+  "name": "PG&E business demand response programs (incl. Capacity Bidding)",
+  "url": "https://www.pge.com/en/save-energy-and-money/energy-saving-programs/demand-response-programs/business-programs.html",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S54",
+  "summary": "Capacity Bidding Program and other business DR offerings with incentives and performance obligations."
+ },
+ {
+  "id": "sce-cbp-elect",
+  "name": "SCE Capacity Bidding Program Elect",
+  "url": "https://www.sce.com/save-money/savings-programs/enroll-in-savings-programs/capacity-bidding-program-elect",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S55",
+  "summary": "Pays participants for temporary reductions during high demand; overlap restrictions with other DR programs."
+ },
+ {
+  "id": "sce-elrp",
+  "name": "SCE Emergency Load Reduction Program",
+  "url": "https://www.sce.com/factsheet/emergency-load-reduction-program",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "S56",
+  "summary": "Seven-year DR pilot 2021 to 2027 for qualifying non-residential customers, including CCA and Direct Access."
+ },
+ {
+  "id": "ca-dsgs",
+  "name": "California Demand Side Grid Support (DSGS) program",
+  "url": "https://www.energy.ca.gov/programs-and-topics/programs/demand-side-grid-support-program",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "P06",
+  "summary": "Pays eligible customers for net load reduction and backup generation during extreme events, May to October. Fifth Edition guidelines adopted 27 Apr 2026."
+ },
+ {
+  "id": "cec-dsgs-docket",
+  "name": "CEC docket 22-RENEW-01 (DSGS data and guidelines)",
+  "url": "https://efiling.energy.ca.gov/Lists/DocketLog.aspx?docketnumber=22-RENEW-01",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T3",
+   "T6"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "ref": "A05",
+  "summary": "Includes anonymized 2024 and 2025 storage VPP performance workbooks (monthly site and hourly discharge), enrolled capacity by county. Measured distributed storage, not compute."
+ },
+ {
+  "id": "doe-vpp-announcement-2025",
+  "name": "DOE, VPP Liftoff update announcement (Jan 2025)",
+  "url": "https://www.energy.gov/technologycommercialization/articles/us-department-energy-releases-new-reports-highlighting",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "R10",
+  "summary": "33 GW of VPPs in North America; 80 to 160 GW by 2030 scenario (10% to 20% of peak)."
+ },
+ {
+  "id": "doe-grid-orchestration",
+  "name": "DOE, Distribution Grid Orchestration (Nov 2024)",
+  "url": "https://www.energy.gov/documents/distribution-grid-orchestration",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "N04",
+  "summary": "Taxonomy of DER orchestration: dispatch-signal, autonomous, behavioral; local feeder constraints vs grid-wide signals; OpenADR and IEEE 2030.5 roles."
+ },
+ {
+  "id": "doe-sourcing-der",
+  "name": "DOE, Sourcing DER for Distribution Services (2024)",
+  "url": "https://www.energy.gov/sites/default/files/2024-12/Sourcing%20DER%20for%20Dist%20Services%20final%2012.17.24.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A14",
+  "summary": "How utilities procure DER for local distribution needs, distinct from wholesale aggregation."
+ },
+ {
+  "id": "pge-redwood-microgrid",
+  "name": "PG&E EPIC 3.11, Redwood Coast Airport Microgrid final report (2024)",
+  "url": "https://www.pge.com/assets/pge/docs/about/corporate-responsibility-and-sustainability/pge-epic-project-3.11.pdf",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T2",
+   "T5",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "ref": "A09",
+  "summary": "Measured community microgrid: 2.3 MW / 8.8 MWh battery plus 2.2 MW PV; 51+ hours of resilience across 12 events; fixed limited interconnection avoided reconductoring."
+ },
+ {
+  "id": "energyhub-derms",
+  "name": "EnergyHub edge DERMS utility integrations",
+  "url": "https://www.energyhub.com/edge-derms-platform/utility-integrations",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "paid",
+  "ref": "S13",
+  "summary": "Commercial DERMS integration gateway, including GE Vernova GridOS. No public API or sandbox."
+ },
+ {
+  "id": "gridappsd-2030-5",
+  "name": "GRIDAPPS-D IEEE 2030.5 repositories",
+  "creator": "PNNL (GridAPPS-D)",
+  "url": "https://github.com/GRIDAPPSD",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "See repos",
+  "status": "unverified",
+  "ref": "A12",
+  "summary": "Go components for IEEE 2030.5 server, client and inverter simulator. Repository existence only; conformance not checked."
+ },
+ {
+  "id": "ferc-2222-fact-sheet",
+  "name": "FERC Order No. 2222 fact sheet",
+  "url": "https://www.ferc.gov/media/ferc-order-no-2222-fact-sheet",
+  "kind": "policy",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "topic": [
+   "T4",
+   "T6"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "link_check": "blocks-bots",
+  "ref": "A16",
+  "summary": "Minimum aggregation size in RTO/ISO markets may be no greater than 100 kW."
+ },
+ {
+  "id": "lfe-ainetus",
+  "name": "AINETUS",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/ainetus/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "AI for Safety-Critical Network Infrastructures: human-centric AI components that support grid operators' real-time and planning decisions. LF Energy stage: Sandbox. Code: github.com/ainetus."
+ },
+ {
+  "id": "lfe-arras",
+  "name": "Arras (formerly HiPAS GridLAB-D)",
+  "creator": "LF Energy; GridLAB-D originally developed by PNNL for US DOE",
+  "url": "https://lfenergy.org/projects/arras/",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Grid and smart-grid simulation for utilities and researchers, the continuation of HiPAS GridLAB-D. LF Energy stage: Sandbox. Code: github.com/arras-energy/gridlabd."
+ },
+ {
+  "id": "lfe-assetlife",
+  "name": "AssetLife",
+  "creator": "RTE (France)",
+  "url": "https://lfenergy.org/projects/assetlife/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Python library for asset management: survival analysis, renewal theory and cost calculation for maintenance and replacement decisions. Apache-2.0. LF Energy stage: Sandbox. Code: github.com/AssetLife-project."
+ },
+ {
+  "id": "lfe-battery-data-alliance",
+  "name": "Battery Data Alliance",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/battery-data-alliance/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Common software and data schemas for battery data across companies. LF Energy stage: Sandbox. Code: github.com/battery-data-alliance."
+ },
+ {
+  "id": "lfe-cds-customer-data",
+  "name": "CDS Customer Data",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/cds-customer-data/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Open specifications for access to utility customer energy data, for carbon accounting, efficiency and flexibility use cases. Code: github.com/lfe-cds/CDS-Customer-Data."
+ },
+ {
+  "id": "lfe-cds-power-systems-data",
+  "name": "CDS Power Systems Data",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/cds-power-systems-data/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Open specification for raw power system data, aimed at more accurate grid emissions reporting. Code: github.com/lfe-cds/CDS-Power-Systems-Data."
+ },
+ {
+  "id": "lfe-cds-registration",
+  "name": "CDS Registration",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/cds-registration/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Open specifications for how third-party systems securely discover, register with and connect to utility platforms. Code: github.com/lfe-cds/CDS-Registration."
+ },
+ {
+  "id": "lfe-citrineos",
+  "name": "CitrineOS",
+  "creator": "S44 Energy",
+  "url": "https://lfenergy.org/projects/citrineos/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Open-source charger network management software for OCPP 2.0.1: monitor, control and manage charging stations. Code: github.com/citrineos/citrineos."
+ },
+ {
+  "id": "lfe-compas",
+  "name": "CoMPAS",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/compas/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Shared software blocks for IEC 61850 profile configuration in digital substations. LF Energy stage: Early Adoption. Code: github.com/com-pas."
+ },
+ {
+  "id": "lfe-covxtreme",
+  "name": "covXtreme",
+  "creator": "Shell",
+  "url": "https://lfenergy.org/projects/covxtreme/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Statistical modelling of extreme values and how they occur together, for risk from rare severe conditions. LF Energy stage: Sandbox. Code: github.com/covXtreme."
+ },
+ {
+  "id": "lfe-cupid",
+  "name": "CUPID",
+  "creator": "LF Energy; from the Horizon Europe InterSTORE project",
+  "url": "https://lfenergy.org/projects/cupid/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Interoperability toolkit that extends IEEE 2030.5 for distributed energy resources and energy management systems. LF Energy stage: Sandbox. Code: github.com/cupid-project."
+ },
+ {
+  "id": "lfe-dynawo",
+  "name": "Dynawo",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/dyna%CF%89o/",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Simulation suite for power system dynamics: voltage, frequency, short circuit and stability with power-electronic resources and HVDC. Code: github.com/dynawo."
+ },
+ {
+  "id": "lfe-energnn",
+  "name": "EnerGNN",
+  "creator": "RTE with University of Liège and partners",
+  "url": "https://lfenergy.org/projects/energnn/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Graph neural network stack (H2MG) for amortized optimization: trained once on many grid cases, it returns near-instant solutions to new ones. LF Energy stage: Sandbox. Code: github.com/energnn/energnn."
+ },
+ {
+  "id": "lfe-fidopower",
+  "name": "FIDOpower",
+  "creator": "SLAC National Accelerator Laboratory",
+  "url": "https://lfenergy.org/projects/fidopower/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Notebook-based tools for reproducible power system analysis. LF Energy stage: Sandbox. Code: github.com/fidopower."
+ },
+ {
+  "id": "lfe-flexmeasures",
+  "name": "FlexMeasures",
+  "creator": "Seita Energy Flexibility (Nicolas Höning)",
+  "url": "https://lfenergy.org/projects/flexmeasures/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Open-source energy optimization engine that forecasts and schedules flexible loads, batteries and generation against prices and grid limits, for real-time operations. Built by Seita (https://seita.nl/), founded by Nicolas Höning; hosted by LF Energy. LF Energy stage: Incubation. Code: github.com/FlexMeasures/flexmeasures (Apache-2.0)."
+ },
+ {
+  "id": "lfe-geisa",
+  "name": "GEISA (Grid Edge Interoperability & Security Alliance)",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/geisa/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai",
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Secure, interoperable ecosystem for deploying and operating grid edge computing and applications. LF Energy stage: Sandbox. Code: github.com/geisa."
+ },
+ {
+  "id": "lfe-grid-vantage",
+  "name": "GridVantage",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/grid-vantage/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Agent-based grid modelling with resilience metrics to help operators prepare for and recover from extreme weather. LF Energy stage: Sandbox. Code: github.com/grid-vantage."
+ },
+ {
+  "id": "lfe-hyphae",
+  "name": "Hyphae",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/hyphae/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Microgrid software connecting buildings, homes and devices to local generation, storage and EV batteries. LF Energy stage: Incubation. Code: github.com/hyphae."
+ },
+ {
+  "id": "lfe-node-collective",
+  "name": "NODE Collective",
+  "creator": "Building Decarbonization Coalition, Rewiring America, Eli Technologies",
+  "url": "https://lfenergy.org/projects/node-collective/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "National open database of US electrification incentives and rebates. LF Energy stage: Sandbox. Code: github.com/NODE-Collective."
+ },
+ {
+  "id": "lfe-opendsm",
+  "name": "OpenDSM (formerly OpenEEmeter)",
+  "creator": "Recurve",
+  "url": "https://lfenergy.org/projects/opendsm/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Measures savings and demand-side impact from meter data, for programs that need verified results. Code: github.com/opendsm/opendsm."
+ },
+ {
+  "id": "lfe-opengridfm",
+  "name": "OpenGridFM",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/opengridfm/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Open framework for building and fine-tuning foundation models for power grids. LF Energy stage: Incubation. Code: github.com/gridfm."
+ },
+ {
+  "id": "lfe-openstef",
+  "name": "OpenSTEF",
+  "creator": "LF Energy community (grid operators, vendors, researchers)",
+  "url": "https://lfenergy.org/projects/openstef/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Python machine learning pipelines for short-term energy forecasts. LF Energy stage: Incubation. Code: github.com/OpenSTEF/openstef."
+ },
+ {
+  "id": "lfe-opensynth",
+  "name": "OpenSynth",
+  "creator": "Centre for Net Zero",
+  "url": "https://lfenergy.org/projects/opensynth/",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Open data community for synthetic and real energy datasets, starting with demand. LF Energy stage: Sandbox. Code: github.com/OpenSynth-energy."
+ },
+ {
+  "id": "lfe-operatorfabric",
+  "name": "OperatorFabric",
+  "creator": "RTE (France)",
+  "url": "https://lfenergy.org/projects/operatorfabric/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Control-room platform that brings alerts, workflows and messages from many systems into one interface. MPL-2.0. LF Energy stage: Early Adoption. Code: github.com/opfab."
+ },
+ {
+  "id": "lfe-ores",
+  "name": "ORES: Open Renewable Energy Systems",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/ores-open-renewable-energy-systems/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Open standards and practice for plug-and-play microgrids and grid-interactive device metadata and APIs. LF Energy stage: Sandbox. Code: github.com/open-renewable-energy-systems."
+ },
+ {
+  "id": "lfe-p-swamp",
+  "name": "p-SWAMP",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/p-swamp/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Modular research environment for wide-area monitoring and protection with simulation. LF Energy stage: Sandbox. Code: github.com/p-swamp/P-SWAMP."
+ },
+ {
+  "id": "lfe-power-grid-model",
+  "name": "Power Grid Model",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/power-grid-model/",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Fast calculation engine for distribution grids: power flow, state estimation and short circuit. LF Energy stage: Early Adoption. Code: github.com/PowerGridModel."
+ },
+ {
+  "id": "lfe-powsybl",
+  "name": "PowSyBl",
+  "creator": "RTE (France)",
+  "url": "https://lfenergy.org/projects/powsybl/",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Library and tools for power system modelling: load flow, security analysis, dynamic simulation, many grid formats. MPL-2.0. LF Energy stage: Early Adoption. Code: github.com/powsybl."
+ },
+ {
+  "id": "lfe-rtdip",
+  "name": "RTDIP: Real Time Data Ingestion Platform",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/real-time-data-ingestion-platform-rtdip/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Cloud pipelines for ingesting and querying real-time and historical time-series data. LF Energy stage: Sandbox. Code: github.com/rtdip."
+ },
+ {
+  "id": "lfe-rtc-tools",
+  "name": "RTC-Tools",
+  "creator": "Deltares",
+  "url": "https://lfenergy.org/projects/rtc-tools/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Toolbox for control and optimization of time-dependent systems, originally water systems; MESIDO extends it to energy networks. LF Energy stage: Sandbox. Code: github.com/Multi-Energy-Systems-Optimization/mesido."
+ },
+ {
+  "id": "lfe-seapath",
+  "name": "SEAPATH",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/seapath/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Real-time platform that runs IEC 61850 substation protection and control as virtual machines or containers on standard servers. LF Energy stage: Graduated. Code: github.com/seapath."
+ },
+ {
+  "id": "lfe-sef",
+  "name": "Semantic Energy Framework (SEF)",
+  "creator": "LF Energy; from the EU InterConnect project",
+  "url": "https://lfenergy.org/projects/semantic-energy-framework-sef/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Semantic interoperability so energy apps and devices interpret shared data the same way. LF Energy stage: Sandbox. Code: github.com/lfe-sef."
+ },
+ {
+  "id": "lfe-shapeshifter",
+  "name": "Shapeshifter",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/shapeshifter/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Implements the USEF Flexibility Trading Protocol for coordinating flexibility between grid operators and aggregators. LF Energy stage: Incubation. Code: github.com/shapeshifter."
+ },
+ {
+  "id": "lfe-smart-hems-benchmark",
+  "name": "Smart HEMS Benchmark",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/smart-hems-benchmark/",
+  "kind": "benchmark",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Manufacturer-neutral benchmark for home energy management systems with solar and batteries. LF Energy stage: Sandbox. Code: github.com/SMART-HEMS-Benchmark/smart-hems-benchmark."
+ },
+ {
+  "id": "lfe-sogno",
+  "name": "SOGNO",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/sogno/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Modular, cloud-native automation for distribution utilities: monitoring, state estimation and control. LF Energy stage: Early Adoption. Code: github.com/sogno-platform."
+ },
+ {
+  "id": "lfe-trolie",
+  "name": "TROLIE",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/trolie/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Open specification for exchanging current and forecast transmission line ratings, as required by FERC Order 881. Apache-2.0. LF Energy stage: Sandbox. Code: github.com/trolie/spec."
+ },
+ {
+  "id": "lfe-urpx",
+  "name": "Utility Rate Plan Exchange (URPX)",
+  "creator": "Flux Tailor with the National Laboratory of the Rockies",
+  "url": "https://lfenergy.org/projects/utility-rate-plan-exchange-urpx/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "host": "LF Energy",
+  "summary": "Open, machine-readable standard for utility tariffs and rate plans. Apache-2.0. LF Energy stage: Sandbox. Code: github.com/urpx-org."
+ },
+ {
+  "id": "lfe-varen",
+  "name": "VAREN",
+  "creator": "LF Energy community",
+  "url": "https://lfenergy.org/projects/varen/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Open source (see project)",
+  "host": "LF Energy",
+  "summary": "Python library that automates analysis of mobile LiDAR of overhead distribution lines and nearby vegetation. LF Energy stage: Sandbox. Code: github.com/varen-project."
+ },
+ {
+  "id": "aide2-2026",
+  "name": "Weco AI, AIDE2: outer-loop agent rewrites an inner-loop research agent (2026)",
+  "url": "https://www.alphaxiv.org/abs/2609.26457",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Reports an outer agent improving the code of an inner research agent, with gains carrying to unseen domains. Preprint, Sept 2026."
+ },
+ {
+  "id": "dgm-2025",
+  "name": "Zhang et al., Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents (2025)",
+  "url": "https://arxiv.org/abs/2505.22954",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Coding agent rewrites its own code; archive-based open-ended search raised SWE-bench and Polyglot scores."
+ },
+ {
+  "id": "hyperagents-2026",
+  "name": "Hyperagents (DGM-H), 2026",
+  "url": "https://arxiv.org/abs/2603.19461",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Self-referential agents that can also edit their improvement procedure; reports gains outside coding."
+ },
+ {
+  "id": "alphaevolve-2025",
+  "name": "Novikov et al., AlphaEvolve (Google DeepMind, 2025)",
+  "url": "https://arxiv.org/abs/2506.13131",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "LLM-driven evolutionary coding agent with automated evaluators; reported results in math, scheduling and kernel optimization."
+ },
+ {
+  "id": "funsearch-2023",
+  "name": "Romera-Paredes et al., Mathematical discoveries from program search with LLMs (Nature 2023)",
+  "url": "https://www.nature.com/articles/s41586-023-06924-6",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "verified",
+  "summary": "FunSearch: LLM proposes programs, evaluator scores them, best are recycled into prompts. New cap set constructions."
+ },
+ {
+  "id": "stop-2023",
+  "name": "Zelikman et al., Self-Taught Optimizer (STOP) (2023)",
+  "url": "https://arxiv.org/abs/2310.02304",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "A scaffolding program that improves code is applied to improving itself. Early recursive scaffolding result."
+ },
+ {
+  "id": "self-improving-coding-agent-2025",
+  "name": "Robeyns et al., A Self-Improving Coding Agent (2025)",
+  "url": "https://arxiv.org/abs/2504.15228",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Agent edits its own codebase between benchmark runs and keeps edits that raise scores."
+ },
+ {
+  "id": "reflexion-2023",
+  "name": "Shinn et al., Reflexion (2023)",
+  "url": "https://arxiv.org/abs/2303.11366",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Agents store verbal feedback from failed attempts in memory and use it on the next try, without weight updates."
+ },
+ {
+  "id": "voyager-2023",
+  "name": "Wang et al., Voyager (2023)",
+  "url": "https://arxiv.org/abs/2305.16291",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "LLM agent builds a growing library of verified code skills through self-verification."
+ },
+ {
+  "id": "gepa-2025",
+  "name": "Agrawal et al., GEPA: Reflective Prompt Evolution (2025)",
+  "url": "https://arxiv.org/abs/2507.19457",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Prompt optimization by reflecting on traces; reports outperforming RL fine-tuning (GRPO) with fewer rollouts."
+ },
+ {
+  "id": "ai-scientist-2024",
+  "name": "Lu et al., The AI Scientist (2024)",
+  "url": "https://arxiv.org/abs/2408.06292",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Automated pipeline for idea generation, experiments, paper writing and automated review."
+ },
+ {
+  "id": "autolab-2026",
+  "name": "AutoLab: long-horizon closed-loop optimization benchmark (2026)",
+  "url": "https://huggingface.co/papers/2606.05080",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "36 expert tasks across system optimization, model development and CUDA kernels. Finds sustained iteration matters more than first attempt."
+ },
+ {
+  "id": "self-improvement-survey-2026",
+  "name": "Self-Improvements in Modern Agentic Systems: A Survey (2026)",
+  "url": "https://huggingface.co/papers/2607.13104",
+  "kind": "paper",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "preprint",
+  "summary": "Survey organizing self-improvement by which component changes (prompt, memory, tools, code, weights)."
+ },
+ {
+  "id": "lbnl-dc-energy-2024",
+  "name": "Shehabi et al., 2024 United States Data Center Energy Usage Report (LBNL)",
+  "url": "https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "summary": "US data centers used 176 TWh, about 4.4% of US electricity, in 2023; 325 to 580 TWh (6.7% to 12%) projected for 2028. Bottom-up equipment model. Superseded by lbnl-dc-energy-2025-update for 2030."
+ },
+ {
+  "id": "iea-energy-ai-2025",
+  "name": "IEA, Energy and AI (2025)",
+  "url": "https://www.iea.org/reports/energy-and-ai",
+  "link_check": "blocks-bots",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "summary": "Global data centers used 415 TWh in 2024 (about 1.5%); 945 TWh in 2030 base case. US and China are nearly 80% of growth. Data centers build in 2 to 3 years, grid infrastructure takes longer. CC BY 4.0."
+ },
+ {
+  "id": "epri-powering-intelligence-2024",
+  "name": "EPRI, Powering Intelligence (2024)",
+  "url": "https://www.epri.com/research/products/3002028905",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "Scenarios of US data center load growth to 2030 with state-level breakdown."
+ },
+ {
+  "id": "duke-rethinking-load-growth-2025",
+  "name": "Norris et al., Rethinking Load Growth (Duke Nicholas Institute, 2025)",
+  "url": "https://nicholasinstitute.duke.edu/publications/rethinking-load-growth",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "First-order study of the 22 largest balancing authorities: nearly 100 GW of new load could use existing capacity if it accepts limited curtailment during grid stress."
+ },
+ {
+  "id": "google-carbon-aware-2021",
+  "name": "Radovanovic et al., Carbon-Aware Computing for Datacenters (Google, 2021)",
+  "url": "https://arxiv.org/abs/2106.11750",
+  "kind": "paper",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "preprint",
+  "summary": "Google's system that shifts flexible compute in time using day-ahead carbon forecasts and cluster-level virtual capacity curves."
+ },
+ {
+  "id": "emerald-phoenix-2025",
+  "name": "Colangelo et al., Turning AI Data Centers into Grid-Interactive Assets (2025)",
+  "url": "https://arxiv.org/abs/2507.00909",
+  "kind": "paper",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "status": "preprint",
+  "summary": "Field demo in Phoenix: software-only control cut an AI cluster's power by 25% for 3 hours during a grid peak event."
+ },
+ {
+  "id": "severson-2019",
+  "name": "Severson et al., Data-driven prediction of battery cycle life before capacity degradation (Nature Energy 2019)",
+  "url": "https://www.nature.com/articles/s41560-019-0356-8",
+  "kind": "paper",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "Predicts cycle life from the first 100 cycles. Dataset is data.matr.io (see matr-battery)."
+ },
+ {
+  "id": "attia-2020",
+  "name": "Attia et al., Closed-loop optimization of fast-charging protocols (Nature 2020)",
+  "url": "https://www.nature.com/articles/s41586-020-1994-5",
+  "kind": "paper",
+  "domain": [
+   "materials",
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "verified",
+  "summary": "Bayesian optimization plus early cycle-life prediction found long-life fast-charge protocols in 16 days instead of an estimated 500."
+ },
+ {
+  "id": "gnome-2023",
+  "name": "Merchant et al., Scaling deep learning for materials discovery (Nature 2023)",
+  "url": "https://www.nature.com/articles/s41586-023-06735-9",
+  "kind": "paper",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "GNoME: active learning loop of GNN prediction and DFT verification; reports 2.2M new crystals, 381k on the convex hull."
+ },
+ {
+  "id": "a-lab-2023",
+  "name": "Szymanski et al., An autonomous laboratory for the accelerated synthesis of novel materials (Nature 2023)",
+  "url": "https://www.nature.com/articles/s41586-023-06734-w",
+  "kind": "paper",
+  "domain": [
+   "materials",
+   "rsi"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "status": "verified",
+  "summary": "Robotic lab with computational targets and active learning; 41 of 58 targets synthesized in 17 days. Claims later disputed in the literature."
+ },
+ {
+  "id": "mattergen-2025",
+  "name": "Zeni et al., A generative model for inorganic materials design (Nature 2025)",
+  "url": "https://www.nature.com/articles/s41586-025-08628-5",
+  "kind": "paper",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "MatterGen diffusion model for property-conditioned crystal generation, with one generated material synthesized."
+ },
+ {
+  "id": "oc20-2020",
+  "name": "Chanussot et al., Open Catalyst 2020 (OC20) dataset and community challenges (2020)",
+  "url": "https://arxiv.org/abs/2010.09990",
+  "kind": "paper",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "preprint",
+  "summary": "1.2M DFT relaxations of adsorbates on catalyst surfaces with defined tasks and metrics."
+ },
+ {
+  "id": "degrave-2022",
+  "name": "Degrave et al., Magnetic control of tokamak plasmas through deep RL (Nature 2022)",
+  "url": "https://www.nature.com/articles/s41586-021-04301-9",
+  "kind": "paper",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "RL controller trained in simulation and run on the TCV tokamak to shape plasmas."
+ },
+ {
+  "id": "seo-2024",
+  "name": "Seo et al., Avoiding fusion plasma tearing instability with deep RL (Nature 2024)",
+  "url": "https://www.nature.com/articles/s41586-024-07024-9",
+  "kind": "paper",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "RL controller on DIII-D that anticipates and avoids tearing instabilities in real time."
+ },
+ {
+  "id": "torax-2024",
+  "name": "Citrin et al., TORAX: a fast and differentiable tokamak transport simulator in JAX (2024)",
+  "url": "https://arxiv.org/abs/2406.06718",
+  "kind": "paper",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "preprint",
+  "summary": "Describes TORAX design, validation and use for optimization and control."
+ },
+ {
+  "id": "pglib-2019",
+  "name": "Babaeinejadsarookolaee et al., The Power Grid Library for Benchmarking AC OPF Algorithms (2019)",
+  "url": "https://arxiv.org/abs/1908.02788",
+  "kind": "paper",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "metric"
+  ],
+  "status": "preprint",
+  "summary": "Defines the PGLib-OPF benchmark cases and their intended use."
+ },
+ {
+  "id": "wecc240-2011",
+  "name": "Price and Goodin, Reduced Network Modeling of WECC as a Market Design Prototype (IEEE PES 2011)",
+  "url": "https://ieeexplore.ieee.org/abstract/document/6039476",
+  "kind": "paper",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "Describes a 240-bus reduced Western Interconnection model built by CAISO staff, detailed inside California, with hourly load profiles for CAISO areas. Paywalled; the case file is not bundled with MATPOWER."
+ },
+ {
+  "id": "nvidia-dsx-announcement-2025",
+  "name": "NVIDIA, Omniverse DSX Blueprint for gigawatt-scale AI factories (Oct 2025)",
+  "url": "https://blogs.nvidia.com/blog/omniverse-dsx-blueprint/",
+  "kind": "report",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai",
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "Announces DSX Boost (power-optimized operation), DSX Flex (demand matched to real-time grid conditions with AI agents from Emerald AI and Phaidra) and DSX Exchange. NVIDIA claims DSX Flex can help tap some of 100 GW of underused grid capacity (vendor claim)."
+ },
+ {
+  "id": "epri-dcflex",
+  "name": "EPRI DCFlex",
+  "url": "https://dcflex.epri.com/",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "EPRI initiative with utilities, operators and hyperscalers to demonstrate data center flexibility at field sites."
+ },
+ {
+  "id": "ferc-2222",
+  "name": "FERC Order No. 2222",
+  "url": "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy",
+  "link_check": "blocks-bots",
+  "kind": "policy",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "Requires RTOs/ISOs to let DER aggregations into energy, capacity and ancillary markets; minimum aggregation size no more than 100 kW. Does not apply to ERCOT. Implementation dates on the page are as of Aug 2024."
+ },
+ {
+  "id": "texas-sb6-2025",
+  "name": "Texas SB 6 (89th Legislature, 2025): large load rules in ERCOT",
+  "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6",
+  "kind": "policy",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "unverified",
+  "summary": "Texas law on interconnection standards and grid-emergency curtailment for large loads such as data centers. Read the enrolled text for thresholds."
+ },
+ {
+  "id": "google-dc-demand-response-2025",
+  "name": "Google, data center demand response agreements with utilities (2025)",
+  "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/how-were-making-data-centers-more-flexible-to-benefit-power-grids/",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "status": "verified",
+  "summary": "Aug 2025: agreements with Indiana Michigan Power and TVA to reduce ML workload power during grid events, after three OPPD events in 2024. Google calls it early-stage and location-limited. No MW, payments or event caps disclosed."
+ },
+ {
+  "id": "openadr",
+  "name": "OpenADR 3.0",
+  "url": "https://www.openadr.org/openadr-3-0",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "REST/OpenAPI standard for DR, price and DER signals; public YAML spec supplements 2.0a/b. Reference implementation is members-only; certification is separate from implementing the API."
+ },
+ {
+  "id": "ieee-2030-5",
+  "name": "IEEE 2030.5-2023 Smart Energy Profile",
+  "url": "https://standards.ieee.org/ieee/2030.5/11216/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "Application protocol for utility communication with DERs; required for inverter communication under California Rule 21."
+ },
+ {
+  "id": "ieee-1547",
+  "name": "IEEE 1547-2018",
+  "url": "https://standards.ieee.org/ieee/1547/5915/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "Interconnection and interoperability standard for DERs connected to distribution grids."
+ },
+ {
+  "id": "ferc-ceii",
+  "name": "FERC Critical Energy/Electric Infrastructure Information (CEII)",
+  "url": "https://www.ferc.gov/ceii",
+  "link_check": "blocks-bots",
+  "kind": "policy",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "topic": [
+   "T2"
+  ],
+  "role": [
+   "background"
+  ],
+  "status": "verified",
+  "summary": "Rules restricting detailed grid data such as real network models; access requires a request and non-disclosure agreement. The reason public studies rely on synthetic grids."
+ },
+ {
+  "id": "ocpp",
+  "name": "OCPP: Open Charge Point Protocol (Open Charge Alliance)",
+  "url": "https://openchargealliance.org/protocols/open-charge-point-protocol/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "Open protocol between EV chargers and charging management systems, including smart charging profiles that cap or schedule charging power."
+ },
+ {
+  "id": "iso-15118-20",
+  "name": "ISO 15118-20: vehicle to grid communication interface",
+  "url": "https://www.iso.org/standard/77845.html",
+  "link_check": "blocks-bots",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "Standard for communication between vehicle and charger, adding bidirectional power transfer to plug and charge and scheduling. Paid standard."
+ },
+ {
+  "id": "cpuc-transportation-electrification",
+  "name": "CPUC transportation electrification",
+  "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/transportation-electrification",
+  "kind": "program",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "California utility EV programs, rates and rulemakings, including vehicle-grid integration."
+ },
+ {
+  "id": "sunspec-specifications",
+  "name": "SunSpec specifications and certification",
+  "url": "https://sunspec.org/specifications/",
+  "kind": "standard",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "status": "verified",
+  "summary": "SunSpec Alliance specifications for DER communication (SunSpec Modbus, IEEE 2030.5/CSIP test specs, security). Certification programs and test labs: https://sunspec.org/certifications/."
+ },
+ {
+  "id": "aideml",
+  "name": "AIDE (Weco AI)",
+  "creator": "Weco AI",
+  "url": "https://github.com/WecoAI/aideml",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Agent that iterates on ML code with a tree search over solutions, scored by a user-defined metric."
+ },
+ {
+  "id": "autoresearch",
+  "name": "autoresearch (Andrej Karpathy)",
+  "creator": "Andrej Karpathy",
+  "url": "https://github.com/karpathy/autoresearch",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Minimal loop where an agent edits a training script, runs a short experiment, and keeps changes that improve a validation metric."
+ },
+ {
+  "id": "openevolve",
+  "name": "OpenEvolve",
+  "creator": "Asankhaya Sharma",
+  "url": "https://github.com/codelion/openevolve",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness",
+   "proposer"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Open-source implementation of the AlphaEvolve pattern: an LLM mutates programs and an evaluator scores them across generations."
+ },
+ {
+  "id": "shinkaevolve",
+  "name": "ShinkaEvolve (Sakana AI)",
+  "creator": "Sakana AI",
+  "url": "https://github.com/SakanaAI/ShinkaEvolve",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness",
+   "proposer"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Sample-efficient LLM-driven program evolution framework with novelty filtering and an archive of solutions."
+ },
+ {
+  "id": "dgm",
+  "name": "Darwin Godel Machine",
+  "creator": "Jenny Zhang et al. (UBC, Sakana AI)",
+  "url": "https://github.com/jennyzzt/dgm",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Coding agent that edits its own code and keeps an archive of agent variants, scored on coding benchmarks."
+ },
+ {
+  "id": "funsearch",
+  "name": "FunSearch (Google DeepMind)",
+  "creator": "Google DeepMind",
+  "url": "https://github.com/google-deepmind/funsearch",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness",
+   "proposer"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "LLM proposes programs, an automated evaluator scores them, best programs are fed back. Released code for the Nature 2023 paper."
+ },
+ {
+  "id": "dspy",
+  "name": "DSPy",
+  "creator": "Stanford NLP",
+  "url": "https://github.com/stanfordnlp/dspy",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Framework that optimizes LLM prompts and pipelines against a metric instead of hand-written prompts."
+ },
+ {
+  "id": "gepa",
+  "name": "GEPA",
+  "creator": "Lakshya A. Agrawal et al.",
+  "url": "https://github.com/gepa-ai/gepa",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Reflective prompt evolution: an LLM reads execution traces and rewrites prompts, keeping a Pareto set of candidates."
+ },
+ {
+  "id": "ai-scientist",
+  "name": "The AI Scientist (Sakana AI)",
+  "creator": "Sakana AI",
+  "url": "https://github.com/SakanaAI/AI-Scientist",
+  "kind": "tool",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "End-to-end loop that generates research ideas, runs experiments from templates and writes papers."
+ },
+ {
+  "id": "mle-bench",
+  "name": "MLE-bench (OpenAI)",
+  "creator": "OpenAI",
+  "url": "https://github.com/openai/mle-bench",
+  "kind": "benchmark",
+  "domain": [
+   "rsi"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "rsi",
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "75 Kaggle competitions used to measure how well agents do ML engineering."
+ },
+ {
+  "id": "gridstatus",
+  "name": "gridstatus (Python library)",
+  "creator": "Grid Status",
+  "url": "https://github.com/gridstatus/gridstatus",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Python API for load, prices, fuel mix and queue data from US ISOs (CAISO, ERCOT, PJM, MISO, SPP, NYISO, ISO-NE)."
+ },
+ {
+  "id": "inframation",
+  "name": "Inframation (inframation.io): map of the energy buildout (FREE BETA)",
+  "creator": "Compass International",
+  "url": "https://inframation.io/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Free beta, not open source; no site license yet, each record carries its source's license",
+  "summary": "Free while in beta, per https://inframation.io/pricing. Searchable map of planned, under-construction, operating and retired power plants, batteries, data centers, large loads, lines and substations in the US and GB, plus energy RFPs and funding, built from interconnection queues, EIA-860M and permit registers with every record linked to its source. Includes a site finder (land near high-voltage lines and substations, out of the floodplain), free RSS/JSON feeds and a keyless public API at https://api.inframation.io."
+ },
+ {
+  "id": "electricity-maps",
+  "name": "Electricity Maps API",
+  "url": "https://app.electricitymaps.com/docs",
+  "link_check": "blocks-bots",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "api-key",
+  "summary": "Zone-level carbon intensity, mix, flows, load and day-ahead prices: latest, history and forecast; 5 min to hourly. Lifecycle and flow-traced by default, not marginal. 14-day trial."
+ },
+ {
+  "id": "watttime",
+  "name": "WattTime API",
+  "url": "https://watttime.org/data-science/data-signals/",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "api-key",
+  "summary": "Signals: co2_moer (marginal, lb/MWh), co2_aoer (average), health_damage (USD/MWh), with forecasts for load shifting. API docs could not be fetched in research; check access terms."
+ },
+ {
+  "id": "carbon-aware-sdk",
+  "name": "Carbon Aware SDK (Green Software Foundation)",
+  "creator": "Green Software Foundation",
+  "url": "https://github.com/Green-Software-Foundation/carbon-aware-sdk",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Web API and CLI that wrap carbon intensity providers and return the best time and location to run a workload."
+ },
+ {
+  "id": "kepler",
+  "name": "Kepler (Kubernetes power exporter)",
+  "creator": "Sustainable Computing community (CNCF)",
+  "url": "https://github.com/sustainable-computing-io/kepler",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Exports estimated power use per Kubernetes pod and container as Prometheus metrics."
+ },
+ {
+  "id": "vessim",
+  "name": "Vessim",
+  "creator": "TU Berlin (DOS group)",
+  "url": "https://github.com/dos-group/vessim",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "coordination",
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Co-simulation testbed for computing systems with solar, batteries and grid signals. Built for carbon-aware computing experiments."
+ },
+ {
+  "id": "nrel-reopt",
+  "name": "REopt (NREL, now NLR)",
+  "creator": "NREL (now NLR)",
+  "url": "https://github.com/NREL/REopt.jl",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Optimizes the size and dispatch of on-site solar, storage and generators for a site's load and tariff. Julia package and web API."
+ },
+ {
+  "id": "nrel-sam",
+  "name": "System Advisor Model (SAM, NREL, now NLR)",
+  "creator": "NREL (now NLR)",
+  "url": "https://sam.nlr.gov/",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Performance and financial models for solar, wind, storage and other systems. Python access through PySAM."
+ },
+ {
+  "id": "nrel-rev",
+  "name": "reV (Renewable Energy Potential model, NREL, now NLR)",
+  "creator": "NREL (now NLR)",
+  "url": "https://github.com/NREL/reV",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Geospatial model of renewable generation potential, supply curves and siting exclusions."
+ },
+ {
+  "id": "openleadr",
+  "name": "OpenLEADR (OpenADR 2.0b in Python)",
+  "creator": "LF Energy (OpenLEADR)",
+  "url": "https://github.com/OpenLEADR/openleadr-python",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "host": "LF Energy",
+  "summary": "LF Energy project with open-source OpenADR implementations: openleadr-python (OpenADR 2.0b VEN and VTN, developmental) and openleadr-rs (Rust, OpenADR 3). Code: github.com/openleadr."
+ },
+ {
+  "id": "pymatgen",
+  "name": "pymatgen",
+  "creator": "Materials Project (LBNL)",
+  "url": "https://github.com/materialsproject/pymatgen",
+  "kind": "tool",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Python library for crystal structures, phase diagrams, electrochemistry analysis and Materials Project access."
+ },
+ {
+  "id": "ase",
+  "name": "Atomic Simulation Environment (ASE)",
+  "creator": "ASE community (DTU)",
+  "url": "https://gitlab.com/ase/ase",
+  "kind": "tool",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "LGPL-2.1",
+  "summary": "Python toolkit to set up, run and analyze atomistic simulations with many calculators, including ML potentials."
+ },
+ {
+  "id": "mace",
+  "name": "MACE",
+  "creator": "ACEsuit (University of Cambridge and others)",
+  "url": "https://github.com/ACEsuit/mace",
+  "kind": "simulator",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Machine-learned interatomic potentials, including foundation models (MACE-MP) that run near-DFT checks in seconds."
+ },
+ {
+  "id": "chgnet",
+  "name": "CHGNet",
+  "creator": "Ceder Group (UC Berkeley)",
+  "url": "https://github.com/CederGroupHub/chgnet",
+  "kind": "simulator",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Universal ML potential trained on Materials Project trajectories, includes magnetic moments. Runs on CPU or GPU."
+ },
+ {
+  "id": "mattersim",
+  "name": "MatterSim (Microsoft)",
+  "creator": "Microsoft Research",
+  "url": "https://github.com/microsoft/mattersim",
+  "kind": "simulator",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Universal ML potential for materials across elements, temperatures and pressures."
+ },
+ {
+  "id": "orb-models",
+  "name": "Orb models (Orbital Materials)",
+  "creator": "Orbital Materials",
+  "url": "https://github.com/orbital-materials/orb-models",
+  "kind": "simulator",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Pretrained universal ML interatomic potentials with ASE calculator interface."
+ },
+ {
+  "id": "fairchem",
+  "name": "fairchem (Meta FAIR Chemistry)",
+  "creator": "Meta FAIR Chemistry",
+  "url": "https://github.com/facebookresearch/fairchem",
+  "kind": "simulator",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Models and tooling for Open Catalyst and OMat datasets, including pretrained potentials for catalysts and materials."
+ },
+ {
+  "id": "mattergen",
+  "name": "MatterGen (Microsoft)",
+  "creator": "Microsoft Research",
+  "url": "https://github.com/microsoft/mattergen",
+  "kind": "tool",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "proposer"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Diffusion model that generates crystal structures conditioned on target properties."
+ },
+ {
+  "id": "matbench-discovery",
+  "name": "Matbench Discovery",
+  "creator": "Materials Project (LBNL)",
+  "url": "https://matbench-discovery.materialsproject.org/",
+  "kind": "benchmark",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Leaderboard ranking ML models on predicting stability of new crystals."
+ },
+ {
+  "id": "pybamm",
+  "name": "PyBaMM",
+  "creator": "PyBaMM team (University of Oxford and others)",
+  "url": "https://github.com/pybamm-team/PyBaMM",
+  "kind": "simulator",
+  "domain": [
+   "materials"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Python battery models (SPM, SPMe, DFN) with degradation submodels and parameter sets. Simulates a cycling protocol in seconds."
+ },
+ {
+  "id": "grid2op",
+  "name": "Grid2Op (RTE France)",
+  "creator": "RTE France, hosted by LF Energy",
+  "url": "https://github.com/Grid2op/grid2op",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier",
+   "metric"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MPL-2.0",
+  "host": "LF Energy",
+  "summary": "Power grid operation environment for RL and agents, used in the L2RPN competitions. Agents act on topology and redispatch."
+ },
+ {
+  "id": "pandapower",
+  "name": "pandapower",
+  "creator": "Fraunhofer IEE and University of Kassel",
+  "url": "https://github.com/e2nIEE/pandapower",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Python power flow and optimal power flow on pandas tables, with standard test networks."
+ },
+ {
+  "id": "pypsa",
+  "name": "PyPSA",
+  "creator": "PyPSA team",
+  "url": "https://github.com/PyPSA/PyPSA",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Python power system optimization: capacity expansion, unit commitment and power flow."
+ },
+ {
+  "id": "pypsa-usa",
+  "name": "PyPSA-USA",
+  "creator": "PyPSA-USA contributors",
+  "url": "https://github.com/PyPSA/pypsa-usa",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Open US power system model built on PyPSA with EIA and other public data."
+ },
+ {
+  "id": "pglib-opf",
+  "name": "PGLib-OPF",
+  "creator": "IEEE PES Task Force on OPF benchmarks",
+  "url": "https://github.com/power-grid-lib/pglib-opf",
+  "kind": "benchmark",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "metric"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Standard benchmark library of optimal power flow test cases from 3 to 30,000 buses."
+ },
+ {
+  "id": "matpower",
+  "name": "MATPOWER",
+  "creator": "MATPOWER team (Ray Zimmerman)",
+  "url": "https://github.com/MATPOWER/matpower",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "MATLAB/Octave power flow and OPF package. Its case format is used by most grid benchmarks."
+ },
+ {
+  "id": "powermodels",
+  "name": "PowerModels.jl",
+  "creator": "Los Alamos National Laboratory",
+  "url": "https://github.com/lanl-ansi/PowerModels.jl",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Julia package for steady-state power network optimization with many formulations."
+ },
+ {
+  "id": "opendssdirect",
+  "name": "OpenDSSDirect.py",
+  "creator": "DSS-Extensions (OpenDSS by EPRI)",
+  "url": "https://github.com/dss-extensions/OpenDSSDirect.py",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Python bindings for OpenDSS distribution system simulator. Used for feeder-level hosting capacity studies."
+ },
+ {
+  "id": "gridlab-d",
+  "name": "GridLAB-D",
+  "creator": "PNNL",
+  "url": "https://github.com/gridlab-d/gridlab-d",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "coordination"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Distribution system and end-use load simulator from PNNL, including responsive loads and markets."
+ },
+ {
+  "id": "citylearn",
+  "name": "CityLearn",
+  "creator": "Intelligent Environments Lab (UT Austin), hosted by LF Energy",
+  "url": "https://github.com/intelligent-environments-lab/CityLearn",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion",
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier",
+   "metric"
+  ],
+  "tag": [
+   "simulation",
+   "coordination"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "host": "LF Energy",
+  "summary": "Gym environment for coordinated demand response of many buildings with storage and solar."
+ },
+ {
+  "id": "buildingsbench",
+  "name": "BuildingsBench (NREL, now NLR)",
+  "creator": "NREL (now NLR)",
+  "url": "https://github.com/NREL/BuildingsBench",
+  "kind": "benchmark",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "data",
+   "metric"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Benchmark and 900k simulated buildings for short-term load forecasting, including zero-shot tests on real buildings."
+ },
+ {
+  "id": "torax",
+  "name": "TORAX (Google DeepMind)",
+  "creator": "Google DeepMind",
+  "url": "https://github.com/google-deepmind/torax",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Differentiable tokamak core transport simulator in JAX. Fast enough to run inside optimization loops."
+ },
+ {
+  "id": "freegs",
+  "name": "FreeGS",
+  "creator": "FreeGS contributors (Ben Dudson)",
+  "url": "https://github.com/freegs-plasma/freegs",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "LGPL-3.0",
+  "summary": "Free-boundary Grad-Shafranov plasma equilibrium solver in Python."
+ },
+ {
+  "id": "freegsnke",
+  "name": "FreeGSNKE",
+  "creator": "FusionComputingLab (UKAEA, STFC Hartree Centre)",
+  "url": "https://github.com/FusionComputingLab/freegsnke",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "LGPL-3.0",
+  "summary": "Evolutive free-boundary equilibrium solver built on FreeGS, for time-dependent tokamak simulation."
+ },
+ {
+  "id": "openfusiontoolkit",
+  "name": "Open FUSION Toolkit",
+  "creator": "Open FUSION Toolkit team",
+  "url": "https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit",
+  "kind": "simulator",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "LGPL-3.0",
+  "summary": "Finite element codes for plasma equilibrium (TokaMaker), MHD and 3D wall eddy currents."
+ },
+ {
+  "id": "plasmapy",
+  "name": "PlasmaPy",
+  "creator": "PlasmaPy community",
+  "url": "https://github.com/PlasmaPy/PlasmaPy",
+  "kind": "tool",
+  "domain": [
+   "grid-fusion"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Community Python package for plasma physics formulary and analysis."
+ },
+ {
+  "id": "google-solar-api",
+  "name": "Google Solar API",
+  "url": "https://developers.google.com/maps/documentation/solar/overview",
+  "kind": "api",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "topic": [
+   "T5"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "api-key",
+  "summary": "Per-building roof area, panel layouts, sunshine hours and estimated yearly solar output. Needs a Google Cloud project with billing and an API key."
+ },
+ {
+  "id": "google-earth-engine",
+  "name": "Google Earth Engine",
+  "url": "https://earthengine.google.com/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "topic": [
+   "T3",
+   "T5"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "registration",
+  "summary": "Cloud catalogue and compute for satellite imagery and geospatial datasets (Landsat, Sentinel, NAIP, land cover, ERA5). Free for non-commercial use after registering a Cloud project; Python and JavaScript APIs."
+ },
+ {
+  "id": "surge-load-forecast",
+  "name": "surge: open probabilistic day-ahead US load forecasts",
+  "creator": "Tyler Gibbs",
+  "url": "https://github.com/tylergibbs1/surge",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Day-ahead probabilistic load forecasts for all 53 US balancing authorities: Chronos-2 fine-tuned on seven years of EIA-930 data. MIT."
+ },
+ {
+  "id": "open-eac-alliance",
+  "name": "OpenEAC Alliance M&V methodologies",
+  "creator": "OpenEAC Alliance (repo maintained by WattCarbon)",
+  "url": "https://github.com/wattcarbon/open-eac-alliance",
+  "kind": "standard",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "metric",
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Open, peer-reviewed measurement and verification (M&V) methodologies for issuing Energy Attribute Certificates (EACs) per watt-hour or gram CO2e from battery storage, electrification, demand response and energy efficiency projects. Methods and statuses at methods.openeac.org; drafts go through a 30-day public comment period."
+ },
+ {
+  "id": "pvlib-python",
+  "name": "pvlib-python",
+  "creator": "pvlib community (Sandia origin)",
+  "url": "https://github.com/pvlib/pvlib-python",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Python functions for solar position, irradiance, PV cell temperature and DC/AC output. The standard open PV performance model. BSD-3."
+ },
+ {
+  "id": "nrel-solar-forecasting",
+  "name": "Solar-Forecasting: physics-based smart persistence model (NREL, now NLR)",
+  "creator": "NREL (now NLR)",
+  "url": "https://github.com/NatLabRockies/Solar-Forecasting",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "NREL software record SWR-18-36: physics-based smart persistence model for intra-hour solar forecasting. BSD-3. Last updated 2022."
+ },
+ {
+  "id": "microsoft-gridsfm",
+  "name": "GridSFM: small foundation models for the power grid (Microsoft Research)",
+  "creator": "Microsoft Research",
+  "url": "https://github.com/microsoft/GridSFM",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier",
+   "data"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "Microsoft Research framework for small foundation models in grid optimization, starting with AC optimal power flow. Learns from graph representations of topology, load, dispatch, flows and voltages across many scenarios. Open checkpoint (GridSFM_Open), datasets on Hugging Face, and an open-data pipeline from OpenStreetMap to solved OPF cases. Suited to fast screening (contingencies, planning scenarios, new data center load) and to giving exact solvers a starting point, not replacing them. MIT."
+ },
+ {
+  "id": "timecopilot",
+  "name": "TimeCopilot: agentic forecasting framework",
+  "creator": "TimeCopilot",
+  "url": "https://github.com/TimeCopilot/timecopilot",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "rsi"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "harness"
+  ],
+  "tag": [
+   "rsi"
+  ],
+  "access": "open",
+  "license": "MIT",
+  "summary": "LLM agent over time-series foundation models: forecast, cross-validate and detect anomalies from natural-language requests through one API. MIT."
+ },
+ {
+  "id": "nixtla-timegpt",
+  "name": "Nixtla TimeGPT SDK",
+  "url": "https://github.com/Nixtla/nixtla",
+  "kind": "api",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "access": "api-key",
+  "summary": "Python SDK for TimeGPT, a pre-trained time-series foundation model for forecasting and anomaly detection, including electricity. Needs a Nixtla API key."
+ },
+ {
+  "id": "coral-npu",
+  "name": "Coral NPU (Google)",
+  "creator": "Google",
+  "url": "https://github.com/google-coral/coralnpu",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Open machine learning accelerator core designed for energy-efficient AI at the edge. Hardware design, Apache-2.0."
+ },
+ {
+  "id": "nilmtk",
+  "name": "NILMTK: Non-Intrusive Load Monitoring Toolkit",
+  "creator": "NILMTK community",
+  "url": "https://github.com/nilmtk/nilmtk",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "verifier",
+   "metric"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Toolkit to disaggregate a whole-building meter into appliance loads, with loaders for public datasets including the US REDD dataset. Apache-2.0."
+ },
+ {
+  "id": "open-sustainable-technology",
+  "name": "Open Sustainable Technology directory",
+  "url": "https://github.com/protontypes/open-sustainable-technology",
+  "kind": "dataset",
+  "domain": [
+   "edge-compute",
+   "grid-fusion",
+   "materials"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "access": "open",
+  "summary": "Directory and analysis of open-source projects in climate, sustainable energy and natural resources. Use it to find more tools. CC BY 4.0."
+ },
+ {
+  "id": "loadflow-simulator-web",
+  "name": "Load Flow Simulator (browser)",
+  "creator": "Adjie Brotosukmono",
+  "url": "https://tool.adjiebrotots.com/loadflow-simulator/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Free web tool",
+  "summary": "Free browser tool: draw a single-line diagram and run AC Newton-Raphson or DC load flow (PyPSA-based), with animated flows. Examples include a 9-bus system, a 20/0.4 kV feeder and an HVDC link. Offers a link for AI agents to open a scenario."
+ },
+ {
+  "id": "ed-uc-simulator-web",
+  "name": "ED/UC Simulator: economic dispatch and unit commitment (browser)",
+  "creator": "Adjie Brotosukmono",
+  "url": "https://tool.adjiebrotots.com/ed-uc-simulator/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Free web tool",
+  "summary": "Free browser tool: draw a network, decide which units run hour by hour and read nodal prices (LMP); PyPSA with the HiGHS solver. Examples include a PJM 5-bus case and solar plus battery."
+ },
+ {
+  "id": "dc-emt-model",
+  "name": "Generic EMT Modeling of Data Center Load (Dartmouth)",
+  "creator": "Xingyu Zhao, Yingyi Tang, Junbo Zhao (Dartmouth)",
+  "url": "https://github.com/xingyuz-phd/Generic-EMT-Modeling-of-Data-Center-Load",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "edge-ai"
+  ],
+  "access": "mixed",
+  "license": "None stated",
+  "summary": "Modular electromagnetic transient model of a data center fed by a centralized UPS: rectifier, inverter, battery DC-DC, PFC, buck and VFD modules at three fidelity levels, IT load profiles and voltage ride-through control. Needs PSCAD 5.0.2 (commercial). No license file in the repo; ask the authors before reusing code."
+ },
+ {
+  "id": "andes",
+  "name": "ANDES: power system transient dynamics in Python (CURENT)",
+  "creator": "CURENT (Hantao Cui et al.)",
+  "url": "https://github.com/CURENT/andes",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "See repo",
+  "summary": "Python library for phasor-domain transient stability simulation with symbolic model definitions, including inverter-based resource models. See the repo for license."
+ },
+ {
+  "id": "acnportal",
+  "name": "acnportal / ACN-Sim (Caltech)",
+  "creator": "Caltech (Zach Lee, Steven Low group)",
+  "url": "https://github.com/zach401/acnportal",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier",
+   "data"
+  ],
+  "tag": [
+   "simulation",
+   "coordination"
+  ],
+  "access": "open",
+  "license": "BSD-3-Clause",
+  "summary": "Simulator for scheduling many EV chargers under site capacity limits, plus a client for ACN-Data. BSD-3."
+ },
+ {
+  "id": "everest",
+  "name": "EVerest: open-source EV charging software stack (LF Energy)",
+  "creator": "PIONIX GmbH, hosted by LF Energy",
+  "url": "https://github.com/EVerest/EVerest",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "host": "LF Energy",
+  "summary": "Charger firmware and software stack implementing OCPP and ISO 15118 for EV charging stations. Apache-2.0."
+ },
+ {
+  "id": "evi-x-toolbox",
+  "name": "EVI-X toolbox (NREL, now NLR)",
+  "creator": "NREL (now NLR)",
+  "url": "https://afdc.energy.gov/evi-x-toolbox",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Free web tools",
+  "summary": "Models for EV charging demand and infrastructure needs (EVI-Pro family), with web versions."
+ },
+ {
+  "id": "manta",
+  "name": "Manta: open energy system modelling platform",
+  "creator": "Open Energy Transition",
+  "url": "https://manta-plan.org/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier",
+   "harness"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Open-source application for energy system modelling with graphical no-code workflows and full customization; plug-ins for PyPSA, GenX, Sienna and other frameworks; runs in the cloud, locally or on-premise; AI-assisted setup, debugging and results exploration. Code: github.com/manta-plan/manta (Apache-2.0). Launched 2026; public roadmap and beta program."
+ },
+ {
+  "id": "genx",
+  "name": "GenX capacity expansion model (MIT, Princeton)",
+  "creator": "MIT and Princeton (GenX team)",
+  "url": "https://github.com/GenXProject/GenX.jl",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "GPL-2.0",
+  "summary": "Julia model that chooses which generation, storage and transmission to build and how to operate it, for low-carbon power system studies. GPL-2.0. Needs Julia and a solver."
+ },
+ {
+  "id": "ac-grid-lab",
+  "name": "AC Grid Lab (browser AC power flow)",
+  "creator": "Dr. Eshan Singh",
+  "url": "https://www.eshansingh.xyz/acopf/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Free web tool",
+  "summary": "Browser tool: build a one-line network on a map or diagram and solve AC power flow; starter case is a California-inspired nine-bus network with voltage and line-loading checks. JSON import and export."
+ },
+ {
+  "id": "nrgise-open",
+  "name": "NRGISE Open: local energy system simulator",
+  "creator": "Fraunhofer ISE (Tobias Rohrer, Nils Reiners, Ricarda Hogl)",
+  "url": "https://github.com/nrgise-open/nrgise-open",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "CC BY-NC-SA 4.0",
+  "summary": "Python time-step simulation of local energy systems (PV, storage, loads) with control strategies: peak shaving, self-consumption, controller benchmarking, forecast-error studies, batch sweeps. pip install nrgise. CC BY-NC-SA 4.0 (non-commercial)."
+ },
+ {
+  "id": "bess-flexible-dispatch",
+  "name": "Flexible BESS dispatch and arbitrage optimizer under grid constraints",
+  "creator": "Mohammadreza Refaei",
+  "url": "https://github.com/Mohammadrezarefaei/bess-flexible-dispatch-optimizer",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "2-grid-capacity"
+  ],
+  "role": [
+   "proposer",
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "None stated",
+  "summary": "Optimizes battery charging and discharging across market prices while respecting hourly non-firm grid export limits and degradation cost. Example data from the German market. No clear license in the repo; ask before reusing code."
+ },
+ {
+  "id": "pypsa-ca-app",
+  "name": "PyPSA California: interactive grid model (browser)",
+  "creator": "Dr. Eshan Singh",
+  "url": "https://www.eshansingh.xyz/PyPSA-CA/app/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Free web tool",
+  "summary": "Browser app over a PyPSA optimization model of the California grid: configure demand, generation, storage, transmission and policy, then solve. No install."
+ },
+ {
+  "id": "flex-pse",
+  "name": "flex-pse: industrial energy flexibility optimization (Stanford)",
+  "creator": "Stanford",
+  "url": "https://github.com/flex-pse/flex-pse",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "proposer",
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Stanford open-source Pyomo/IDAES toolbox: model a facility as a time-discretized optimization, fit it from plant data, and schedule it against real electricity tariffs and demand response signals. pip install flex-pse. Apache-2.0. Community Slack: https://join.slack.com/t/flex-pse/shared_invite/zt-4b2va6ztg-K74JiAdHsmqY2CoGjbOmIQ"
+ },
+ {
+  "id": "open-satori",
+  "name": "Satori: open IEEE 2030.5 and SunSpec Modbus reference implementations",
+  "creator": "DER Security Corp (DERSec)",
+  "url": "https://open-satori.org",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "IEEE 2030.5 / CSIP client with a SunSpec Modbus bridge that connects inverters, batteries and EVs to utility programs without firmware changes. pip install py20305; code at github.com/DERSecurity/py20305 (Apache-2.0). Satori Scout, the free iOS/Android reference app, handles device discovery, simulation and VPP connectivity (source under commercial license)."
+ },
+ {
+  "id": "openibr",
+  "name": "OpenIBR: open-source grid-forming controls",
+  "creator": "Heron Power",
+  "url": "https://www.openibr.org/",
+  "kind": "simulator",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "edge-ai"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Universal grid-forming controller for inverter-based resources and large electronic loads such as data centers, aligned with IEEE 2800 and UNIFI. v1.1 builds IEEE/CIGRE TB958 DLLs from the open C code for PSCAD and similar tools, with debug outputs and a COMTRADE-logging test environment. Code: github.com/HeronPower/OpenIBR; DLL guide: github.com/HeronPower/OpenIBR/blob/dev/documentation/9_using_the_ieee_cigre_dll.md"
+ },
+ {
+  "id": "pravah",
+  "name": "Pravah: weather forecasting for the grid (India)",
+  "creator": "Pravah team",
+  "kind": "tool",
+  "domain": [
+   "edge-compute",
+   "grid-fusion"
+  ],
+  "track": [
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "data"
+  ],
+  "access": "on-request",
+  "summary": "Weather forecasting built for power grid operations in India. Not public: access on request. Email arhams@stanford.edu for a contact."
+ },
+ {
+  "id": "nvidia-omniverse-dsx",
+  "name": "NVIDIA Omniverse DSX Blueprint: digital twins of AI data centers",
+  "creator": "NVIDIA",
+  "url": "https://docs.omniverse.nvidia.com/dsx/latest/overview.html",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites",
+   "2-grid-capacity",
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "edge-ai",
+   "coordination"
+  ],
+  "access": "mixed",
+  "license": "NVIDIA Omniverse terms",
+  "summary": "Developer blueprint for OpenUSD digital twins of gigawatt-scale AI data centers: 50-acre reference site geometry, electrical loading and thermal (CFD) simulation, web viewer. DSX Flex matches facility demand to real-time grid conditions. Needs NVIDIA software and GPUs; NVIDIA says it is not turn-key for production."
+ },
+ {
+  "id": "nepa-mcp",
+  "name": "NEPA MCP Toolkit (PermitAI, PNNL)",
+  "creator": "Pacific Northwest National Laboratory (PNNL)",
+  "url": "https://pnnl.github.io/nepa-mcp/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "1-sites"
+  ],
+  "role": [
+   "data"
+  ],
+  "tag": [
+   "edge-ai"
+  ],
+  "access": "mixed",
+  "license": "BSD-3-Clause",
+  "summary": "23 Model Context Protocol servers that give AI agents federal environmental data for siting, NEPA review and permitting: permitting schedules, protected areas, species and critical habitat, wetlands, flood hazards, soils, air quality, cultural resources, Tribal lands, demographics, brownfields and federal regulations. pip install nepa-mcp; code at github.com/pnnl/nepa-mcp. Census and EPA AQS servers need free API keys."
+ },
+ {
+  "id": "dersec-py1815",
+  "name": "py1815: open IEEE 1815 (DNP3) outstation",
+  "creator": "DER Security Corp (DERSec), Project Satori",
+  "url": "https://github.com/DERSecurity/py1815",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "The DNP3 (IEEE 1815) outstation of Project Satori, for distributed energy resources. Companion to the py20305 IEEE 2030.5 client."
+ },
+ {
+  "id": "pysunspec2",
+  "name": "pySunSpec2: SunSpec Modbus library",
+  "creator": "SunSpec Alliance",
+  "url": "https://github.com/sunspec/pysunspec2",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Python library for reading and controlling SunSpec Modbus devices such as inverters and batteries. Model definitions at github.com/sunspec/models. Used as the Modbus bridge in Project Satori."
+ },
+ {
+  "id": "sunspec-svp",
+  "name": "SunSpec System Validation Platform (OpenSVP)",
+  "creator": "SunSpec Alliance with CanmetENERGY-Varennes",
+  "url": "https://github.com/sunspec/svp",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Open-source Python test platform and scripts for DER conformance testing against IEEE 1547.1, UL 1741 SA and AS/NZS 4777.2 with lab equipment or simulation."
+ },
+ {
+  "id": "qualitylogic-evse-test-system",
+  "name": "EVSE Test System (QualityLogic)",
+  "creator": "QualityLogic",
+  "url": "https://github.com/QualityLogic/evse-test-system",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "simulation",
+   "coordination"
+  ],
+  "access": "open",
+  "license": "Apache-2.0",
+  "summary": "Modified EVerest stack for testing EV interoperability over DIN 70121 and ISO 15118-2, AC and DC: 20 conformance scenarios from CharIN and ChargeX specs, web dashboard, REST API, PCAP capture and software-in-the-loop mode without hardware."
+ },
+ {
+  "id": "qualitylogic-2030-5-test-tools",
+  "name": "QualityLogic IEEE 2030.5 test tools",
+  "creator": "QualityLogic",
+  "url": "https://www.qualitylogic.com/industries/smart-energy/smart-energy-test-tool-solutions/ieee-2030-5-test-tools/",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "verifier"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "paid",
+  "license": "Commercial",
+  "summary": "Commercial IEEE 2030.5 and CSIP test system for clients and servers, used as a certification test harness. Not open source."
+ },
+ {
+  "id": "codibly-2030-5-accelerator",
+  "name": "Codibly IEEE 2030.5 Accelerator",
+  "creator": "Codibly",
+  "url": "https://codibly.com/accelerators/ieee-2030-5-accelerator",
+  "kind": "tool",
+  "domain": [
+   "edge-compute"
+  ],
+  "track": [
+   "3-load-management",
+   "4-aggregation"
+  ],
+  "role": [
+   "background"
+  ],
+  "tag": [
+   "coordination"
+  ],
+  "access": "paid",
+  "license": "Commercial, source code included",
+  "summary": "Pre-certified IEEE 2030.5 client and server code sold under a perpetual license with source. Codibly is a SunSpec authorized test lab for IEEE 2030.5 and CSIP. Not open source."
+ }
+]

@@ -1,0 +1,6 @@
+CONTEXT.md
+HANDOFF.md
+.cursor/
+.claude/
+__pycache__/
+.DS_Store

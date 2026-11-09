@@ -1,0 +1,1060 @@
+# Tools, simulators, APIs, benchmarks and RSI harnesses. Schema: catalog/SCHEMA.md
+# Query: python3 scripts/find.py --kind simulator --track materials
+
+# ---------- RSI harnesses (loops that propose, test, keep) ----------
+- id: aideml
+  name: "AIDE (Weco AI)"
+  creator: "Weco AI"
+  url: "https://github.com/WecoAI/aideml"
+  kind: tool
+  domain: [rsi]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "MIT"
+  summary: "Agent that iterates on ML code with a tree search over solutions, scored by a user-defined metric."
+
+- id: autoresearch
+  name: "autoresearch (Andrej Karpathy)"
+  creator: "Andrej Karpathy"
+  url: "https://github.com/karpathy/autoresearch"
+  kind: tool
+  domain: [rsi]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "See repo"
+  summary: "Minimal loop where an agent edits a training script, runs a short experiment, and keeps changes that improve a validation metric."
+
+- id: openevolve
+  name: "OpenEvolve"
+  creator: "Asankhaya Sharma"
+  url: "https://github.com/codelion/openevolve"
+  kind: tool
+  domain: [rsi]
+  role: [harness, proposer]
+  tag: [rsi]
+  access: open
+  license: "Apache-2.0"
+  summary: "Open-source implementation of the AlphaEvolve pattern: an LLM mutates programs and an evaluator scores them across generations."
+
+- id: shinkaevolve
+  name: "ShinkaEvolve (Sakana AI)"
+  creator: "Sakana AI"
+  url: "https://github.com/SakanaAI/ShinkaEvolve"
+  kind: tool
+  domain: [rsi]
+  role: [harness, proposer]
+  tag: [rsi]
+  access: open
+  license: "Apache-2.0"
+  summary: "Sample-efficient LLM-driven program evolution framework with novelty filtering and an archive of solutions."
+
+- id: dgm
+  name: "Darwin Godel Machine"
+  creator: "Jenny Zhang et al. (UBC, Sakana AI)"
+  url: "https://github.com/jennyzzt/dgm"
+  kind: tool
+  domain: [rsi]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "Apache-2.0"
+  summary: "Coding agent that edits its own code and keeps an archive of agent variants, scored on coding benchmarks."
+
+- id: funsearch
+  name: "FunSearch (Google DeepMind)"
+  creator: "Google DeepMind"
+  url: "https://github.com/google-deepmind/funsearch"
+  kind: tool
+  domain: [rsi]
+  role: [harness, proposer]
+  tag: [rsi]
+  access: open
+  license: "Apache-2.0"
+  summary: "LLM proposes programs, an automated evaluator scores them, best programs are fed back. Released code for the Nature 2023 paper."
+
+- id: dspy
+  name: "DSPy"
+  creator: "Stanford NLP"
+  url: "https://github.com/stanfordnlp/dspy"
+  kind: tool
+  domain: [rsi]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "MIT"
+  summary: "Framework that optimizes LLM prompts and pipelines against a metric instead of hand-written prompts."
+
+- id: gepa
+  name: "GEPA"
+  creator: "Lakshya A. Agrawal et al."
+  url: "https://github.com/gepa-ai/gepa"
+  kind: tool
+  domain: [rsi]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "MIT"
+  summary: "Reflective prompt evolution: an LLM reads execution traces and rewrites prompts, keeping a Pareto set of candidates."
+
+- id: ai-scientist
+  name: "The AI Scientist (Sakana AI)"
+  creator: "Sakana AI"
+  url: "https://github.com/SakanaAI/AI-Scientist"
+  kind: tool
+  domain: [rsi]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "See repo"
+  summary: "End-to-end loop that generates research ideas, runs experiments from templates and writes papers."
+
+- id: mle-bench
+  name: "MLE-bench (OpenAI)"
+  creator: "OpenAI"
+  url: "https://github.com/openai/mle-bench"
+  kind: benchmark
+  domain: [rsi]
+  role: [metric]
+  tag: [rsi, simulation]
+  access: open
+  license: "See repo"
+  summary: "75 Kaggle competitions used to measure how well agents do ML engineering."
+
+# ---------- Edge compute ----------
+- id: gridstatus
+  name: "gridstatus (Python library)"
+  creator: "Grid Status"
+  url: "https://github.com/gridstatus/gridstatus"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data]
+  tag: [coordination]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Python API for load, prices, fuel mix and queue data from US ISOs (CAISO, ERCOT, PJM, MISO, SPP, NYISO, ISO-NE)."
+
+- id: inframation
+  name: "Inframation (inframation.io): map of the energy buildout (FREE BETA)"
+  creator: "Compass International"
+  url: "https://inframation.io/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity, 4-aggregation]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: open
+  license: "Free beta, not open source; no site license yet, each record carries its source's license"
+  summary: "Free while in beta, per https://inframation.io/pricing. Searchable map of planned, under-construction, operating and retired power plants, batteries, data centers, large loads, lines and substations in the US and GB, plus energy RFPs and funding, built from interconnection queues, EIA-860M and permit registers with every record linked to its source. Includes a site finder (land near high-voltage lines and substations, out of the floodplain), free RSS/JSON feeds and a keyless public API at https://api.inframation.io."
+
+- id: electricity-maps
+  name: "Electricity Maps API"
+  url: "https://app.electricitymaps.com/docs"
+  link_check: blocks-bots
+  kind: api
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination]
+  access: api-key
+  summary: "Zone-level carbon intensity, mix, flows, load and day-ahead prices: latest, history and forecast; 5 min to hourly. Lifecycle and flow-traced by default, not marginal. 14-day trial."
+
+- id: watttime
+  name: "WattTime API"
+  url: "https://watttime.org/data-science/data-signals/"
+  kind: api
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination]
+  access: api-key
+  summary: "Signals: co2_moer (marginal, lb/MWh), co2_aoer (average), health_damage (USD/MWh), with forecasts for load shifting. API docs could not be fetched in research; check access terms."
+
+- id: carbon-aware-sdk
+  name: "Carbon Aware SDK (Green Software Foundation)"
+  creator: "Green Software Foundation"
+  url: "https://github.com/Green-Software-Foundation/carbon-aware-sdk"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  tag: [simulation, coordination, edge-ai]
+  access: open
+  license: "MIT"
+  summary: "Web API and CLI that wrap carbon intensity providers and return the best time and location to run a workload."
+
+- id: kepler
+  name: "Kepler (Kubernetes power exporter)"
+  creator: "Sustainable Computing community (CNCF)"
+  url: "https://github.com/sustainable-computing-io/kepler"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [metric]
+  tag: [edge-ai]
+  access: open
+  license: "Apache-2.0"
+  summary: "Exports estimated power use per Kubernetes pod and container as Prometheus metrics."
+
+- id: vessim
+  name: "Vessim"
+  creator: "TU Berlin (DOS group)"
+  url: "https://github.com/dos-group/vessim"
+  kind: simulator
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  tag: [simulation, coordination, edge-ai]
+  access: open
+  license: "MIT"
+  summary: "Co-simulation testbed for computing systems with solar, batteries and grid signals. Built for carbon-aware computing experiments."
+
+- id: nrel-reopt
+  name: "REopt (NREL, now NLR)"
+  creator: "NREL (now NLR)"
+  url: "https://github.com/NREL/REopt.jl"
+  kind: simulator
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Apache-2.0"
+  summary: "Optimizes the size and dispatch of on-site solar, storage and generators for a site's load and tariff. Julia package and web API."
+
+- id: nrel-sam
+  name: "System Advisor Model (SAM, NREL, now NLR)"
+  creator: "NREL (now NLR)"
+  url: "https://sam.nlr.gov/"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Performance and financial models for solar, wind, storage and other systems. Python access through PySAM."
+
+- id: nrel-rev
+  name: "reV (Renewable Energy Potential model, NREL, now NLR)"
+  creator: "NREL (now NLR)"
+  url: "https://github.com/NREL/reV"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Geospatial model of renewable generation potential, supply curves and siting exclusions."
+
+- id: openleadr
+  name: "OpenLEADR (OpenADR 2.0b in Python)"
+  creator: "LF Energy (OpenLEADR)"
+  url: "https://github.com/OpenLEADR/openleadr-python"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination]
+  access: open
+  license: "Apache-2.0"
+  host: "LF Energy"
+  summary: "LF Energy project with open-source OpenADR implementations: openleadr-python (OpenADR 2.0b VEN and VTN, developmental) and openleadr-rs (Rust, OpenADR 3). Code: github.com/openleadr."
+
+# ---------- Materials ----------
+- id: pymatgen
+  name: "pymatgen"
+  creator: "Materials Project (LBNL)"
+  url: "https://github.com/materialsproject/pymatgen"
+  kind: tool
+  domain: [materials]
+  role: [data, verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Python library for crystal structures, phase diagrams, electrochemistry analysis and Materials Project access."
+
+- id: ase
+  name: "Atomic Simulation Environment (ASE)"
+  creator: "ASE community (DTU)"
+  url: "https://gitlab.com/ase/ase"
+  kind: tool
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "LGPL-2.1"
+  summary: "Python toolkit to set up, run and analyze atomistic simulations with many calculators, including ML potentials."
+
+- id: mace
+  name: "MACE"
+  creator: "ACEsuit (University of Cambridge and others)"
+  url: "https://github.com/ACEsuit/mace"
+  kind: simulator
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Machine-learned interatomic potentials, including foundation models (MACE-MP) that run near-DFT checks in seconds."
+
+- id: chgnet
+  name: "CHGNet"
+  creator: "Ceder Group (UC Berkeley)"
+  url: "https://github.com/CederGroupHub/chgnet"
+  kind: simulator
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Universal ML potential trained on Materials Project trajectories, includes magnetic moments. Runs on CPU or GPU."
+
+- id: mattersim
+  name: "MatterSim (Microsoft)"
+  creator: "Microsoft Research"
+  url: "https://github.com/microsoft/mattersim"
+  kind: simulator
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "MIT"
+  summary: "Universal ML potential for materials across elements, temperatures and pressures."
+
+- id: orb-models
+  name: "Orb models (Orbital Materials)"
+  creator: "Orbital Materials"
+  url: "https://github.com/orbital-materials/orb-models"
+  kind: simulator
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Apache-2.0"
+  summary: "Pretrained universal ML interatomic potentials with ASE calculator interface."
+
+- id: fairchem
+  name: "fairchem (Meta FAIR Chemistry)"
+  creator: "Meta FAIR Chemistry"
+  url: "https://github.com/facebookresearch/fairchem"
+  kind: simulator
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Models and tooling for Open Catalyst and OMat datasets, including pretrained potentials for catalysts and materials."
+
+- id: mattergen
+  name: "MatterGen (Microsoft)"
+  creator: "Microsoft Research"
+  url: "https://github.com/microsoft/mattergen"
+  kind: tool
+  domain: [materials]
+  role: [proposer]
+  tag: [rsi]
+  access: open
+  license: "MIT"
+  summary: "Diffusion model that generates crystal structures conditioned on target properties."
+
+- id: matbench-discovery
+  name: "Matbench Discovery"
+  creator: "Materials Project (LBNL)"
+  url: "https://matbench-discovery.materialsproject.org/"
+  kind: benchmark
+  domain: [materials]
+  role: [metric]
+  tag: [simulation]
+  access: open
+  license: "MIT"
+  summary: "Leaderboard ranking ML models on predicting stability of new crystals."
+
+- id: pybamm
+  name: "PyBaMM"
+  creator: "PyBaMM team (University of Oxford and others)"
+  url: "https://github.com/pybamm-team/PyBaMM"
+  kind: simulator
+  domain: [materials]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Python battery models (SPM, SPMe, DFN) with degradation submodels and parameter sets. Simulates a cycling protocol in seconds."
+
+# ---------- Grid and fusion ----------
+- id: grid2op
+  name: "Grid2Op (RTE France)"
+  creator: "RTE France, hosted by LF Energy"
+  url: "https://github.com/Grid2op/grid2op"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier, metric]
+  tag: [simulation]
+  access: open
+  license: "MPL-2.0"
+  host: "LF Energy"
+  summary: "Power grid operation environment for RL and agents, used in the L2RPN competitions. Agents act on topology and redispatch."
+
+- id: pandapower
+  name: "pandapower"
+  creator: "Fraunhofer IEE and University of Kassel"
+  url: "https://github.com/e2nIEE/pandapower"
+  kind: simulator
+  domain: [grid-fusion, edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Python power flow and optimal power flow on pandas tables, with standard test networks."
+
+- id: pypsa
+  name: "PyPSA"
+  creator: "PyPSA team"
+  url: "https://github.com/PyPSA/PyPSA"
+  kind: simulator
+  domain: [grid-fusion, edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "MIT"
+  summary: "Python power system optimization: capacity expansion, unit commitment and power flow."
+
+- id: pypsa-usa
+  name: "PyPSA-USA"
+  creator: "PyPSA-USA contributors"
+  url: "https://github.com/PyPSA/pypsa-usa"
+  kind: simulator
+  domain: [grid-fusion, edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "MIT"
+  summary: "Open US power system model built on PyPSA with EIA and other public data."
+
+- id: pglib-opf
+  name: "PGLib-OPF"
+  creator: "IEEE PES Task Force on OPF benchmarks"
+  url: "https://github.com/power-grid-lib/pglib-opf"
+  kind: benchmark
+  domain: [grid-fusion]
+  role: [metric]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Standard benchmark library of optimal power flow test cases from 3 to 30,000 buses."
+
+- id: matpower
+  name: "MATPOWER"
+  creator: "MATPOWER team (Ray Zimmerman)"
+  url: "https://github.com/MATPOWER/matpower"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "MATLAB/Octave power flow and OPF package. Its case format is used by most grid benchmarks."
+
+- id: powermodels
+  name: "PowerModels.jl"
+  creator: "Los Alamos National Laboratory"
+  url: "https://github.com/lanl-ansi/PowerModels.jl"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Julia package for steady-state power network optimization with many formulations."
+
+- id: opendssdirect
+  name: "OpenDSSDirect.py"
+  creator: "DSS-Extensions (OpenDSS by EPRI)"
+  url: "https://github.com/dss-extensions/OpenDSSDirect.py"
+  kind: simulator
+  domain: [grid-fusion, edge-compute]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Python bindings for OpenDSS distribution system simulator. Used for feeder-level hosting capacity studies."
+
+- id: gridlab-d
+  name: "GridLAB-D"
+  creator: "PNNL"
+  url: "https://github.com/gridlab-d/gridlab-d"
+  kind: simulator
+  domain: [grid-fusion, edge-compute]
+  track: [2-grid-capacity, 4-aggregation]
+  role: [verifier]
+  tag: [simulation, coordination]
+  access: open
+  license: "See repo"
+  summary: "Distribution system and end-use load simulator from PNNL, including responsive loads and markets."
+
+- id: citylearn
+  name: "CityLearn"
+  creator: "Intelligent Environments Lab (UT Austin), hosted by LF Energy"
+  url: "https://github.com/intelligent-environments-lab/CityLearn"
+  kind: simulator
+  domain: [grid-fusion, edge-compute]
+  track: [4-aggregation]
+  role: [verifier, metric]
+  tag: [simulation, coordination]
+  access: open
+  license: "MIT"
+  host: "LF Energy"
+  summary: "Gym environment for coordinated demand response of many buildings with storage and solar."
+
+- id: buildingsbench
+  name: "BuildingsBench (NREL, now NLR)"
+  creator: "NREL (now NLR)"
+  url: "https://github.com/NREL/BuildingsBench"
+  kind: benchmark
+  domain: [grid-fusion]
+  role: [data, metric]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Benchmark and 900k simulated buildings for short-term load forecasting, including zero-shot tests on real buildings."
+
+- id: torax
+  name: "TORAX (Google DeepMind)"
+  creator: "Google DeepMind"
+  url: "https://github.com/google-deepmind/torax"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Differentiable tokamak core transport simulator in JAX. Fast enough to run inside optimization loops."
+
+- id: freegs
+  name: "FreeGS"
+  creator: "FreeGS contributors (Ben Dudson)"
+  url: "https://github.com/freegs-plasma/freegs"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "LGPL-3.0"
+  summary: "Free-boundary Grad-Shafranov plasma equilibrium solver in Python."
+
+- id: freegsnke
+  name: "FreeGSNKE"
+  creator: "FusionComputingLab (UKAEA, STFC Hartree Centre)"
+  url: "https://github.com/FusionComputingLab/freegsnke"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "LGPL-3.0"
+  summary: "Evolutive free-boundary equilibrium solver built on FreeGS, for time-dependent tokamak simulation."
+
+- id: openfusiontoolkit
+  name: "Open FUSION Toolkit"
+  creator: "Open FUSION Toolkit team"
+  url: "https://github.com/OpenFUSIONToolkit/OpenFUSIONToolkit"
+  kind: simulator
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "LGPL-3.0"
+  summary: "Finite element codes for plasma equilibrium (TokaMaker), MHD and 3D wall eddy currents."
+
+- id: plasmapy
+  name: "PlasmaPy"
+  creator: "PlasmaPy community"
+  url: "https://github.com/PlasmaPy/PlasmaPy"
+  kind: tool
+  domain: [grid-fusion]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Community Python package for plasma physics formulary and analysis."
+
+# ---------- Siting starter tools (added 2026-11-08) ----------
+- id: google-solar-api
+  name: "Google Solar API"
+  url: "https://developers.google.com/maps/documentation/solar/overview"
+  kind: api
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  topic: [T5]
+  role: [data, verifier]
+  tag: [simulation]
+  access: api-key
+  summary: "Per-building roof area, panel layouts, sunshine hours and estimated yearly solar output. Needs a Google Cloud project with billing and an API key."
+
+- id: google-earth-engine
+  name: "Google Earth Engine"
+  url: "https://earthengine.google.com/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites]
+  topic: [T3, T5]
+  role: [data]
+  access: registration
+  summary: "Cloud catalogue and compute for satellite imagery and geospatial datasets (Landsat, Sentinel, NAIP, land cover, ERA5). Free for non-commercial use after registering a Cloud project; Python and JavaScript APIs."
+
+# ---------- US-focused open-source tools (added 2026-11-08) ----------
+- id: surge-load-forecast
+  name: "surge: open probabilistic day-ahead US load forecasts"
+  creator: "Tyler Gibbs"
+  url: "https://github.com/tylergibbs1/surge"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data, verifier]
+  tag: [simulation]
+  access: open
+  license: "MIT"
+  summary: "Day-ahead probabilistic load forecasts for all 53 US balancing authorities: Chronos-2 fine-tuned on seven years of EIA-930 data. MIT."
+
+- id: open-eac-alliance
+  name: "OpenEAC Alliance M&V methodologies"
+  creator: "OpenEAC Alliance (repo maintained by WattCarbon)"
+  url: "https://github.com/wattcarbon/open-eac-alliance"
+  kind: standard
+  domain: [edge-compute, grid-fusion]
+  track: [3-load-management, 4-aggregation]
+  role: [metric, verifier]
+  tag: [coordination]
+  access: open
+  license: "Apache-2.0"
+  summary: "Open, peer-reviewed measurement and verification (M&V) methodologies for issuing Energy Attribute Certificates (EACs) per watt-hour or gram CO2e from battery storage, electrification, demand response and energy efficiency projects. Methods and statuses at methods.openeac.org; drafts go through a 30-day public comment period."
+
+- id: pvlib-python
+  name: "pvlib-python"
+  creator: "pvlib community (Sandia origin)"
+  url: "https://github.com/pvlib/pvlib-python"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Python functions for solar position, irradiance, PV cell temperature and DC/AC output. The standard open PV performance model. BSD-3."
+
+- id: nrel-solar-forecasting
+  name: "Solar-Forecasting: physics-based smart persistence model (NREL, now NLR)"
+  creator: "NREL (now NLR)"
+  url: "https://github.com/NatLabRockies/Solar-Forecasting"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "NREL software record SWR-18-36: physics-based smart persistence model for intra-hour solar forecasting. BSD-3. Last updated 2022."
+
+- id: microsoft-gridsfm
+  name: "GridSFM: small foundation models for the power grid (Microsoft Research)"
+  creator: "Microsoft Research"
+  url: "https://github.com/microsoft/GridSFM"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  role: [verifier, data]
+  tag: [simulation]
+  access: open
+  license: "MIT"
+  summary: "Microsoft Research framework for small foundation models in grid optimization, starting with AC optimal power flow. Learns from graph representations of topology, load, dispatch, flows and voltages across many scenarios. Open checkpoint (GridSFM_Open), datasets on Hugging Face, and an open-data pipeline from OpenStreetMap to solved OPF cases. Suited to fast screening (contingencies, planning scenarios, new data center load) and to giving exact solvers a starting point, not replacing them. MIT."
+
+- id: timecopilot
+  name: "TimeCopilot: agentic forecasting framework"
+  creator: "TimeCopilot"
+  url: "https://github.com/TimeCopilot/timecopilot"
+  kind: tool
+  domain: [edge-compute, rsi]
+  track: [2-grid-capacity, 3-load-management]
+  role: [harness]
+  tag: [rsi]
+  access: open
+  license: "MIT"
+  summary: "LLM agent over time-series foundation models: forecast, cross-validate and detect anomalies from natural-language requests through one API. MIT."
+
+- id: nixtla-timegpt
+  name: "Nixtla TimeGPT SDK"
+  url: "https://github.com/Nixtla/nixtla"
+  kind: api
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  access: api-key
+  summary: "Python SDK for TimeGPT, a pre-trained time-series foundation model for forecasting and anomaly detection, including electricity. Needs a Nixtla API key."
+
+- id: coral-npu
+  name: "Coral NPU (Google)"
+  creator: "Google"
+  url: "https://github.com/google-coral/coralnpu"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [edge-ai]
+  access: open
+  license: "Apache-2.0"
+  summary: "Open machine learning accelerator core designed for energy-efficient AI at the edge. Hardware design, Apache-2.0."
+
+- id: nilmtk
+  name: "NILMTK: Non-Intrusive Load Monitoring Toolkit"
+  creator: "NILMTK community"
+  url: "https://github.com/nilmtk/nilmtk"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [3-load-management]
+  role: [verifier, metric]
+  tag: [simulation]
+  access: open
+  license: "Apache-2.0"
+  summary: "Toolkit to disaggregate a whole-building meter into appliance loads, with loaders for public datasets including the US REDD dataset. Apache-2.0."
+
+- id: open-sustainable-technology
+  name: "Open Sustainable Technology directory"
+  url: "https://github.com/protontypes/open-sustainable-technology"
+  kind: dataset
+  domain: [edge-compute, grid-fusion, materials]
+  track: [1-sites, 2-grid-capacity, 3-load-management, 4-aggregation]
+  role: [background]
+  access: open
+  summary: "Directory and analysis of open-source projects in climate, sustainable energy and natural resources. Use it to find more tools. CC BY 4.0."
+
+# ---------- Concepts: load flow, dynamics, microgrids, EV (added 2026-11-08) ----------
+- id: loadflow-simulator-web
+  name: "Load Flow Simulator (browser)"
+  creator: "Adjie Brotosukmono"
+  url: "https://tool.adjiebrotots.com/loadflow-simulator/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Free web tool"
+  summary: "Free browser tool: draw a single-line diagram and run AC Newton-Raphson or DC load flow (PyPSA-based), with animated flows. Examples include a 9-bus system, a 20/0.4 kV feeder and an HVDC link. Offers a link for AI agents to open a scenario."
+
+- id: ed-uc-simulator-web
+  name: "ED/UC Simulator: economic dispatch and unit commitment (browser)"
+  creator: "Adjie Brotosukmono"
+  url: "https://tool.adjiebrotots.com/ed-uc-simulator/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Free web tool"
+  summary: "Free browser tool: draw a network, decide which units run hour by hour and read nodal prices (LMP); PyPSA with the HiGHS solver. Examples include a PJM 5-bus case and solar plus battery."
+
+- id: dc-emt-model
+  name: "Generic EMT Modeling of Data Center Load (Dartmouth)"
+  creator: "Xingyu Zhao, Yingyi Tang, Junbo Zhao (Dartmouth)"
+  url: "https://github.com/xingyuz-phd/Generic-EMT-Modeling-of-Data-Center-Load"
+  kind: simulator
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  tag: [simulation, edge-ai]
+  access: mixed
+  license: "None stated"
+  summary: "Modular electromagnetic transient model of a data center fed by a centralized UPS: rectifier, inverter, battery DC-DC, PFC, buck and VFD modules at three fidelity levels, IT load profiles and voltage ride-through control. Needs PSCAD 5.0.2 (commercial). No license file in the repo; ask the authors before reusing code."
+
+- id: andes
+  name: "ANDES: power system transient dynamics in Python (CURENT)"
+  creator: "CURENT (Hantao Cui et al.)"
+  url: "https://github.com/CURENT/andes"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 4-aggregation]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "See repo"
+  summary: "Python library for phasor-domain transient stability simulation with symbolic model definitions, including inverter-based resource models. See the repo for license."
+
+- id: acnportal
+  name: "acnportal / ACN-Sim (Caltech)"
+  creator: "Caltech (Zach Lee, Steven Low group)"
+  url: "https://github.com/zach401/acnportal"
+  kind: simulator
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier, data]
+  tag: [simulation, coordination]
+  access: open
+  license: "BSD-3-Clause"
+  summary: "Simulator for scheduling many EV chargers under site capacity limits, plus a client for ACN-Data. BSD-3."
+
+- id: everest
+  name: "EVerest: open-source EV charging software stack (LF Energy)"
+  creator: "PIONIX GmbH, hosted by LF Energy"
+  url: "https://github.com/EVerest/EVerest"
+  kind: tool
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [coordination]
+  access: open
+  license: "Apache-2.0"
+  host: "LF Energy"
+  summary: "Charger firmware and software stack implementing OCPP and ISO 15118 for EV charging stations. Apache-2.0."
+
+- id: evi-x-toolbox
+  name: "EVI-X toolbox (NREL, now NLR)"
+  creator: "NREL (now NLR)"
+  url: "https://afdc.energy.gov/evi-x-toolbox"
+  kind: tool
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Free web tools"
+  summary: "Models for EV charging demand and infrastructure needs (EVI-Pro family), with web versions."
+
+- id: manta
+  name: "Manta: open energy system modelling platform"
+  creator: "Open Energy Transition"
+  url: "https://manta-plan.org/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  role: [verifier, harness]
+  tag: [simulation]
+  access: open
+  license: "Apache-2.0"
+  summary: "Open-source application for energy system modelling with graphical no-code workflows and full customization; plug-ins for PyPSA, GenX, Sienna and other frameworks; runs in the cloud, locally or on-premise; AI-assisted setup, debugging and results exploration. Code: github.com/manta-plan/manta (Apache-2.0). Launched 2026; public roadmap and beta program."
+
+- id: genx
+  name: "GenX capacity expansion model (MIT, Princeton)"
+  creator: "MIT and Princeton (GenX team)"
+  url: "https://github.com/GenXProject/GenX.jl"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "GPL-2.0"
+  summary: "Julia model that chooses which generation, storage and transmission to build and how to operate it, for low-carbon power system studies. GPL-2.0. Needs Julia and a solver."
+
+- id: ac-grid-lab
+  name: "AC Grid Lab (browser AC power flow)"
+  creator: "Dr. Eshan Singh"
+  url: "https://www.eshansingh.xyz/acopf/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Free web tool"
+  summary: "Browser tool: build a one-line network on a map or diagram and solve AC power flow; starter case is a California-inspired nine-bus network with voltage and line-loading checks. JSON import and export."
+
+- id: nrgise-open
+  name: "NRGISE Open: local energy system simulator"
+  creator: "Fraunhofer ISE (Tobias Rohrer, Nils Reiners, Ricarda Hogl)"
+  url: "https://github.com/nrgise-open/nrgise-open"
+  kind: simulator
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "CC BY-NC-SA 4.0"
+  summary: "Python time-step simulation of local energy systems (PV, storage, loads) with control strategies: peak shaving, self-consumption, controller benchmarking, forecast-error studies, batch sweeps. pip install nrgise. CC BY-NC-SA 4.0 (non-commercial)."
+
+- id: bess-flexible-dispatch
+  name: "Flexible BESS dispatch and arbitrage optimizer under grid constraints"
+  creator: "Mohammadreza Refaei"
+  url: "https://github.com/Mohammadrezarefaei/bess-flexible-dispatch-optimizer"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 2-grid-capacity]
+  role: [proposer, verifier]
+  tag: [simulation]
+  access: open
+  license: "None stated"
+  summary: "Optimizes battery charging and discharging across market prices while respecting hourly non-firm grid export limits and degradation cost. Example data from the German market. No clear license in the repo; ask before reusing code."
+
+- id: pypsa-ca-app
+  name: "PyPSA California: interactive grid model (browser)"
+  creator: "Dr. Eshan Singh"
+  url: "https://www.eshansingh.xyz/PyPSA-CA/app/"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Free web tool"
+  summary: "Browser app over a PyPSA optimization model of the California grid: configure demand, generation, storage, transmission and policy, then solve. No install."
+
+- id: flex-pse
+  name: "flex-pse: industrial energy flexibility optimization (Stanford)"
+  creator: "Stanford"
+  url: "https://github.com/flex-pse/flex-pse"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [proposer, verifier]
+  tag: [simulation, coordination]
+  access: open
+  license: "Apache-2.0"
+  summary: "Stanford open-source Pyomo/IDAES toolbox: model a facility as a time-discretized optimization, fit it from plant data, and schedule it against real electricity tariffs and demand response signals. pip install flex-pse. Apache-2.0. Community Slack: https://join.slack.com/t/flex-pse/shared_invite/zt-4b2va6ztg-K74JiAdHsmqY2CoGjbOmIQ"
+
+- id: open-satori
+  name: "Satori: open IEEE 2030.5 and SunSpec Modbus reference implementations"
+  creator: "DER Security Corp (DERSec)"
+  url: "https://open-satori.org"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  access: open
+  license: "Apache-2.0"
+  summary: "IEEE 2030.5 / CSIP client with a SunSpec Modbus bridge that connects inverters, batteries and EVs to utility programs without firmware changes. pip install py20305; code at github.com/DERSecurity/py20305 (Apache-2.0). Satori Scout, the free iOS/Android reference app, handles device discovery, simulation and VPP connectivity (source under commercial license)."
+
+- id: openibr
+  name: "OpenIBR: open-source grid-forming controls"
+  creator: "Heron Power"
+  url: "https://www.openibr.org/"
+  kind: simulator
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [verifier]
+  tag: [simulation, edge-ai]
+  access: open
+  license: "Apache-2.0"
+  summary: "Universal grid-forming controller for inverter-based resources and large electronic loads such as data centers, aligned with IEEE 2800 and UNIFI. v1.1 builds IEEE/CIGRE TB958 DLLs from the open C code for PSCAD and similar tools, with debug outputs and a COMTRADE-logging test environment. Code: github.com/HeronPower/OpenIBR; DLL guide: github.com/HeronPower/OpenIBR/blob/dev/documentation/9_using_the_ieee_cigre_dll.md"
+
+- id: pravah
+  name: "Pravah: weather forecasting for the grid (India)"
+  creator: "Pravah team"
+  kind: tool
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data]
+  access: on-request
+  summary: "Weather forecasting built for power grid operations in India. Not public: access on request. Email arhams@stanford.edu for a contact."
+
+- id: nvidia-omniverse-dsx
+  name: "NVIDIA Omniverse DSX Blueprint: digital twins of AI data centers"
+  creator: "NVIDIA"
+  url: "https://docs.omniverse.nvidia.com/dsx/latest/overview.html"
+  kind: tool
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity, 3-load-management]
+  role: [verifier]
+  tag: [simulation, edge-ai, coordination]
+  access: mixed
+  license: "NVIDIA Omniverse terms"
+  summary: "Developer blueprint for OpenUSD digital twins of gigawatt-scale AI data centers: 50-acre reference site geometry, electrical loading and thermal (CFD) simulation, web viewer. DSX Flex matches facility demand to real-time grid conditions. Needs NVIDIA software and GPUs; NVIDIA says it is not turn-key for production."
+
+- id: nepa-mcp
+  name: "NEPA MCP Toolkit (PermitAI, PNNL)"
+  creator: "Pacific Northwest National Laboratory (PNNL)"
+  url: "https://pnnl.github.io/nepa-mcp/"
+  kind: tool
+  domain: [edge-compute]
+  track: [1-sites]
+  role: [data]
+  tag: [edge-ai]
+  access: mixed
+  license: "BSD-3-Clause"
+  summary: "23 Model Context Protocol servers that give AI agents federal environmental data for siting, NEPA review and permitting: permitting schedules, protected areas, species and critical habitat, wetlands, flood hazards, soils, air quality, cultural resources, Tribal lands, demographics, brownfields and federal regulations. pip install nepa-mcp; code at github.com/pnnl/nepa-mcp. Census and EPA AQS servers need free API keys."
+
+- id: dersec-py1815
+  name: "py1815: open IEEE 1815 (DNP3) outstation"
+  creator: "DER Security Corp (DERSec), Project Satori"
+  url: "https://github.com/DERSecurity/py1815"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  access: open
+  license: "Apache-2.0"
+  summary: "The DNP3 (IEEE 1815) outstation of Project Satori, for distributed energy resources. Companion to the py20305 IEEE 2030.5 client."
+
+- id: pysunspec2
+  name: "pySunSpec2: SunSpec Modbus library"
+  creator: "SunSpec Alliance"
+  url: "https://github.com/sunspec/pysunspec2"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  access: open
+  license: "Apache-2.0"
+  summary: "Python library for reading and controlling SunSpec Modbus devices such as inverters and batteries. Model definitions at github.com/sunspec/models. Used as the Modbus bridge in Project Satori."
+
+- id: sunspec-svp
+  name: "SunSpec System Validation Platform (OpenSVP)"
+  creator: "SunSpec Alliance with CanmetENERGY-Varennes"
+  url: "https://github.com/sunspec/svp"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [verifier]
+  tag: [simulation]
+  access: open
+  license: "Apache-2.0"
+  summary: "Open-source Python test platform and scripts for DER conformance testing against IEEE 1547.1, UL 1741 SA and AS/NZS 4777.2 with lab equipment or simulation."
+
+- id: qualitylogic-evse-test-system
+  name: "EVSE Test System (QualityLogic)"
+  creator: "QualityLogic"
+  url: "https://github.com/QualityLogic/evse-test-system"
+  kind: tool
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [verifier]
+  tag: [simulation, coordination]
+  access: open
+  license: "Apache-2.0"
+  summary: "Modified EVerest stack for testing EV interoperability over DIN 70121 and ISO 15118-2, AC and DC: 20 conformance scenarios from CharIN and ChargeX specs, web dashboard, REST API, PCAP capture and software-in-the-loop mode without hardware."
+
+- id: qualitylogic-2030-5-test-tools
+  name: "QualityLogic IEEE 2030.5 test tools"
+  creator: "QualityLogic"
+  url: "https://www.qualitylogic.com/industries/smart-energy/smart-energy-test-tool-solutions/ieee-2030-5-test-tools/"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [verifier]
+  tag: [coordination]
+  access: paid
+  license: "Commercial"
+  summary: "Commercial IEEE 2030.5 and CSIP test system for clients and servers, used as a certification test harness. Not open source."
+
+- id: codibly-2030-5-accelerator
+  name: "Codibly IEEE 2030.5 Accelerator"
+  creator: "Codibly"
+  url: "https://codibly.com/accelerators/ieee-2030-5-accelerator"
+  kind: tool
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  access: paid
+  license: "Commercial, source code included"
+  summary: "Pre-certified IEEE 2030.5 client and server code sold under a perpetual license with source. Codibly is a SunSpec authorized test lab for IEEE 2030.5 and CSIP. Not open source."

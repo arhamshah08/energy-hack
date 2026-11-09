@@ -1,0 +1,626 @@
+# Datasets. Schema: catalog/SCHEMA.md
+# Query: python3 scripts/find.py --kind dataset --track edge-compute --category C2
+
+# ---------- Edge compute ----------
+- id: eia-930
+  name: "EIA Hourly Electric Grid Monitor (Form EIA-930)"
+  url: "https://www.eia.gov/electricity/gridmonitor/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data]
+  tag: [coordination]
+  access: open
+  summary: "Hourly demand, day-ahead demand forecast, net generation by fuel and interchange for US balancing authorities. Bulk download and API."
+
+- id: eia-860
+  name: "EIA-860 Annual Electric Generator Report"
+  url: "https://www.eia.gov/electricity/data/eia860/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  role: [data]
+  access: open
+  summary: "Generator-level data for US plants of 1 MW and above: location, capacity, technology, status, planned additions and retirements."
+
+- id: eia-861
+  name: "EIA-861 Annual Electric Power Industry Report"
+  url: "https://www.eia.gov/electricity/data/eia861/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination]
+  access: open
+  summary: "Utility-level sales, customers, revenue, demand response program enrollment and distributed generation by US utility."
+
+- id: pudl
+  name: "PUDL (Public Utility Data Liberation), Catalyst Cooperative"
+  url: "https://github.com/catalyst-cooperative/pudl"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  role: [data]
+  access: open
+  summary: "Cleaned and linked EIA, FERC and EPA data in SQLite and Parquet. Removes most of the cleanup work of using raw EIA/FERC files."
+
+- id: lbnl-queued-up
+  name: "LBNL Queued Up: interconnection queue data"
+  url: "https://emp.lbl.gov/publications/queued-2026-edition-characteristics"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [data]
+  access: open
+  summary: "2026 edition: generation and storage requests through end-2025 from 7 ISOs and 50 other areas; XLSX with codebook, CC BY 4.0. Median request-to-operation over 5 years; 13% of 2000 to 2020 requests reached operation. Excludes load requests."
+
+- id: interconnection-fyi
+  name: "Interconnection.fyi"
+  url: "https://www.interconnection.fyi/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [data]
+  access: mixed
+  summary: "Searchable aggregation of US interconnection queue projects by ISO, utility, county and point of interconnection."
+
+- id: pjm-dataminer
+  name: "PJM Data Miner 2"
+  url: "https://dataminer2.pjm.com/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data]
+  access: registration
+  summary: "PJM load, load forecast, LMP prices, generation and reserve data. API needs a free key."
+
+- id: caiso-oasis
+  name: "CAISO OASIS"
+  url: "https://oasis.caiso.com/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data]
+  access: open
+  summary: "CAISO prices, load, forecasts, transmission and ancillary service data. Queryable by URL API."
+
+- id: ercot-data
+  name: "ERCOT data products"
+  url: "https://www.ercot.com/mp/data-products"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  role: [data]
+  access: open
+  summary: "ERCOT load, prices, generation and system reports. ERCOT also publishes large load interconnection status reports."
+
+- id: sce-drpep
+  name: "SCE Distribution Resources Plan External Portal (DRPEP)"
+  url: "https://drpep.sce.com/drpep/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [data]
+  access: registration
+  summary: "Southern California Edison feeder-level integration (hosting) capacity maps and grid data. Example of a utility hosting capacity portal."
+
+- id: pge-ica
+  name: "PG&E Grid Resource Integration Portal (GRIP)"
+  url: "https://grip.pge.com/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [2-grid-capacity]
+  role: [data]
+  access: open
+  summary: "PG&E data for California: feeder and line-section load and generation hosting capacity (ICA), forecasts, grid needs, substations and lines, with map exports and a no-login REST service. PG&E says values are directional, not a guarantee. Older DRP page: pge.com distributed-resource-planning-data-and-maps."
+
+- id: openinframap
+  name: "Open Infrastructure Map"
+  url: "https://openinframap.org/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  role: [data]
+  access: open
+  summary: "Map of OpenStreetMap power lines, substations, power plants and telecom infrastructure. Underlying data via OSM / Overpass."
+
+- id: fcc-broadband-map
+  name: "FCC National Broadband Map"
+  url: "https://broadbandmap.fcc.gov/"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  role: [data]
+  tag: [edge-ai]
+  access: open
+  summary: "Provider-reported fixed and mobile broadband availability by location (CSV and GIS). Not fiber routes, capacity or latency. Download page blocks scripts."
+
+- id: peeringdb
+  name: "PeeringDB"
+  url: "https://www.peeringdb.com/"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 4-aggregation]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: open
+  summary: "Database of colocation facilities, exchanges and networks with coordinates and a public API (peeringdb.com/apidocs). Facility records include diverse_serving_substations, a declared field, not measured capacity."
+
+- id: im3-datacenter-atlas
+  name: "PNNL IM3 Open Source Data Center Atlas"
+  url: "https://im3.pnnl.gov/datacenter-atlas"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  role: [data]
+  tag: [edge-ai]
+  access: open
+  summary: "Open geospatial inventory of existing US data center locations compiled by Pacific Northwest National Laboratory."
+
+- id: epoch-data-centers
+  name: "Epoch AI data on AI data centers"
+  url: "https://epoch.ai/data/data-centers"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [data]
+  tag: [edge-ai]
+  access: open
+  summary: "Tracked large AI data center projects with estimated power, compute and timelines. Focused on large sites, not edge."
+
+- id: census-acs
+  name: "US Census American Community Survey"
+  url: "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  role: [data]
+  access: api-key
+  summary: "ACS 5-year estimates via API down to block group. All Census API queries now need a free key."
+
+- id: wri-aqueduct
+  name: "WRI Aqueduct water risk atlas"
+  url: "https://www.wri.org/aqueduct"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  role: [data]
+  access: open
+  summary: "Global water stress and water risk indicators by watershed. Relevant to cooling water availability."
+
+- id: epa-egrid
+  name: "EPA eGRID"
+  url: "https://www.epa.gov/egrid"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 3-load-management]
+  role: [data]
+  access: open
+  summary: "Emissions and generation mix for US power plants and grid subregions. Annual average emission rates."
+
+- id: openei-urdb
+  name: "OpenEI Utility Rate Database"
+  url: "https://openei.org/wiki/Utility_Rate_Database"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  role: [data]
+  access: open
+  summary: "US retail electricity tariffs including energy charges, demand charges and time-of-use periods. API available."
+
+- id: nsrdb
+  name: "National Solar Radiation Database (NSRDB)"
+  url: "https://nsrdb.nlr.gov/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 3-load-management]
+  role: [data]
+  access: api-key
+  summary: "Gridded hourly and sub-hourly solar irradiance and weather. Used to model on-site solar output at a location."
+
+- id: google-cluster-data
+  name: "Google cluster workload traces"
+  url: "https://github.com/google/cluster-data"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: open
+  summary: "Borg traces: 2019 (eight cells, May 2019) and 2011 (one ~12,500-machine cell), plus power traces for 57 power domains in May 2019. CC BY."
+
+- id: azure-public-dataset
+  name: "Azure Public Dataset"
+  url: "https://github.com/Azure/AzurePublicDataset"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: open
+  summary: "Azure VM, serverless function and LLM inference request traces. The inference traces show request timing and token counts."
+
+- id: alibaba-clusterdata
+  name: "Alibaba cluster traces"
+  url: "https://github.com/alibaba/clusterdata"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination, edge-ai]
+  access: open
+  summary: "Production traces 2017 to 2026, including GPU traces (2020, 2023, 2025, 2026 up to 155k GPUs), LLM serving and spot GPU. Some downloads need a survey; license per release."
+
+# ---------- Materials ----------
+- id: materials-project
+  name: "Materials Project"
+  url: "https://next-gen.materialsproject.org/"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [materials]
+  role: [data, verifier]
+  tag: [simulation]
+  access: api-key
+  summary: "DFT-computed properties for 150k+ inorganic materials: formation energy, band gap, stability, battery electrode data. Free API key."
+
+- id: oqmd
+  name: "Open Quantum Materials Database (OQMD)"
+  url: "https://oqmd.org/"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "DFT formation energies and structures for about 1M materials. Downloadable database and REST API."
+
+- id: jarvis
+  name: "JARVIS (NIST)"
+  url: "https://jarvis.nist.gov/"
+  kind: dataset
+  domain: [materials]
+  role: [data, verifier]
+  tag: [simulation]
+  access: open
+  summary: "NIST DFT, force-field and ML datasets and tools for materials, including 2D materials and solar-relevant properties."
+
+- id: aflow
+  name: "AFLOW"
+  url: "https://aflow.org/"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "High-throughput DFT database of millions of material entries with REST API."
+
+- id: alexandria
+  name: "Alexandria materials database"
+  url: "https://alexandria.icams.rub.de/"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "Millions of DFT calculations of periodic compounds, used to train ML interatomic potentials."
+
+- id: omat24
+  name: "OMat24 (Meta FAIR)"
+  url: "https://huggingface.co/datasets/facebook/OMAT24"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "About 110M DFT single-point calculations on inorganic structures, released for training ML potentials."
+
+- id: open-catalyst
+  name: "Open Catalyst Project (OC20, OC22)"
+  url: "https://opencatalystproject.org/"
+  kind: dataset
+  domain: [materials]
+  role: [data, metric]
+  access: open
+  summary: "Large DFT datasets of adsorbate-catalyst relaxations for renewable energy reactions, with leaderboards."
+
+- id: gnome
+  name: "GNoME materials discovery data (Google DeepMind)"
+  url: "https://github.com/google-deepmind/materials_discovery"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "Predicted stable crystal structures from the GNoME project (Nature 2023), with released structures and models."
+
+- id: catalysis-hub
+  name: "Catalysis-Hub"
+  url: "https://www.catalysis-hub.org/"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "Surface reaction energies and barriers from DFT, searchable with GraphQL API."
+
+- id: matr-battery
+  name: "Battery cycle life dataset (Severson et al. 2019), data.matr.io"
+  url: "https://data.matr.io/1/"
+  kind: dataset
+  domain: [materials]
+  role: [data, metric]
+  access: open
+  summary: "124 LFP/graphite cells cycled to failure under fast-charge protocols. Standard benchmark for early cycle-life prediction."
+
+- id: battery-archive
+  name: "Battery Archive"
+  url: "https://www.batteryarchive.org/"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "Repository of battery cycling data from multiple labs in a common format."
+
+- id: nasa-pcoe
+  name: "NASA Prognostics Center of Excellence data sets"
+  url: "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "Run-to-failure datasets including Li-ion battery aging data used for prognostics research."
+
+- id: nrel-cell-efficiency
+  name: "NREL (now NLR) Best Research-Cell Efficiency Chart"
+  url: "https://www.nlr.gov/pv/cell-efficiency"
+  kind: dataset
+  domain: [materials]
+  role: [metric]
+  access: open
+  summary: "Record confirmed efficiencies of research solar cells by technology since 1976."
+
+- id: perovskite-database
+  name: "The Perovskite Database"
+  url: "https://www.perovskitedatabase.com/"
+  kind: dataset
+  domain: [materials]
+  role: [data]
+  access: open
+  summary: "Device data from 40k+ perovskite solar cells extracted from the literature: composition, architecture, efficiency, stability."
+
+# ---------- Grid and fusion ----------
+- id: opsd
+  name: "Open Power System Data"
+  url: "https://open-power-system-data.org/"
+  kind: dataset
+  domain: [grid-fusion]
+  role: [data]
+  access: open
+  summary: "Cleaned European time series (load, wind, solar, prices), power plant lists and weather data."
+
+- id: comstock
+  name: "NREL (now NLR) ComStock"
+  url: "https://comstock.nlr.gov/"
+  kind: dataset
+  domain: [grid-fusion, edge-compute]
+  track: [3-load-management]
+  role: [data]
+  access: open
+  summary: "Simulated hourly end-use load profiles for the US commercial building stock."
+
+- id: resstock
+  name: "NREL (now NLR) ResStock"
+  url: "https://resstock.nlr.gov/"
+  kind: dataset
+  domain: [grid-fusion]
+  role: [data]
+  access: open
+  summary: "Simulated hourly end-use load profiles for the US residential building stock."
+
+- id: bdg2
+  name: "Building Data Genome Project 2"
+  url: "https://github.com/buds-lab/building-data-genome-project-2"
+  kind: dataset
+  domain: [grid-fusion]
+  role: [data, metric]
+  access: open
+  summary: "Two years of hourly meter data from 1,636 non-residential buildings with weather and metadata. Used for load forecasting benchmarks."
+
+- id: era5
+  name: "ERA5 reanalysis (Copernicus)"
+  url: "https://cds.climate.copernicus.eu/"
+  kind: dataset
+  domain: [grid-fusion, edge-compute]
+  track: [1-sites]
+  role: [data]
+  access: registration
+  summary: "Global hourly weather reanalysis from 1940. Common input for load, wind and solar forecasting."
+
+- id: wind-toolkit
+  name: "NREL (now NLR) WIND Toolkit"
+  url: "https://www.nlr.gov/grid/wind-toolkit"
+  kind: dataset
+  domain: [grid-fusion]
+  role: [data]
+  access: api-key
+  summary: "Modeled wind speed and power for 126k US sites at 5-minute resolution, 2007 to 2013."
+
+- id: fair-mast
+  name: "FAIR-MAST (UKAEA MAST tokamak data)"
+  url: "https://github.com/ukaea/fair-mast"
+  kind: dataset
+  domain: [grid-fusion]
+  role: [data]
+  access: open
+  summary: "Open diagnostic data from the MAST spherical tokamak, released by UKAEA with an API and cloud-native formats."
+
+- id: the-well
+  name: "The Well (Polymathic AI)"
+  url: "https://github.com/PolymathicAI/the_well"
+  kind: dataset
+  domain: [grid-fusion]
+  role: [data, metric]
+  access: open
+  summary: "15 TB collection of physics simulations, including magnetohydrodynamics, for training and benchmarking surrogate models."
+
+# ---------- Siting starter data (added 2026-11-08) ----------
+- id: tamu-synthetic-grids
+  name: "Texas A&M Electric Grid Test Case Repository"
+  url: "https://electricgrids.engr.tamu.edu/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  topic: [T3]
+  role: [data, verifier]
+  tag: [simulation]
+  access: open
+  summary: "Synthetic power system cases from 200 to 70,000 buses (Illinois, South Carolina, Texas, western, northeastern and eastern US) in MATPOWER, PSS/E, PowerWorld and PSLF formats. Free for commercial and non-commercial use. Not real utility networks."
+
+- id: tamu-activsg10k
+  name: "ACTIVSg10k: 10,000-bus synthetic grid, western US"
+  url: "https://electricgrids.engr.tamu.edu/electric-grid-test-cases/activsg10k/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3]
+  role: [data, verifier]
+  tag: [simulation]
+  access: open
+  summary: "Synthetic grid on the US WECC footprint, 16 areas. Package includes a MATPOWER case, substation latitude/longitude in the PowerWorld .aux file, and an N-1 branch contingency list. No hourly load time series. Also bundled with MATPOWER as case_ACTIVSg10k."
+
+- id: tamu-activsg2000
+  name: "ACTIVSg2000: 2,000-bus synthetic grid, Texas"
+  url: "https://electricgrids.engr.tamu.edu/electric-grid-test-cases/activsg2000/"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management]
+  topic: [T3]
+  role: [data, verifier]
+  tag: [simulation]
+  access: open
+  summary: "Synthetic grid on the ERCOT footprint. Package includes a MATPOWER case, contingencies and a year of hourly load scenarios. Also bundled with MATPOWER as case_ACTIVSg2000."
+
+- id: overpass-api
+  name: "Overpass API (OpenStreetMap queries)"
+  creator: "OpenStreetMap community (Roland Olbricht)"
+  url: "https://wiki.openstreetmap.org/wiki/Overpass_API"
+  kind: api
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3, T5]
+  role: [data]
+  access: open
+  license: "AGPL-3.0"
+  summary: "Query OpenStreetMap features by tag and area, e.g. power=substation, power=line with voltage, building footprints. No key; public endpoints are rate-limited. OSM coverage of grid assets is volunteer-mapped and uneven."
+
+- id: microsoft-us-building-footprints
+  name: "Microsoft US Building Footprints"
+  url: "https://github.com/microsoft/USBuildingFootprints"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites]
+  topic: [T3]
+  role: [data]
+  access: open
+  summary: "Building footprint polygons for the US derived from imagery, by state, GeoJSON. ODbL license."
+
+- id: census-reporter-api
+  name: "Census Reporter API"
+  creator: "Census Reporter"
+  url: "https://censusreporter.org/"
+  kind: api
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3, T5]
+  role: [data]
+  access: open
+  license: "Free API"
+  summary: "Simplified access to ACS tables by geography through api.censusreporter.org. No key, unlike the official Census API."
+
+- id: cpuc-fire-threat-map
+  name: "CPUC High Fire Threat District map"
+  url: "https://www.cpuc.ca.gov/industries-and-topics/wildfires/fire-threat-maps-and-fire-safety-rulemaking"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T2, T3]
+  role: [data]
+  access: open
+  summary: "California fire threat tiers (Tier 2 elevated, Tier 3 extreme) used for utility fire safety rules, published as a map and ArcGIS feature service."
+
+- id: open-meteo
+  name: "Open-Meteo weather API"
+  creator: "Open-Meteo (Patrick Zippenfenig)"
+  url: "https://open-meteo.com/"
+  kind: api
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 3-load-management]
+  topic: [T3, T5]
+  role: [data]
+  access: open
+  license: "AGPL-3.0"
+  summary: "Weather forecasts and historical reanalysis by coordinate, hourly, JSON. No key for non-commercial use."
+
+- id: esa-worldcover
+  name: "ESA WorldCover"
+  url: "https://esa-worldcover.org/en"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites]
+  topic: [T3]
+  role: [data]
+  access: open
+  summary: "Global 10 m land cover maps for 2020 and 2021 from Sentinel-1 and Sentinel-2."
+
+- id: eagle-i-outages
+  name: "EAGLE-I recorded electricity outages 2014 to 2022 (ORNL)"
+  url: "https://doi.org/10.6084/m9.figshare.24237376"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity]
+  topic: [T3]
+  role: [data]
+  access: open
+  summary: "Customers without power by US county at 15-minute intervals, 2014 to 2022, from DOE's EAGLE-I system. Live EAGLE-I portal: eagle-i.doe.gov."
+
+# ---------- EV charging (added 2026-11-08) ----------
+- id: acn-data
+  name: "ACN-Data: EV charging sessions (Caltech)"
+  url: "https://ev.caltech.edu/dataset"
+  kind: dataset
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [data]
+  access: registration
+  summary: "Real EV charging sessions from Caltech, JPL and an office site: arrival, departure, energy requested and delivered. API with a free token."
+
+- id: afdc-stations
+  name: "AFDC alternative fuel station locator (US DOE)"
+  url: "https://afdc.energy.gov/stations"
+  kind: dataset
+  domain: [edge-compute]
+  track: [1-sites, 3-load-management]
+  role: [data]
+  access: open
+  summary: "US public EV charging stations with location, network, connector types and power level. API through the NREL developer network (free key)."
+
+- id: gridstatus-io
+  name: "Grid Status (gridstatus.io): live and historical data for all US ISOs"
+  creator: "Grid Status"
+  url: "https://www.gridstatus.io/"
+  link_check: blocks-bots
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [1-sites, 2-grid-capacity, 3-load-management, 4-aggregation]
+  role: [data]
+  tag: [coordination]
+  access: mixed
+  summary: "Web dashboards and API with live and historical prices (LMP), demand, forecasts and fuel mix across US ISOs: CAISO, ERCOT, PJM, MISO, SPP, NYISO, ISO-NE. Browse in the browser; an account is needed for the API and downloads. Python library: gridstatus."
+
+- id: starter-us-grid-hourly-2025
+  name: "Starter data: US grid demand and generation, hourly, 2025 (12 operators)"
+  creator: "Built for this repo from US EIA-930"
+  url: "https://github.com/arhamshah08/energy-hack/tree/main/data/grid-hourly-2025"
+  kind: dataset
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 3-load-management, 4-aggregation]
+  role: [data]
+  access: open
+  license: "Public domain (US government data)"
+  summary: "Ready-to-load CSV: hourly 2025 demand, day-ahead forecast, net generation, interchange and generation by fuel (coal, gas, nuclear, hydro, solar, wind, battery and more) for CAISO, ERCOT, PJM, MISO, NYISO, ISO-NE, SPP, BPA, Duke, Southern, TVA, FPL. Plus an annual summary file. One-line pandas loader in the README."

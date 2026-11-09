@@ -1,0 +1,21 @@
+name: Check catalog and generated pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Catalog schema, ids and duplicates
+        run: python3 scripts/validate.py
+      - name: Search works
+        run: python3 scripts/find.py --track 2 > /dev/null
+      - name: Track pages, catalog.json and llms-full.txt are up to date
+        run: python3 scripts/build.py && git diff --exit-code

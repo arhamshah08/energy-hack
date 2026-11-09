@@ -1,0 +1,317 @@
+# Papers and reports. Schema: catalog/SCHEMA.md
+# status: verified = link checked and source is peer-reviewed or an official report.
+#         preprint = not peer-reviewed. unverified = secondary source, check before citing.
+
+# ---------- RSI ----------
+- id: aide2-2026
+  name: "Weco AI, AIDE2: outer-loop agent rewrites an inner-loop research agent (2026)"
+  url: "https://www.alphaxiv.org/abs/2609.26457"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Reports an outer agent improving the code of an inner research agent, with gains carrying to unseen domains. Preprint, Sept 2026."
+
+- id: dgm-2025
+  name: "Zhang et al., Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents (2025)"
+  url: "https://arxiv.org/abs/2505.22954"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Coding agent rewrites its own code; archive-based open-ended search raised SWE-bench and Polyglot scores."
+
+- id: hyperagents-2026
+  name: "Hyperagents (DGM-H), 2026"
+  url: "https://arxiv.org/abs/2603.19461"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Self-referential agents that can also edit their improvement procedure; reports gains outside coding."
+
+- id: alphaevolve-2025
+  name: "Novikov et al., AlphaEvolve (Google DeepMind, 2025)"
+  url: "https://arxiv.org/abs/2506.13131"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "LLM-driven evolutionary coding agent with automated evaluators; reported results in math, scheduling and kernel optimization."
+
+- id: funsearch-2023
+  name: "Romera-Paredes et al., Mathematical discoveries from program search with LLMs (Nature 2023)"
+  url: "https://www.nature.com/articles/s41586-023-06924-6"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: verified
+  summary: "FunSearch: LLM proposes programs, evaluator scores them, best are recycled into prompts. New cap set constructions."
+
+- id: stop-2023
+  name: "Zelikman et al., Self-Taught Optimizer (STOP) (2023)"
+  url: "https://arxiv.org/abs/2310.02304"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "A scaffolding program that improves code is applied to improving itself. Early recursive scaffolding result."
+
+- id: self-improving-coding-agent-2025
+  name: "Robeyns et al., A Self-Improving Coding Agent (2025)"
+  url: "https://arxiv.org/abs/2504.15228"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Agent edits its own codebase between benchmark runs and keeps edits that raise scores."
+
+- id: reflexion-2023
+  name: "Shinn et al., Reflexion (2023)"
+  url: "https://arxiv.org/abs/2303.11366"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Agents store verbal feedback from failed attempts in memory and use it on the next try, without weight updates."
+
+- id: voyager-2023
+  name: "Wang et al., Voyager (2023)"
+  url: "https://arxiv.org/abs/2305.16291"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "LLM agent builds a growing library of verified code skills through self-verification."
+
+- id: gepa-2025
+  name: "Agrawal et al., GEPA: Reflective Prompt Evolution (2025)"
+  url: "https://arxiv.org/abs/2507.19457"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Prompt optimization by reflecting on traces; reports outperforming RL fine-tuning (GRPO) with fewer rollouts."
+
+- id: ai-scientist-2024
+  name: "Lu et al., The AI Scientist (2024)"
+  url: "https://arxiv.org/abs/2408.06292"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Automated pipeline for idea generation, experiments, paper writing and automated review."
+
+- id: autolab-2026
+  name: "AutoLab: long-horizon closed-loop optimization benchmark (2026)"
+  url: "https://huggingface.co/papers/2606.05080"
+  kind: paper
+  domain: [rsi]
+  role: [metric]
+  tag: [rsi]
+  status: preprint
+  summary: "36 expert tasks across system optimization, model development and CUDA kernels. Finds sustained iteration matters more than first attempt."
+
+- id: self-improvement-survey-2026
+  name: "Self-Improvements in Modern Agentic Systems: A Survey (2026)"
+  url: "https://huggingface.co/papers/2607.13104"
+  kind: paper
+  domain: [rsi]
+  role: [background]
+  tag: [rsi]
+  status: preprint
+  summary: "Survey organizing self-improvement by which component changes (prompt, memory, tools, code, weights)."
+
+# ---------- Edge compute ----------
+- id: lbnl-dc-energy-2024
+  name: "Shehabi et al., 2024 United States Data Center Energy Usage Report (LBNL)"
+  url: "https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  summary: "US data centers used 176 TWh, about 4.4% of US electricity, in 2023; 325 to 580 TWh (6.7% to 12%) projected for 2028. Bottom-up equipment model. Superseded by lbnl-dc-energy-2025-update for 2030."
+
+- id: iea-energy-ai-2025
+  name: "IEA, Energy and AI (2025)"
+  url: "https://www.iea.org/reports/energy-and-ai"
+  link_check: blocks-bots
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  summary: "Global data centers used 415 TWh in 2024 (about 1.5%); 945 TWh in 2030 base case. US and China are nearly 80% of growth. Data centers build in 2 to 3 years, grid infrastructure takes longer. CC BY 4.0."
+
+- id: epri-powering-intelligence-2024
+  name: "EPRI, Powering Intelligence (2024)"
+  url: "https://www.epri.com/research/products/3002028905"
+  kind: report
+  domain: [edge-compute]
+  track: [1-sites, 2-grid-capacity]
+  role: [background]
+  status: verified
+  summary: "Scenarios of US data center load growth to 2030 with state-level breakdown."
+
+- id: duke-rethinking-load-growth-2025
+  name: "Norris et al., Rethinking Load Growth (Duke Nicholas Institute, 2025)"
+  url: "https://nicholasinstitute.duke.edu/publications/rethinking-load-growth"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [background]
+  status: verified
+  summary: "First-order study of the 22 largest balancing authorities: nearly 100 GW of new load could use existing capacity if it accepts limited curtailment during grid stress."
+
+- id: google-carbon-aware-2021
+  name: "Radovanovic et al., Carbon-Aware Computing for Datacenters (Google, 2021)"
+  url: "https://arxiv.org/abs/2106.11750"
+  kind: paper
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [background]
+  tag: [edge-ai]
+  status: preprint
+  summary: "Google's system that shifts flexible compute in time using day-ahead carbon forecasts and cluster-level virtual capacity curves."
+
+- id: emerald-phoenix-2025
+  name: "Colangelo et al., Turning AI Data Centers into Grid-Interactive Assets (2025)"
+  url: "https://arxiv.org/abs/2507.00909"
+  kind: paper
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination, edge-ai]
+  status: preprint
+  summary: "Field demo in Phoenix: software-only control cut an AI cluster's power by 25% for 3 hours during a grid peak event."
+
+# ---------- Materials ----------
+- id: severson-2019
+  name: "Severson et al., Data-driven prediction of battery cycle life before capacity degradation (Nature Energy 2019)"
+  url: "https://www.nature.com/articles/s41560-019-0356-8"
+  kind: paper
+  domain: [materials]
+  role: [background]
+  status: verified
+  summary: "Predicts cycle life from the first 100 cycles. Dataset is data.matr.io (see matr-battery)."
+
+- id: attia-2020
+  name: "Attia et al., Closed-loop optimization of fast-charging protocols (Nature 2020)"
+  url: "https://www.nature.com/articles/s41586-020-1994-5"
+  kind: paper
+  domain: [materials, rsi]
+  role: [background]
+  tag: [rsi]
+  status: verified
+  summary: "Bayesian optimization plus early cycle-life prediction found long-life fast-charge protocols in 16 days instead of an estimated 500."
+
+- id: gnome-2023
+  name: "Merchant et al., Scaling deep learning for materials discovery (Nature 2023)"
+  url: "https://www.nature.com/articles/s41586-023-06735-9"
+  kind: paper
+  domain: [materials]
+  role: [background]
+  status: verified
+  summary: "GNoME: active learning loop of GNN prediction and DFT verification; reports 2.2M new crystals, 381k on the convex hull."
+
+- id: a-lab-2023
+  name: "Szymanski et al., An autonomous laboratory for the accelerated synthesis of novel materials (Nature 2023)"
+  url: "https://www.nature.com/articles/s41586-023-06734-w"
+  kind: paper
+  domain: [materials, rsi]
+  role: [background]
+  tag: [rsi]
+  status: verified
+  summary: "Robotic lab with computational targets and active learning; 41 of 58 targets synthesized in 17 days. Claims later disputed in the literature."
+
+- id: mattergen-2025
+  name: "Zeni et al., A generative model for inorganic materials design (Nature 2025)"
+  url: "https://www.nature.com/articles/s41586-025-08628-5"
+  kind: paper
+  domain: [materials]
+  role: [background]
+  status: verified
+  summary: "MatterGen diffusion model for property-conditioned crystal generation, with one generated material synthesized."
+
+- id: oc20-2020
+  name: "Chanussot et al., Open Catalyst 2020 (OC20) dataset and community challenges (2020)"
+  url: "https://arxiv.org/abs/2010.09990"
+  kind: paper
+  domain: [materials]
+  role: [background]
+  status: preprint
+  summary: "1.2M DFT relaxations of adsorbates on catalyst surfaces with defined tasks and metrics."
+
+# ---------- Grid and fusion ----------
+- id: degrave-2022
+  name: "Degrave et al., Magnetic control of tokamak plasmas through deep RL (Nature 2022)"
+  url: "https://www.nature.com/articles/s41586-021-04301-9"
+  kind: paper
+  domain: [grid-fusion]
+  role: [background]
+  status: verified
+  summary: "RL controller trained in simulation and run on the TCV tokamak to shape plasmas."
+
+- id: seo-2024
+  name: "Seo et al., Avoiding fusion plasma tearing instability with deep RL (Nature 2024)"
+  url: "https://www.nature.com/articles/s41586-024-07024-9"
+  kind: paper
+  domain: [grid-fusion]
+  role: [background]
+  status: verified
+  summary: "RL controller on DIII-D that anticipates and avoids tearing instabilities in real time."
+
+- id: torax-2024
+  name: "Citrin et al., TORAX: a fast and differentiable tokamak transport simulator in JAX (2024)"
+  url: "https://arxiv.org/abs/2406.06718"
+  kind: paper
+  domain: [grid-fusion]
+  role: [background]
+  status: preprint
+  summary: "Describes TORAX design, validation and use for optimization and control."
+
+- id: pglib-2019
+  name: "Babaeinejadsarookolaee et al., The Power Grid Library for Benchmarking AC OPF Algorithms (2019)"
+  url: "https://arxiv.org/abs/1908.02788"
+  kind: paper
+  domain: [grid-fusion]
+  role: [metric]
+  status: preprint
+  summary: "Defines the PGLib-OPF benchmark cases and their intended use."
+
+# ---------- Siting (added 2026-11-08) ----------
+- id: wecc240-2011
+  name: "Price and Goodin, Reduced Network Modeling of WECC as a Market Design Prototype (IEEE PES 2011)"
+  url: "https://ieeexplore.ieee.org/abstract/document/6039476"
+  kind: paper
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  role: [background]
+  status: verified
+  summary: "Describes a 240-bus reduced Western Interconnection model built by CAISO staff, detailed inside California, with hourly load profiles for CAISO areas. Paywalled; the case file is not bundled with MATPOWER."
+
+- id: nvidia-dsx-announcement-2025
+  name: "NVIDIA, Omniverse DSX Blueprint for gigawatt-scale AI factories (Oct 2025)"
+  url: "https://blogs.nvidia.com/blog/omniverse-dsx-blueprint/"
+  kind: report
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [background]
+  tag: [edge-ai, coordination]
+  status: verified
+  summary: "Announces DSX Boost (power-optimized operation), DSX Flex (demand matched to real-time grid conditions with AI agents from Emerald AI and Phaidra) and DSX Exchange. NVIDIA claims DSX Flex can help tap some of 100 GW of underused grid capacity (vendor claim)."

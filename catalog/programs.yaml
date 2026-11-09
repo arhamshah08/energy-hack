@@ -1,0 +1,136 @@
+# Programs, policies and standards. Schema: catalog/SCHEMA.md
+# Seed list. Deep research results are being added.
+
+- id: epri-dcflex
+  name: "EPRI DCFlex"
+  url: "https://dcflex.epri.com/"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "EPRI initiative with utilities, operators and hyperscalers to demonstrate data center flexibility at field sites."
+
+- id: ferc-2222
+  name: "FERC Order No. 2222"
+  url: "https://www.ferc.gov/ferc-order-no-2222-explainer-facilitating-participation-electricity-markets-distributed-energy"
+  link_check: blocks-bots
+  kind: policy
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "Requires RTOs/ISOs to let DER aggregations into energy, capacity and ancillary markets; minimum aggregation size no more than 100 kW. Does not apply to ERCOT. Implementation dates on the page are as of Aug 2024."
+
+- id: texas-sb6-2025
+  name: "Texas SB 6 (89th Legislature, 2025): large load rules in ERCOT"
+  url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6"
+  kind: policy
+  domain: [edge-compute]
+  track: [2-grid-capacity, 3-load-management]
+  role: [background]
+  status: unverified
+  summary: "Texas law on interconnection standards and grid-emergency curtailment for large loads such as data centers. Read the enrolled text for thresholds."
+
+- id: google-dc-demand-response-2025
+  name: "Google, data center demand response agreements with utilities (2025)"
+  url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/how-were-making-data-centers-more-flexible-to-benefit-power-grids/"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management]
+  role: [background]
+  tag: [edge-ai]
+  status: verified
+  summary: "Aug 2025: agreements with Indiana Michigan Power and TVA to reduce ML workload power during grid events, after three OPPD events in 2024. Google calls it early-stage and location-limited. No MW, payments or event caps disclosed."
+
+- id: openadr
+  name: "OpenADR 3.0"
+  url: "https://www.openadr.org/openadr-3-0"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "REST/OpenAPI standard for DR, price and DER signals; public YAML spec supplements 2.0a/b. Reference implementation is members-only; certification is separate from implementing the API."
+
+- id: ieee-2030-5
+  name: "IEEE 2030.5-2023 Smart Energy Profile"
+  url: "https://standards.ieee.org/ieee/2030.5/11216/"
+  kind: standard
+  domain: [edge-compute]
+  track: [4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "Application protocol for utility communication with DERs; required for inverter communication under California Rule 21."
+
+- id: ieee-1547
+  name: "IEEE 1547-2018"
+  url: "https://standards.ieee.org/ieee/1547/5915/"
+  kind: standard
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "Interconnection and interoperability standard for DERs connected to distribution grids."
+
+- id: ferc-ceii
+  name: "FERC Critical Energy/Electric Infrastructure Information (CEII)"
+  url: "https://www.ferc.gov/ceii"
+  link_check: blocks-bots
+  kind: policy
+  domain: [edge-compute, grid-fusion]
+  track: [2-grid-capacity]
+  topic: [T2]
+  role: [background]
+  status: verified
+  summary: "Rules restricting detailed grid data such as real network models; access requires a request and non-disclosure agreement. The reason public studies rely on synthetic grids."
+
+- id: ocpp
+  name: "OCPP: Open Charge Point Protocol (Open Charge Alliance)"
+  url: "https://openchargealliance.org/protocols/open-charge-point-protocol/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "Open protocol between EV chargers and charging management systems, including smart charging profiles that cap or schedule charging power."
+
+- id: iso-15118-20
+  name: "ISO 15118-20: vehicle to grid communication interface"
+  url: "https://www.iso.org/standard/77845.html"
+  link_check: blocks-bots
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "Standard for communication between vehicle and charger, adding bidirectional power transfer to plug and charge and scheduling. Paid standard."
+
+- id: cpuc-transportation-electrification
+  name: "CPUC transportation electrification"
+  url: "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/infrastructure/transportation-electrification"
+  kind: program
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "California utility EV programs, rates and rulemakings, including vehicle-grid integration."
+
+- id: sunspec-specifications
+  name: "SunSpec specifications and certification"
+  url: "https://sunspec.org/specifications/"
+  kind: standard
+  domain: [edge-compute]
+  track: [3-load-management, 4-aggregation]
+  role: [background]
+  tag: [coordination]
+  status: verified
+  summary: "SunSpec Alliance specifications for DER communication (SunSpec Modbus, IEEE 2030.5/CSIP test specs, security). Certification programs and test labs: https://sunspec.org/certifications/."
