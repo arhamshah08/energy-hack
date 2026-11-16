@@ -171,17 +171,17 @@ for key, title in TRACK_TITLES.items():
     mine = [e for e in entries if key in as_list(e.get("track"))]
     rfq_rows = [l.replace("](../", "](../guides/") for l in rfq_text.splitlines() if l.startswith(f"| {n}.")]
     page = (f"# {title}: every resource, one per line\n\n"
-            f"SF x MIT Hack Day: Energy (AGI House SF, 8 Nov 2026). Theme: grid-friendly compute. Demos 18:30. "
+            f"Grid-friendly compute resources, free for anyone. First made for SF x MIT Hack Day: Energy (8 Nov 2026). "
             f"Full repo: https://github.com/arhamshah08/energy-hack. "
-            f"Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu\n\n"
+            f"Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6\n\n"
             f"Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` "
-            f"for a one-day build, and do not invent tools. {len(mine)} resources below.\n\n"
-            f"## Ready-made problems (RFQs) for this track\n\n| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |\n|---|---|---|---|---|---|---|\n"
+            f"first, and do not invent tools. {len(mine)} resources below.\n\n"
+            f"## Ready-made problems (RFQs) for this track\n\n| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |\n|---|---|---|---|---|---|---|\n"
             + "\n".join(rfq_rows) + "\n\n## Resources\n" + grouped(mine))
     (ROOT / "ai" / f"track-{key}.md").write_text(page)
 
 (ROOT / "ai" / "all-resources.md").write_text(
-    "# All resources, one per line\n\nSF x MIT Hack Day: Energy. Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu. Every catalog entry, grouped by type. "
+    "# All resources, one per line\n\nGrid-friendly compute resources, free for anyone. Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6. Every catalog entry, grouped by type. "
     "Each line: name, creator, what it is, access, tracks (1 sites, 2 grid capacity, 3 load management, 4 aggregation), id, link.\n"
     + grouped(entries))
 
@@ -190,27 +190,41 @@ seen = []
 for i in oss_ids:
     if i not in seen:
         seen.append(i)
-oss_page = "# Open-source tools, one per line\n\nFree tools for the hack, credited to their creators. Check each license before reusing code. Built one of these? Request changes: https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu\n"
+oss_page = "# Open-source tools, one per line\n\nFree tools, credited to their creators. Check each license before reusing code. Built one of these? Request changes: https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu\n"
 for title, ids in OSS_GROUPS + [("LF Energy projects (https://lfenergy.org/projects/)", [e["id"] for e in lfe])]:
     oss_page += f"\n## {title}\n\n" + "\n".join(line(by_id[i]) for i in ids) + "\n"
 (ROOT / "ai" / "open-source-tools.md").write_text(oss_page)
 
 start = f"""# START HERE (for ChatGPT, Claude, Gemini and other chat assistants)
 
-SF x MIT Hack Day: Energy, Sunday 8 Nov 2026, AGI House SF. Theme: grid-friendly compute.
-Schedule: 10:30 team formation, 13:00 lunch, 18:30 demos.
+Repo: https://github.com/arhamshah08/energy-hack
+What it is: a free, open catalog of {len(entries)} resources (datasets, open-source tools, simulators,
+papers, programs) on grid-friendly compute: powering data centers and distributed compute
+without straining the grid. Built for SF x MIT Hack Day: Energy (8 Nov 2026, AGI House SF).
 
-## How to help the user
+## First reply: a short brief (under 200 words)
 
-1. Ask which track they are on, then open that track's file below and list the most relevant resources with links.
-2. Prefer resources marked `access: open` (no key) for a one-day build. Flag keys, billing, paid software, large downloads.
-3. Cite names and links from these files. Do not invent tools, datasets or numbers.
-4. If they need something outside their track, open the other track file or the all-resources file.
-5. Help them reach a working demo by 18:30 and describe how it could expand.
+1. **What this is**, one line.
+2. **What is here for them**: 3 to 5 resources that fit their interest, with links. Open the matching
+   track file below (or all-resources) first. Prefer `access: open`; flag keys, billing, paid software.
+3. **What is missing** for their interest: use "Known gaps" below plus anything you looked for and did not find.
+4. **Questions**: email arhams@stanford.edu.
 
-## Feedback
+Cite names and links from these files only. Do not invent tools, datasets or numbers.
+If they then want to build something, help them get a first result running fast, then improve it.
 
-Feedback form (participants, later users, and creators of listed tools): https://forms.gle/k1pnQ4dtvfcGkuGK6\nOr email arhams@stanford.edu.
+## Known gaps
+
+1. Mostly US. Few India or Europe entries; none for the UK or Australia.
+2. Feeder hosting capacity maps for California only (PG&E GRIP, SCE DRPEP).
+3. Compute load data is thin: Google and Alibaba cluster traces, no measured AI or GPU power profiles.
+4. Data center cooling and water: a handful of entries.
+5. One dataset is hosted in the repo (hourly 2025 grid data, 12 US operators); everything else links out.
+6. {sum(1 for e in entries if e.get('link_check') == 'blocks-bots')} links block bots (open them in a browser). {sum(1 for e in entries if e.get('status') in ('preprint', 'unverified'))} entries are preprints or unverified.
+
+## Questions and feedback
+
+Email arhams@stanford.edu, or use the form (also for creators of listed tools): https://forms.gle/k1pnQ4dtvfcGkuGK6
 
 ## The four tracks (open the file for full lists, one resource per line)
 
@@ -246,7 +260,7 @@ Feedback form (participants, later users, and creators of listed tools): https:/
 DOCS = ["README.md", "AGENTS.md", "tools/README.md", "guides/theme/README.md", "guides/playbook/README.md",
         "guides/playbook/demo-template.md", "guides/playbook/prompts.md", "guides/ideas/README.md", "data/grid-hourly-2025/README.md", "guides/concepts/README.md", "guides/concepts/load-flow.md", "guides/concepts/grid-forming-microgrids.md", "guides/concepts/ev-smart-charging-v2g.md"] + [f"{f}/README.md" for _, f, _ in TRACKS] + \
        ["guides/reference/glossary.md", "guides/reference/data-setup.md", "guides/event/README.md"]
-parts = ["# SF x MIT Hack Day: Energy, full repo in one file\n",
+parts = ["# Energy hack: grid-friendly compute resources, full repo in one file\n",
          "Source: https://github.com/arhamshah08/energy-hack. Read the AGENTS section first.\n"]
 for d in DOCS:
     p = ROOT / d

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/assets/banner.svg" alt="SF x MIT Hack Day: Energy. Grid-friendly compute. Four tracks: identify suitable sites, assess grid capacity at the edge, manage loads, aggregate distributed compute." width="100%">
+  <img src=".github/assets/banner.svg" alt="Grid-friendly compute. Open resources for anyone. First made for SF x MIT Hack Day: Energy. Four tracks: identify suitable sites, assess grid capacity at the edge, manage loads, aggregate distributed compute." width="100%">
 </p>
 
 <p align="center">
@@ -23,14 +23,15 @@
 > **Using ChatGPT, Claude or Gemini in a browser?** Copy this into the chat:
 >
 > ```
-> I'm at SF x MIT Hack Day: Energy on Track [1, 2, 3 or 4]. Read
-> https://raw.githubusercontent.com/arhamshah08/energy-hack/main/ai/START.md
-> and then the file for my track. List the most relevant open tools, datasets and papers
-> (with links) for: [your idea]. Prefer ones with no API key.
+> Read https://raw.githubusercontent.com/arhamshah08/energy-hack/main/ai/START.md
+> (repo: https://github.com/arhamshah08/energy-hack) and follow it.
+> My interest: [topic, idea, or Track 1, 2, 3 or 4].
 > ```
 
-Everything a team and its AI agent need to go from an idea to a working demo by **18:30**:
-four tracks, ready-made problems, 300+ datasets, open-source tools, simulators, papers and programs.
+A free, open catalog for anyone working on **grid-friendly compute**: powering data centers and
+distributed compute without straining the grid. Four tracks, ready-made problems, 300+ datasets,
+open-source tools, simulators, papers and programs, readable by you or your AI agent.
+First made for [SF x MIT Hack Day: Energy](guides/event/README.md) (8 Nov 2026, AGI House SF).
 Grid prices (LMP), demand and fuel mix for every US ISO: [gridstatus.io](https://www.gridstatus.io/). California feeder capacity: [PG&E GRIP](https://grip.pge.com/).
 
 ## Pick a track
@@ -46,26 +47,16 @@ Grid prices (LMP), demand and fuel mix for every US ISO: [gridstatus.io](https:/
 
 **Starter data**: hourly 2025 demand and generation by fuel for the 12 largest US grid operators, one line to load: [data](data/grid-hourly-2025/README.md).
 
-Not sure? Browse the [RFQs](guides/rfq/README.md): 22 problems people have today, each sized for one day.
-
-## Schedule
-
-| Time | |
-|---|---|
-| 10:00 | Doors, coffee, intro |
-| 10:30 | Team formation |
-| 13:00 | Lunch |
-| **18:30** | **Demos** ([ideas](guides/playbook/demo-template.md)) |
-| 19:30 | Done |
+Not sure? Browse the [RFQs](guides/rfq/README.md): 22 problems people have today, each small enough to start on in a day.
 
 ## Use it with your agent
 
-**Coding agents** (Claude Code, Codex, Cursor, Copilot, Gemini CLI) read [`AGENTS.md`](AGENTS.md) automatically:
+**Coding agents** (Claude Code, Codex, Cursor, Copilot) read [`AGENTS.md`](AGENTS.md) automatically. With Gemini CLI or others, tell it to read `AGENTS.md`:
 
 ```bash
 git clone https://github.com/arhamshah08/energy-hack
 cd energy-hack
-# open your agent here and tell it your track
+# open your agent here and tell it your interest
 ```
 
 **Chat agents** (ChatGPT, Claude, Gemini in a browser): use the prompt at the top of this page. Each track has a
@@ -103,16 +94,15 @@ reliability, markets, carbon, permitting speed, community impact, and more.
 | [`data/`](data/README.md) | Starter datasets, ready to load |
 | [`guides/`](guides/README.md) | Ideas, ready-made problems, concepts, glossary |
 | [`ai/`](ai/START.md) | Chat-ready files for ChatGPT, Claude or Gemini |
-| [`catalog/`](catalog/SCHEMA.md) | All 320+ resources as YAML and JSON |
+| [`catalog/`](catalog/SCHEMA.md) | All 330+ resources as YAML and JSON |
 | [`scripts/`](scripts) | Search and build |
 
-## Feedback
+## Questions and feedback
 
-Anyone can share feedback, corrections or updates through the **[Energy Hack Repo Feedback form](https://forms.gle/k1pnQ4dtvfcGkuGK6)**:
-participants, people who used the repo after the event, and the creators of any tool or project listed here
-(tell us if a description, credit or link is wrong). Or email **arhams@stanford.edu**.
+Email **arhams@stanford.edu**, or use the **[feedback form](https://forms.gle/k1pnQ4dtvfcGkuGK6)**.
+Creators of any tool or project listed here: tell us if a description, credit or link is wrong.
 
 ## Contribute
 
-Found a useful resource during the day? Add one entry to `catalog/*.yaml` and open a pull request.
+Know a useful resource? Add one entry to `catalog/*.yaml` and open a pull request.
 See [CONTRIBUTING.md](.github/CONTRIBUTING.md). Content CC BY 4.0, scripts MIT.

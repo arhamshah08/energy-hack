@@ -1,12 +1,12 @@
 # Track 3: Manage loads: every resource, one per line
 
-SF x MIT Hack Day: Energy (AGI House SF, 8 Nov 2026). Theme: grid-friendly compute. Demos 18:30. Full repo: https://github.com/arhamshah08/energy-hack. Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu
+Grid-friendly compute resources, free for anyone. First made for SF x MIT Hack Day: Energy (8 Nov 2026). Full repo: https://github.com/arhamshah08/energy-hack. Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6
 
-Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` for a one-day build, and do not invent tools. 143 resources below.
+Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` first, and do not invent tools. 143 resources below.
 
 ## Ready-made problems (RFQs) for this track
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 3.1 | How much can an inference cluster shift without breaking latency targets? | Cloud operator | Field demos show software-only reductions (`emerald-phoenix-2025`) | `azure-llm-inference-traces` | `sustaindc` or `vessim` | MW reduced vs requests delayed |
 | 3.2 | Which batch schedule minimizes cost and carbon given tomorrow's prices and grid mix? | Data center operator | Average and marginal signals give different answers (`watttime`) | `google-cluster-data`, `caiso-todays-outlook`, `electricity-maps` | `carbon-aware-sdk`, simulator | Schedule chart with cost and carbon saved |

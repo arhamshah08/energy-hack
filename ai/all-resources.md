@@ -1,6 +1,6 @@
 # All resources, one per line
 
-SF x MIT Hack Day: Energy. Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu. Every catalog entry, grouped by type. Each line: name, creator, what it is, access, tracks (1 sites, 2 grid capacity, 3 load management, 4 aggregation), id, link.
+Grid-friendly compute resources, free for anyone. Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6. Every catalog entry, grouped by type. Each line: name, creator, what it is, access, tracks (1 sites, 2 grid capacity, 3 load management, 4 aggregation), id, link.
 
 ### Data and datasets (82)
 

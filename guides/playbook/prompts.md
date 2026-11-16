@@ -3,12 +3,12 @@
 # Prompts
 
 Copy, paste, fill the brackets. Coding agents: run inside the cloned repo. Chat agents (ChatGPT,
-Claude, Gemini in a browser): first paste `https://raw.githubusercontent.com/arhamshah08/energy-hack/main/ai/START.md` and say your track.
+Claude, Gemini in a browser): first paste `https://raw.githubusercontent.com/arhamshah08/energy-hack/main/ai/START.md` and say your interest.
 
 ## Explore the tracks
 
 ```
-Read AGENTS.md and guides/rfq/README.md. We are a team of [N] with skills in [skills].
+Read AGENTS.md and guides/rfq/README.md. I am (or we are) [who] with skills in [skills].
 Summarise the four tracks in one line each and list RFQs that fit our skills and can run on
 open data. Give 3 options with the data and simulator each needs; we will choose.
 ```
@@ -38,6 +38,6 @@ our track page and scripts/find.py to find the 3 most relevant resources.
 ## Prepare the demo
 
 ```
-Using guides/playbook/demo-template.md, draft a short demo of what we built: the problem with one
+Using guides/playbook/demo-template.md, draft a short presentation of what we built: the problem with one
 sourced number, what we did, the result, and three concrete ways it could expand.
 ```

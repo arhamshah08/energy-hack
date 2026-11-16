@@ -1,12 +1,12 @@
 # Track 2: Assess grid capacity at the edge: every resource, one per line
 
-SF x MIT Hack Day: Energy (AGI House SF, 8 Nov 2026). Theme: grid-friendly compute. Demos 18:30. Full repo: https://github.com/arhamshah08/energy-hack. Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu
+Grid-friendly compute resources, free for anyone. First made for SF x MIT Hack Day: Energy (8 Nov 2026). Full repo: https://github.com/arhamshah08/energy-hack. Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6
 
-Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` for a one-day build, and do not invent tools. 126 resources below.
+Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` first, and do not invent tools. 126 resources below.
 
 ## Ready-made problems (RFQs) for this track
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 2.1 | How much load can each substation in a region take before a thermal or voltage violation? | Developer, utility planner | Real models are restricted (`ferc-ceii`); synthetic grids are public | `tamu-activsg10k` | `pandapower` or `matpower` power flow | Headroom map by substation |
 | 2.2 | Does splitting one large load across several substations connect more of it? | Developer | Large requests far exceed approvals (`ercot-constraints-2025`) | `tamu-activsg10k` | Power flow, before vs after | Violations: one site vs split |

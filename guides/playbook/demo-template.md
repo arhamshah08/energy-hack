@@ -1,6 +1,6 @@
 [← Front page](../../README.md) &nbsp;·&nbsp; [Feedback form](https://forms.gle/k1pnQ4dtvfcGkuGK6)
 
-# Demo ideas (demos at 18:30)
+# Presenting a result
 
 A suggested shape, not a requirement.
 

@@ -1,6 +1,6 @@
 # Open-source tools, one per line
 
-Free tools for the hack, credited to their creators. Check each license before reusing code. Built one of these? Request changes: https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu
+Free tools, credited to their creators. Check each license before reusing code. Built one of these? Request changes: https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu
 
 ## Try in the browser, no install
 

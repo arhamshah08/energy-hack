@@ -1,12 +1,12 @@
 # Track 4: Aggregate distributed compute: every resource, one per line
 
-SF x MIT Hack Day: Energy (AGI House SF, 8 Nov 2026). Theme: grid-friendly compute. Demos 18:30. Full repo: https://github.com/arhamshah08/energy-hack. Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu
+Grid-friendly compute resources, free for anyone. First made for SF x MIT Hack Day: Energy (8 Nov 2026). Full repo: https://github.com/arhamshah08/energy-hack. Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6
 
-Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` for a one-day build, and do not invent tools. 95 resources below.
+Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` first, and do not invent tools. 95 resources below.
 
 ## Ready-made problems (RFQs) for this track
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 4.1 | Can 50 edge sites answer one grid event and deliver the requested MW? | Aggregator | VPPs are about 33 GW today (`doe-vpp-announcement-2025`) | `openleadr`, workload traces | `vessim` or `citylearn` | Dashboard: requested vs delivered MW |
 | 4.2 | Which sites should respond to a request, given each site's flexibility and service limits? | Aggregator, operator | Equal MW is not equal reliability (`doe-resource-adequacy-2024`) | Track 3 outputs, `eia-930` | Assignment scored in simulation | Site assignment map and delivery score |

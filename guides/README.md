@@ -8,6 +8,6 @@
 | [RFQs](rfq/README.md) | Ready-made problems per track |
 | [Theme](theme/README.md) | Grid-friendly compute and example angles |
 | [Concepts](concepts/README.md) | Grid ideas explained, with tools to try |
-| [Playbook](playbook/README.md) | Schedule, demo ideas, prompts |
+| [Playbook](playbook/README.md) | Build plan, presenting a result, prompts |
 | [Reference](reference/README.md) | Glossary, data setup, materials and fusion |
-| [Event](event/README.md) | SF x MIT Hack Day: Energy, 8 Nov 2026 |
+| [Event](event/README.md) | The original hack day: SF x MIT Hack Day: Energy, 8 Nov 2026 |

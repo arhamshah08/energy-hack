@@ -2,9 +2,9 @@
 
 # RFQs: Requests for Questions
 
-Problems people in the grid and compute world have today, sized for one day. Pick one, change
+Problems people in the grid and compute world have today, each small enough to start on in a day. Pick one, change
 one, or bring your own. Each lists who has the problem, why it matters (with a source), where to
-start, what checks your answer, and what to show at 18:30.
+start, what checks your answer, and what to show.
 
 **Questions about any RFQ:** [feedback form](https://forms.gle/k1pnQ4dtvfcGkuGK6) or arhams@stanford.edu.
 
@@ -12,7 +12,7 @@ All ids are in the catalog: `python3 scripts/find.py <id>`.
 
 ## Track 1: Identify suitable sites
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 1.1 | Where in a chosen county could a 1 to 5 MW edge site go: near a substation and fiber, outside flood and fire zones? | Edge developer | Land use rules and hazards differ site by site (`richmond-dc-moratorium`, `fema-nfhl`) | `overpass-api`, `fema-nfhl`, `cpuc-fire-threat-map`, `fcc-broadband-map` | Scoring rules + `nrel-reopt` for onsite energy | Map of ranked sites with the evidence per site |
 | 1.2 | Which existing buildings could be reused for edge compute instead of building new? | Property owner, city | Reuse avoids new construction; footprints and zoning are public | `microsoft-us-building-footprints`, `sf-property-information-map`, `national-zoning-atlas`, `mrlc-nlcd` | Filters for size, zoning, hazards | Shortlist map with reasons |
@@ -22,7 +22,7 @@ All ids are in the catalog: `python3 scripts/find.py <id>`.
 
 ## Track 2: Assess grid capacity at the edge
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 2.1 | How much load can each substation in a region take before a thermal or voltage violation? | Developer, utility planner | Real models are restricted (`ferc-ceii`); synthetic grids are public | `tamu-activsg10k` | `pandapower` or `matpower` power flow | Headroom map by substation |
 | 2.2 | Does splitting one large load across several substations connect more of it? | Developer | Large requests far exceed approvals (`ercot-constraints-2025`) | `tamu-activsg10k` | Power flow, before vs after | Violations: one site vs split |
@@ -32,7 +32,7 @@ All ids are in the catalog: `python3 scripts/find.py <id>`.
 
 ## Track 3: Manage loads
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 3.1 | How much can an inference cluster shift without breaking latency targets? | Cloud operator | Field demos show software-only reductions (`emerald-phoenix-2025`) | `azure-llm-inference-traces` | `sustaindc` or `vessim` | MW reduced vs requests delayed |
 | 3.2 | Which batch schedule minimizes cost and carbon given tomorrow's prices and grid mix? | Data center operator | Average and marginal signals give different answers (`watttime`) | `google-cluster-data`, `caiso-todays-outlook`, `electricity-maps` | `carbon-aware-sdk`, simulator | Schedule chart with cost and carbon saved |
@@ -43,7 +43,7 @@ All ids are in the catalog: `python3 scripts/find.py <id>`.
 
 ## Track 4: Aggregate distributed compute
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 4.1 | Can 50 edge sites answer one grid event and deliver the requested MW? | Aggregator | VPPs are about 33 GW today (`doe-vpp-announcement-2025`) | `openleadr`, workload traces | `vessim` or `citylearn` | Dashboard: requested vs delivered MW |
 | 4.2 | Which sites should respond to a request, given each site's flexibility and service limits? | Aggregator, operator | Equal MW is not equal reliability (`doe-resource-adequacy-2024`) | Track 3 outputs, `eia-930` | Assignment scored in simulation | Site assignment map and delivery score |

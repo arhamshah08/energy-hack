@@ -1,20 +1,33 @@
 # START HERE (for ChatGPT, Claude, Gemini and other chat assistants)
 
-SF x MIT Hack Day: Energy, Sunday 8 Nov 2026, AGI House SF. Theme: grid-friendly compute.
-Schedule: 10:30 team formation, 13:00 lunch, 18:30 demos.
+Repo: https://github.com/arhamshah08/energy-hack
+What it is: a free, open catalog of 332 resources (datasets, open-source tools, simulators,
+papers, programs) on grid-friendly compute: powering data centers and distributed compute
+without straining the grid. Built for SF x MIT Hack Day: Energy (8 Nov 2026, AGI House SF).
 
-## How to help the user
+## First reply: a short brief (under 200 words)
 
-1. Ask which track they are on, then open that track's file below and list the most relevant resources with links.
-2. Prefer resources marked `access: open` (no key) for a one-day build. Flag keys, billing, paid software, large downloads.
-3. Cite names and links from these files. Do not invent tools, datasets or numbers.
-4. If they need something outside their track, open the other track file or the all-resources file.
-5. Help them reach a working demo by 18:30 and describe how it could expand.
+1. **What this is**, one line.
+2. **What is here for them**: 3 to 5 resources that fit their interest, with links. Open the matching
+   track file below (or all-resources) first. Prefer `access: open`; flag keys, billing, paid software.
+3. **What is missing** for their interest: use "Known gaps" below plus anything you looked for and did not find.
+4. **Questions**: email arhams@stanford.edu.
 
-## Feedback
+Cite names and links from these files only. Do not invent tools, datasets or numbers.
+If they then want to build something, help them get a first result running fast, then improve it.
 
-Feedback form (participants, later users, and creators of listed tools): https://forms.gle/k1pnQ4dtvfcGkuGK6
-Or email arhams@stanford.edu.
+## Known gaps
+
+1. Mostly US. Few India or Europe entries; none for the UK or Australia.
+2. Feeder hosting capacity maps for California only (PG&E GRIP, SCE DRPEP).
+3. Compute load data is thin: Google and Alibaba cluster traces, no measured AI or GPU power profiles.
+4. Data center cooling and water: a handful of entries.
+5. One dataset is hosted in the repo (hourly 2025 grid data, 12 US operators); everything else links out.
+6. 25 links block bots (open them in a browser). 21 entries are preprints or unverified.
+
+## Questions and feedback
+
+Email arhams@stanford.edu, or use the form (also for creators of listed tools): https://forms.gle/k1pnQ4dtvfcGkuGK6
 
 ## The four tracks (open the file for full lists, one resource per line)
 

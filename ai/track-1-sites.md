@@ -1,12 +1,12 @@
 # Track 1: Identify suitable sites: every resource, one per line
 
-SF x MIT Hack Day: Energy (AGI House SF, 8 Nov 2026). Theme: grid-friendly compute. Demos 18:30. Full repo: https://github.com/arhamshah08/energy-hack. Feedback or corrections (users and tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6 or email arhams@stanford.edu
+Grid-friendly compute resources, free for anyone. First made for SF x MIT Hack Day: Energy (8 Nov 2026). Full repo: https://github.com/arhamshah08/energy-hack. Questions: arhams@stanford.edu. Feedback or corrections (also tool creators): https://forms.gle/k1pnQ4dtvfcGkuGK6
 
-Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` for a one-day build, and do not invent tools. 78 resources below.
+Assistant instructions: answer from this list, cite resource names and links, prefer `access: open` first, and do not invent tools. 78 resources below.
 
 ## Ready-made problems (RFQs) for this track
 
-| # | Question | Who has it | Why it matters | Start with | Checked by | Show at 18:30 |
+| # | Question | Who has it | Why it matters | Start with | Checked by | What to show |
 |---|---|---|---|---|---|---|
 | 1.1 | Where in a chosen county could a 1 to 5 MW edge site go: near a substation and fiber, outside flood and fire zones? | Edge developer | Land use rules and hazards differ site by site (`richmond-dc-moratorium`, `fema-nfhl`) | `overpass-api`, `fema-nfhl`, `cpuc-fire-threat-map`, `fcc-broadband-map` | Scoring rules + `nrel-reopt` for onsite energy | Map of ranked sites with the evidence per site |
 | 1.2 | Which existing buildings could be reused for edge compute instead of building new? | Property owner, city | Reuse avoids new construction; footprints and zoning are public | `microsoft-us-building-footprints`, `sf-property-information-map`, `national-zoning-atlas`, `mrlc-nlcd` | Filters for size, zoning, hazards | Shortlist map with reasons |
